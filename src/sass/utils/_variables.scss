@@ -1,0 +1,90 @@
+html {
+    /*---Colors---*/
+    --primary-black: #444444;
+    --primary-white: #FFFFFF;
+    --secondary-gray: #7A7A7A;
+    --secondary-light-gray: #C1C1C1;
+
+    /*---Fonts---*/
+    --h1: 48px/110% 'RF Dewi';
+    --h2: 32px/110% 'RF Dewi';
+    --h3: 24px/120% 'RF Dewi';
+    --h4: 20px/120% 'RF Dewi';
+    --h5: 18px/120% 'RF Dewi';
+    --h6: 16px/120% 'RF Dewi';
+    --sub-title-1: 600 18px/140% 'Montserrat';
+    --sub-title-2: 600 14px/140% 'Montserrat';
+    --body-1: 400 18px/150% 'Montserrat';
+    --body-2: 400 16px/150% 'Montserrat';
+    --body-3: 400 14px/150% 'Montserrat';
+    --body-4: 400 12px/150% 'Montserrat';
+}
+
+/*---Colors---*/
+.primary-black-background {
+    background-color: var(--primary-black);
+}
+.primary-black {
+    color: var(--primary-black);
+}
+
+.primary-white-background {
+    background-color: var(--primary-white);
+}
+.primary-white {
+    color: var(--primary-white);
+}
+
+.secondary-gray-background {
+    background-color: var(--secondary-gray);
+}
+.secondary-gray {
+    color: var(--secondary-gray);
+}
+
+.secondary-light-gray-background {
+    background-color: var(--secondary-light-gray);
+}
+.secondary-light-gray {
+    color: var(--secondary-light-gray);
+}
+
+/*---Fonts---*/
+.h1 {
+    font: var(--h1);
+}
+.h2 {
+    font: var(--h2);
+}
+.h3 {
+    font: var(--h3);
+}
+.h4 {
+    font: var(--h4);
+}
+.h5 {
+    font: var(--h5);
+}
+.h6 {
+    font: var(--h6);
+}
+
+.sub-title-1 {
+    font: var(--sub-title-1);
+}
+.sub-title-2 {
+    font: var(--sub-title-2);
+}
+
+.body-1 {
+    font: var(--body-1);
+}
+.body-2 {
+    font: var(--body-2);
+}
+.body-3 {
+    font: var(--body-3);
+}
+.body-4 {
+    font: var(--body-4);
+}
