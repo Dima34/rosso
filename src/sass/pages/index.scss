@@ -1,9 +1,8 @@
 .catalog {
 
     .block_top {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+        display: grid; 
+        grid-template-columns: 40% 60%; 
         border-bottom: 1px solid var(--secondary-light-gray);
 
         .block_left {
@@ -14,22 +13,26 @@
             display: flex;
             justify-content: center;
             
-
             .title {
+                max-width: 160px;
                 padding: 111px 0 0 0;
-                max-width: 190px;
             }
         }
     }
 
-    // .block_bottom {
-    //     display: flex;
+    .block_bottom {
+        display: grid; 
+        grid-template-columns: 75% 25%; 
 
-    //     .block_left {
-    //         .sub-title  {
-    //             padding: 34px 0 0 33px;
-    //             width: 206px;
-    //         }
-    //     }
-    // }
+        .block_left {
+            display: flex;
+            justify-content: center;
+            border-right: 1px solid var(--secondary-light-gray);
+
+            .sub-title  {
+                padding: 34px 10px 135px 10px;
+                max-width: 226px;
+            }
+        }
+    }
 }
