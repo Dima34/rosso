@@ -268,6 +268,8 @@ html {
                 transform: translate(-50%, -50%);
 
                 .button-logo {
+                    display: flex;
+                    align-items: center;
                     background-color: transparent;
                     border: none;
                     cursor: pointer;
@@ -284,6 +286,7 @@ html {
                     display: flex;
                     align-items: center;
                     .link {
+                        height: 11.25px;
                         background-color: transparent;
                         border: none;
                         padding: 0;

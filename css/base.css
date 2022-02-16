@@ -412,6 +412,8 @@ html {
     transform: translate(-50%, -50%);
   }
   .top_menu .wrapper .top_menu-logo .button-logo {
+    display: flex;
+    align-items: center;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -424,6 +426,7 @@ html {
     align-items: center;
   }
   .top_menu .wrapper .top_menu-right .links .link {
+    height: 11.25px;
     background-color: transparent;
     border: none;
     padding: 0;
