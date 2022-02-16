@@ -1,3 +1,19 @@
-
+.catalog .block_top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--secondary-light-gray);
+}
+.catalog .block_top .block_left {
+  display: contents;
+}
+.catalog .block_top .block_right {
+  display: flex;
+  justify-content: center;
+}
+.catalog .block_top .block_right .title {
+  padding: 111px 0 0 0;
+  max-width: 190px;
+}
 
 /*# sourceMappingURL=index.css.map */
