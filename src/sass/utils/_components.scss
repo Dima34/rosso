@@ -5,7 +5,7 @@ html {
 
 
 // desktop 1920px
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1920px) {
     header {
         padding: 23px 0 23px 0;
         border: 1px solid var(--secondary-light-gray);
@@ -225,7 +225,7 @@ html {
 
 
 // desktop 1366
-@media screen and (min-width: 768px) and (max-width: 1366px) {
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
     header {
         padding: 23px 0 23px 0;
         border: 1px solid var(--secondary-light-gray);
@@ -461,7 +461,7 @@ html {
 
 
 // mobile 768px
-@media screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1366px) {
     header {
         display: none;
     }
@@ -600,7 +600,7 @@ html {
 
 
 // mobile 360px
-@media screen and (min-width: 0px) and (max-width: 360px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
     header {
         display: none;
     }

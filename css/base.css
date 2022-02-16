@@ -195,7 +195,7 @@ html {
   background-image: url(/img/background.svg);
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1920px) {
   header {
     padding: 23px 0 23px 0;
     border: 1px solid var(--secondary-light-gray);
@@ -374,7 +374,7 @@ html {
     padding: 15px 57px 15px 57px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1366px) {
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
   header {
     padding: 23px 0 23px 0;
     border: 1px solid var(--secondary-light-gray);
@@ -567,7 +567,7 @@ html {
     font: var(--body-4);
   }
 }
-@media screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1366px) {
   header {
     display: none;
   }
@@ -678,7 +678,7 @@ html {
     font: var(--body-4);
   }
 }
-@media screen and (min-width: 0px) and (max-width: 360px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
   header {
     display: none;
   }
