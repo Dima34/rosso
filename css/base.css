@@ -195,7 +195,7 @@ html {
   background-image: url(/img/background.svg);
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1366px) {
   header {
     padding: 23px 0 23px 0;
     border: 1px solid var(--secondary-light-gray);
@@ -291,12 +291,11 @@ html {
   .top_menu .top_menu-left .links .link {
     padding: 20px 25px 20px 25px;
     text-decoration: none;
-    opacity: 50%;
     transition: all 0.2s linear;
   }
   .top_menu .top_menu-left .links .link:hover {
     transition: all 0.2s linear;
-    opacity: 100%;
+    color: var(--secondary-light-gray);
   }
   .top_menu .top_menu-logo {
     position: absolute;
@@ -375,7 +374,7 @@ html {
     padding: 15px 57px 15px 57px;
   }
 }
-@media screen and (min-width: 1366px) and (max-width: 1919px) {
+@media screen and (min-width: 768px) and (max-width: 1366px) {
   header {
     padding: 23px 0 23px 0;
     border: 1px solid var(--secondary-light-gray);
@@ -568,7 +567,7 @@ html {
     font: var(--body-4);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1365px) {
+@media screen and (min-width: 360px) and (max-width: 768px) {
   header {
     display: none;
   }
@@ -679,7 +678,7 @@ html {
     font: var(--body-4);
   }
 }
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 360px) {
   header {
     display: none;
   }
