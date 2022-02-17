@@ -7,7 +7,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link id = "media" rel="stylesheet" href="">
+
+    <script type="text/javascript">
+        const link = document.getElementById("media") 
+
+        function checkWidth(){
+            const innerWidth = window.innerWidth;
+            let href;
+            
+            if(window.matchMedia("screen and (max-width: 525px)").matches){
+                href = "css/mobile.css";
+                checkCurrentHref(href)                
+            } else if(window.matchMedia("screen and (min-width: 525px) and (max-width: 1024px)").matches){
+                href = "css/tablet.css";
+                checkCurrentHref(href)                
+            } else if(window.matchMedia("screen and (min-width: 1024px) and (max-width: 1366px)").matches){
+                href = "css/laptop.css";
+                checkCurrentHref(href)                
+            } else if(window.matchMedia("screen and (min-width: 1366px)").matches){
+                href = "css/descktop.css";
+                checkCurrentHref(href)                
+            }
+        }
+
+        checkWidth()
+
+        function checkCurrentHref(href){
+            const currentHref = link.getAttribute("href")
+
+            if (!(href === currentHref)) {
+                setHref(href)
+            }
+        }
+
+        function setHref(href){
+            link.setAttribute("href", href) 
+        }
+
+        window.requestAnimationFrame(()=>{
+            window.addEventListener('resize', function(event) {
+                checkWidth()
+            }, true);
+        })
+
+        
+
+    </script>
+      
+    <noscript>
+        <link href="css/bundle.css" rel="stylesheet">
+    </noscript>
+    
+    
     <title>Главная</title>
 </head>
 
@@ -38,62 +90,61 @@
             <a href="tel:+74955067832" class="body-2 primary-black phone-number">+7(495) 506-78-32</a>
         </div>
     </div>
-</header>
-
-
-    <div class="top_menu">
-        <div class="wrapper">
-            <div class="top_menu-left">
-                <div class="burger-menu">
-                    <button class="burger-button">
-                        <img src="./img/burger.svg" alt="burger" class="burger">
-                        <p class="body-2 burger-text">Каталог</p>
-                    </button>
-                </div>
-        
-                <div class="links">
-                    <a href="#" class="body-2 primary-black link">Новинки</a>
-                    <a href="#" class="body-2 primary-black link">Распродажа</a>
-                </div>
+    <div class="wrapper">
+        <div class="top_menu-left">
+            <div class="burger-menu">
+                <button class="burger-button">
+                    <img src="./img/burger.svg" alt="burger" class="burger">
+                    <p class="body-2 burger-text">Каталог</p>
+                </button>
             </div>
     
-            <div class="top_menu-logo">
-                <a href="#" class="button-logo"><img src="./img/logo.svg" alt="rosso" class="logo"></a>
+            <div class="links">
+                <a href="#" class="body-2 primary-black link">Новинки</a>
+                <a href="#" class="body-2 primary-black link">Распродажа</a>
             </div>
-    
-            <div class="top_menu-right">
-                <nav class="links">
-                    <button class="link search"><img src="./img/search.svg" alt="search"></button>
-                    <button class="link people"><img src="./img/people.svg" alt="people"></button>
-                    <button class="link heart"><img src="./img/heart.svg" alt="heart"></button>
-                    <button class="link shopping"><img src="./img/shopping.svg" alt="shopping"></button>
-                </nav>
-            </div>
+        </div>
+
+        <div class="top_menu-logo">
+            <a href="#" class="button-logo"><img src="./img/logo.svg" alt="rosso" class="logo"></a>
+        </div>
+
+        <div class="top_menu-right">
+            <nav class="links">
+                <button class="link search"><img src="./img/search.svg" alt="search"></button>
+                <button class="link people"><img src="./img/people.svg" alt="people"></button>
+                <button class="link heart"><img src="./img/heart.svg" alt="heart"></button>
+                <button class="link shopping"><img src="./img/shopping.svg" alt="shopping"></button>
+            </nav>
         </div>
     </div>
+</header>
 
-
-    <section class="catalog">
-        <div class="block_top">
-            <div class="block_left">
-                <img src="./img/index-1.png" alt="" class="block_left-img">
+    <main>
+        <section class="catalog">
+            <div class="block_top">
+                <div class="block_left">
+                    <img src="./img/index-1.png" alt="" class="block_left-img">
+                </div>
+    
+                <div class="block_right">
+                    <h5 class="h5 title">Поставщик качественной мебельной фурнитуры</h5>
+                </div>
             </div>
-
-            <div class="block_right">
-                <h5 class="h5 title">Поставщик качественной мебельной фурнитуры</h5>
+    
+            <div class="block_bottom">
+                <div class="block_left">
+                    <p class="body-4 sub-title">Мы стали специалистами в поставках одного из самых сложных и, в то же время, самых красивых направлений фурнитуры для мебели – лицевой фурнитуры, а точнее – мебельных ручек.</p>
+                </div>
+    
+                <div class="block_right">
+    
+                </div>
             </div>
-        </div>
+        </section>
+    </main>
 
-        <div class="block_bottom">
-            <div class="block_left">
-                <p class="body-4 sub-title">Мы стали специалистами в поставках одного из самых сложных и, в то же время, самых красивых направлений фурнитуры для мебели – лицевой фурнитуры, а точнее – мебельных ручек.</p>
-            </div>
-
-            <div class="block_right">
-
-            </div>
-        </div>
-    </section>
+    
 
 
     <footer class="primary-black-background primary-white">

@@ -1,4 +1,8 @@
 @import "./utils/_variables.scss";
 @import "./utils/_fonts.scss";
 @import "./utils/_reset.scss";
-@import "./utils/_components.scss";
+
+html {
+    background-image: url('/img/background.svg');
+    height: 1200px;
+}
