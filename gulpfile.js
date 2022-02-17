@@ -25,12 +25,13 @@ gulp.task('fileinclude', function() {
 
 
 gulp.task("watch", function(){
+    (gulp.series("fileinclude", "sass-compile")())
+
     browserSync.init({
       server: "./"
     });
     gulp.watch("./src/**/*.html", gulp.series("fileinclude")).on('change', browserSync.reload),
-    gulp.watch("./src/sass/**/*.scss", 
-    gulp.series("sass-compile"))
+    gulp.watch("./src/sass/**/*.scss", gulp.series("sass-compile"))
 })
 
 

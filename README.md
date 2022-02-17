@@ -1,4 +1,6 @@
 # Rosso
 
-## Type `npm install` to insta;; the packages
+## Type `npm install` to install the packages
+## Type `gulp watch` to start working
+
 
