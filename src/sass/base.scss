@@ -21,3 +21,24 @@ hr{
 .medium{
     font-weight: 500;
 }
+
+#header-location, .header-phone, 
+.header_nav-item a,.burger-button,
+.header_button-set a, .header_button-set button,
+.header-middle-list a, .header-logo{
+    &:hover, &:focus{
+        color: var(--black);
+        background: var(--light-gray);
+        border-radius: 10px;
+
+        p,span{
+            color: var(--black);
+        }
+    }
+}
+
+#header-location, .header-phone{
+    span{
+        white-space: nowrap;
+    }
+}

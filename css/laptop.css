@@ -1,2 +1,85 @@
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  header {
+    border-bottom: 1px solid var(--light-gray);
+  }
+  header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1266px;
+    padding: 10px 10px;
+    position: relative;
+  }
+  header .wrapper:last-child {
+    padding: 20px 5px;
+  }
 
+  #header-location, .header-phone,
+.header_nav-item a, .burger-button,
+.header_button-set a, .header_button-set button,
+.header-middle-list a, .header-logo {
+    padding: 10px 5px;
+    display: block;
+  }
+
+  #header-location, .header-phone, .burger-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  #header-location p, #header-location span, .header-phone p, .header-phone span, .burger-button p, .burger-button span {
+    padding-top: 1px;
+  }
+
+  #header-location svg, .header-phone svg, .burger-button svg, .header_button-set svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .header_nav {
+    max-width: 790px;
+    width: 100%;
+  }
+
+  .header_nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header_button-set {
+    display: flex;
+    max-width: 155px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .header_button-set svg {
+    display: block;
+  }
+
+  .header_middle {
+    width: 100%;
+    padding-left: 14px;
+  }
+
+  .header-middle_search {
+    display: none;
+  }
+
+  .header-middle-list {
+    display: flex;
+    gap: 14px;
+  }
+
+  .header-logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header-logo img {
+    height: 32px;
+    width: auto;
+  }
+}
 /*# sourceMappingURL=laptop.css.map */

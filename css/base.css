@@ -101,6 +101,28 @@ html {
   font: var(--body-4);
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  html {
+    /*---Colors---*/
+    --black: #444444;
+    --white: #FFFFFF;
+    --gray: #7A7A7A;
+    --light-gray: #C1C1C1;
+    /*---Fonts---*/
+    --h1: 600 48px/110% "RF Dewi";
+    --h2: 600 32px/110% "RF Dewi";
+    --h3: 600 24px/120% "RF Dewi";
+    --h4: 600 20px/120% "RF Dewi";
+    --h5: 600 18px/120% "RF Dewi";
+    --h6: 600 16px/120% "RF Dewi";
+    --sub-title-1: 600 18px/140% "Montserrat";
+    --sub-title-2: 600 14px/140% "Montserrat";
+    --body-1: 400 18px/150% "Montserrat";
+    --body-2: 400 12px/150% "Montserrat";
+    --body-3: 400 14px/150% "Montserrat";
+    --body-4: 400 12px/150% "Montserrat";
+  }
+}
 /* montserrat-regular - latin_cyrillic */
 @font-face {
   font-family: "Montserrat";
@@ -212,5 +234,36 @@ hr {
 
 .medium {
   font-weight: 500;
+}
+
+#header-location:hover, #header-location:focus, .header-phone:hover, .header-phone:focus,
+.header_nav-item a:hover,
+.header_nav-item a:focus, .burger-button:hover, .burger-button:focus,
+.header_button-set a:hover,
+.header_button-set a:focus, .header_button-set button:hover, .header_button-set button:focus,
+.header-middle-list a:hover,
+.header-middle-list a:focus, .header-logo:hover, .header-logo:focus {
+  color: var(--black);
+  background: var(--light-gray);
+  border-radius: 10px;
+}
+#header-location:hover p, #header-location:hover span, #header-location:focus p, #header-location:focus span, .header-phone:hover p, .header-phone:hover span, .header-phone:focus p, .header-phone:focus span,
+.header_nav-item a:hover p,
+.header_nav-item a:hover span,
+.header_nav-item a:focus p,
+.header_nav-item a:focus span, .burger-button:hover p, .burger-button:hover span, .burger-button:focus p, .burger-button:focus span,
+.header_button-set a:hover p,
+.header_button-set a:hover span,
+.header_button-set a:focus p,
+.header_button-set a:focus span, .header_button-set button:hover p, .header_button-set button:hover span, .header_button-set button:focus p, .header_button-set button:focus span,
+.header-middle-list a:hover p,
+.header-middle-list a:hover span,
+.header-middle-list a:focus p,
+.header-middle-list a:focus span, .header-logo:hover p, .header-logo:hover span, .header-logo:focus p, .header-logo:focus span {
+  color: var(--black);
+}
+
+#header-location span, .header-phone span {
+  white-space: nowrap;
 }
 /*# sourceMappingURL=base.css.map */

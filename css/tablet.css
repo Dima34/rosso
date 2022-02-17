@@ -1,2 +1,20 @@
-
+@media screen and (min-width: 525px) and (max-width: 1024px) {
+  header {
+    border-bottom: 1px solid var(--light-gray);
+  }
+  header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1266px;
+    padding: 10px 10px;
+    position: relative;
+  }
+  header .wrapper:first-child {
+    display: none;
+  }
+  header .wrapper:last-child {
+    padding: 20px 5px;
+  }
+}
 /*# sourceMappingURL=tablet.css.map */
