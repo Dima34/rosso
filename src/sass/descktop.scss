@@ -1,4 +1,81 @@
 // desktop 
 @media screen and (min-width: 1366px) {
-    
+    header{
+        border-bottom: 1px solid var(--light-gray);
+
+        .wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1780px;
+            padding: 10px 0;
+            position: relative;
+
+            &:last-child{
+                padding: 36px 0;
+            }
+        }
+    }
+
+    #header-location, .header-phone, 
+    .header_nav-item a,.burger-button,
+    .header_button-set a, .header_button-set button,
+    .header-middle-list a, .header-logo{
+        padding: 10px 10px;
+        display: block;
+    }
+
+    #header-location, .header-phone, .burger-button{
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        p, span{
+            padding-top: 1px;
+        }
+    }
+
+    .header_nav{
+        max-width: 1120px;
+        width: 100%;
+    }
+
+    .header_nav-list{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+
+    .header_button-set{
+        display: flex;
+        max-width: 205px;
+        width: 100%;
+        justify-content: space-between;
+
+        svg{
+            display: block;
+        }
+    }
+
+    .header_middle{
+        width: 100%;
+        padding-left: 40px;
+    }
+
+    .header-middle_search{
+        display: none;
+    }
+
+    .header-middle-list{
+        display: flex;
+        gap: 30px;
+    }
+
+    .header-logo{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 }

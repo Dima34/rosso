@@ -1,9 +1,9 @@
 html {
   /*---Colors---*/
-  --primary-black: #444444;
-  --primary-white: #FFFFFF;
-  --secondary-gray: #7A7A7A;
-  --secondary-light-gray: #C1C1C1;
+  --black: #444444;
+  --white: #FFFFFF;
+  --gray: #7A7A7A;
+  --light-gray: #C1C1C1;
   /*---Fonts---*/
   --h1: 600 48px/110% "RF Dewi";
   --h2: 600 32px/110% "RF Dewi";
@@ -20,36 +20,36 @@ html {
 }
 
 /*---Colors---*/
-.primary-black-background {
-  background-color: var(--primary-black);
+.black-bg {
+  background-color: var(--black);
 }
 
-.primary-black {
+.black {
   color: var(--primary-black);
 }
 
-.primary-white-background {
-  background-color: var(--primary-white);
+.white-bg {
+  background-color: var(--white);
 }
 
-.primary-white {
+.white {
   color: var(--primary-white);
 }
 
-.secondary-gray-background {
-  background-color: var(--secondary-gray);
+.gray-bg {
+  background-color: var(--gray);
 }
 
-.secondary-gray {
-  color: var(--secondary-gray);
+.gray {
+  color: var(--gray);
 }
 
-.secondary-light-gray-background {
-  background-color: var(--secondary-light-gray);
+.light-gray-bg {
+  background-color: var(--light-gray);
 }
 
-.secondary-light-gray {
-  color: var(--secondary-light-gray);
+.light-gray {
+  color: var(--light-gray);
 }
 
 /*---Fonts---*/
@@ -138,18 +138,11 @@ html {
   font-weight: 600;
   src: local("RF Dewi Semibold"), local("RF-Dewi-Semibold"), url("/fonts/RFDewi-Semibold.woff2") format("woff2"), url("/fonts/RFDewi-Semibold.woff") format("woff"), url("/fonts/RFDewi-Semibold.ttf") format("truetype");
 }
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, section, video {
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, a, ol, ul, li, form, label,
+table, article, aside, canvas,
+figure, figcaption, footer, header,
+nav, section {
   margin: 0;
   padding: 0;
   border: 0;
@@ -190,8 +183,34 @@ table {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+button {
+  background: 0;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
 html {
   background-image: url("/img/background.svg");
   height: 1200px;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+hr {
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.medium {
+  font-weight: 500;
 }
 /*# sourceMappingURL=base.css.map */

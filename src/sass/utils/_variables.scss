@@ -1,9 +1,9 @@
 html {
     /*---Colors---*/
-    --primary-black: #444444;
-    --primary-white: #FFFFFF;
-    --secondary-gray: #7A7A7A;
-    --secondary-light-gray: #C1C1C1;
+    --black: #444444;
+    --white: #FFFFFF;
+    --gray: #7A7A7A;
+    --light-gray: #C1C1C1;
 
     /*---Fonts---*/
     --h1: 600 48px/110% 'RF Dewi';
@@ -21,32 +21,32 @@ html {
 }
 
 /*---Colors---*/
-.primary-black-background {
-    background-color: var(--primary-black);
+.black-bg{
+    background-color: var(--black);
 }
-.primary-black {
+.black {
     color: var(--primary-black);
 }
 
-.primary-white-background {
-    background-color: var(--primary-white);
+.white-bg {
+    background-color: var(--white);
 }
-.primary-white {
+.white {
     color: var(--primary-white);
 }
 
-.secondary-gray-background {
-    background-color: var(--secondary-gray);
+.gray-bg {
+    background-color: var(--gray);
 }
-.secondary-gray {
-    color: var(--secondary-gray);
+.gray {
+    color: var(--gray);
 }
 
-.secondary-light-gray-background {
-    background-color: var(--secondary-light-gray);
+.light-gray-bg {
+    background-color: var(--light-gray);
 }
-.secondary-light-gray {
-    color: var(--secondary-light-gray);
+.light-gray {
+    color: var(--light-gray);
 }
 
 /*---Fonts---*/
