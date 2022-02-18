@@ -6,22 +6,22 @@ html {
     --light-gray: #C1C1C1;
 
     /*---Fonts---*/
-    --h1: 600 48px/110% 'RF Dewi';
-    --h2: 600 32px/110% 'RF Dewi';
-    --h3: 600 24px/120% 'RF Dewi';
-    --h4: 600 20px/120% 'RF Dewi';
-    --h5: 600 18px/120% 'RF Dewi';
-    --h6: 600 16px/120% 'RF Dewi';
-    --sub-title-1: 600 18px/140% 'Montserrat';
-    --sub-title-2: 600 14px/140% 'Montserrat';
-    --body-1: 400 18px/150% 'Montserrat';
-    --body-2: 400 16px/150% 'Montserrat';
-    --body-3: 400 14px/150% 'Montserrat';
-    --body-4: 400 12px/150% 'Montserrat';
+    --h1: 600 48px / 110% 'RF Dewi';
+    --h2: 600 32px / 110% 'RF Dewi';
+    --h3: 600 24px / 120% 'RF Dewi';
+    --h4: 600 20px / 120% 'RF Dewi';
+    --h5: 600 18px / 120% 'RF Dewi';
+    --h6: 600 16px / 120% 'RF Dewi';
+    --sub-title-1: 600 18px / 140% 'Montserrat';
+    --sub-title-2: 600 14px / 140% 'Montserrat';
+    --body-1: 400 18px / 150% 'Montserrat';
+    --body-2: 400 16px / 150% 'Montserrat';
+    --body-3: 400 14px / 150% 'Montserrat';
+    --body-4: 400 12px / 150% 'Montserrat';
 }
 
 /*---Colors---*/
-.black-bg{
+.black-bg {
     background-color: var(--black);
 }
 .black {
@@ -90,26 +90,26 @@ html {
 }
 
 
-@media screen and (min-width: 1024px) and (max-width: 1366px){
+@media screen and(min-width: 1024px) and(max-width: 1366px) {
     html {
         /*---Colors---*/
         --black: #444444;
         --white: #FFFFFF;
         --gray: #7A7A7A;
         --light-gray: #C1C1C1;
-    
+
         /*---Fonts---*/
-        --h1: 600 48px/110% 'RF Dewi';
-        --h2: 600 32px/110% 'RF Dewi';
-        --h3: 600 24px/120% 'RF Dewi';
-        --h4: 600 20px/120% 'RF Dewi';
-        --h5: 600 18px/120% 'RF Dewi';
-        --h6: 600 16px/120% 'RF Dewi';
-        --sub-title-1: 600 18px/140% 'Montserrat';
-        --sub-title-2: 600 14px/140% 'Montserrat';
-        --body-1: 400 18px/150% 'Montserrat';
-        --body-2: 400 12px/150% 'Montserrat';
-        --body-3: 400 14px/150% 'Montserrat';
-        --body-4: 400 12px/150% 'Montserrat';
+        --h1: 600 48px / 110% 'RF Dewi';
+        --h2: 600 32px / 110% 'RF Dewi';
+        --h3: 600 24px / 120% 'RF Dewi';
+        --h4: 600 20px / 120% 'RF Dewi';
+        --h5: 600 18px / 120% 'RF Dewi';
+        --h6: 600 16px / 120% 'RF Dewi';
+        --sub-title-1: 600 18px / 140% 'Montserrat';
+        --sub-title-2: 600 14px / 140% 'Montserrat';
+        --body-1: 400 18px / 150% 'Montserrat';
+        --body-2: 400 12px / 150% 'Montserrat';
+        --body-3: 400 14px / 150% 'Montserrat';
+        --body-4: 400 12px / 150% 'Montserrat';
     }
 }
