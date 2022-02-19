@@ -25,14 +25,14 @@ html {
     background-color: var(--black);
 }
 .black {
-    color: var(--primary-black);
+    color: var(--black);
 }
 
 .white-bg {
     background-color: var(--white);
 }
 .white {
-    color: var(--primary-white);
+    color: var(--white);
 }
 
 .gray-bg {
@@ -89,6 +89,9 @@ html {
     font: var(--body-4);
 }
 
+p {
+    font: var(--body-1);
+}
 
 @media screen and(min-width: 1024px) and(max-width: 1366px) {
     html {

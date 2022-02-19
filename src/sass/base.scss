@@ -1,6 +1,6 @@
+@import "./utils/_reset.scss";
 @import "./utils/_variables.scss";
 @import "./utils/_fonts.scss";
-@import "./utils/_reset.scss";
 
 html {
     background-image: url('/img/background.svg');
@@ -20,6 +20,10 @@ hr{
 
 .medium{
     font-weight: 500;
+}
+
+.semi-bold{
+    font-weight: 600;
 }
 
 #header-location, .header-phone, 

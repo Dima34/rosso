@@ -1,3 +1,59 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, a, ol, ul, li, form, label,
+table, article, aside, canvas,
+figure, figcaption, footer, header,
+nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: 0;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
 html {
   /*---Colors---*/
   --black: #444444;
@@ -25,7 +81,7 @@ html {
 }
 
 .black {
-  color: var(--primary-black);
+  color: var(--black);
 }
 
 .white-bg {
@@ -33,7 +89,7 @@ html {
 }
 
 .white {
-  color: var(--primary-white);
+  color: var(--white);
 }
 
 .gray-bg {
@@ -101,6 +157,10 @@ html {
   font: var(--body-4);
 }
 
+p {
+  font: var(--body-1);
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
   html {
     /*---Colors---*/
@@ -160,62 +220,6 @@ html {
   font-weight: 600;
   src: local("RF Dewi Semibold"), local("RF-Dewi-Semibold"), url("/fonts/RFDewi-Semibold.woff2") format("woff2"), url("/fonts/RFDewi-Semibold.woff") format("woff"), url("/fonts/RFDewi-Semibold.ttf") format("truetype");
 }
-html, body, div, span,
-h1, h2, h3, h4, h5, h6, p, a, ol, ul, li, form, label,
-table, article, aside, canvas,
-figure, figcaption, footer, header,
-nav, section {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-*, *::after, *::before {
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-button {
-  background: 0;
-  border: 0;
-  padding: 0;
-  cursor: pointer;
-}
-
 html {
   background-image: url("/img/background.svg");
   height: 1200px;
@@ -234,6 +238,10 @@ hr {
 
 .medium {
   font-weight: 500;
+}
+
+.semi-bold {
+  font-weight: 600;
 }
 
 #header-location:hover, #header-location:focus, .header-phone:hover, .header-phone:focus,

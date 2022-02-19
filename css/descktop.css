@@ -111,6 +111,31 @@
     padding: 88px 0 156px;
   }
 
+  .news-article_intro {
+    padding: 200px 160px 50px 160px;
+  }
+  .news-article_intro p {
+    padding-bottom: 15px;
+  }
+
+  .news-article_main {
+    display: grid;
+    grid-template-columns: 33.3333333333% 66.6666666667%;
+  }
+  .news-article_main > div {
+    border-bottom: 1px solid var(--light-gray);
+  }
+  .news-article_main > div:nth-child(2n) {
+    border-left: 1px solid var(--light-gray);
+  }
+
+  .news_main-intro {
+    padding: 88px 85px 186px 85px;
+  }
+  .news_main-intro p {
+    max-width: 543px;
+  }
+
   footer {
     display: none;
   }
