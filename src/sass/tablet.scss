@@ -20,4 +20,55 @@
             }
         }
     }
+
+    .header-middle-list{
+        display: none;
+    }
+
+    .burger-button p{
+        display: none;
+    }
+
+    .header_button-set{
+        display: flex;
+        gap: 4px;
+
+        a, button{
+            display: none;
+        }
+
+        & #search-open,& #cart-open{
+            display: block;
+        }
+    }
+
+    #search-open, #cart-open, #burger-open{
+        padding: 10px;
+
+        svg{
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    .header_middle{
+        width: 100%;
+        padding-left: 14px;
+    }
+
+    .header-middle_search{
+        display: none;
+    }
+
+    .header-logo{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        
+        img{
+            height: auto;
+            width: 159px;
+        }
+    }
 }
