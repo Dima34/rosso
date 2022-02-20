@@ -417,4 +417,22 @@ input[type=password]::placeholder {
   border-color: var(--light-gray);
   background-color: var(--light-gray);
 }
+
+.button-white {
+  color: var(--black);
+  background-color: var(--white);
+  border: 1px solid transparent;
+  font: var(--h4);
+  text-align: center;
+}
+.button-white:hover {
+  border-color: var(--black);
+  background: var(--black);
+  color: var(--white);
+}
+.button-white:active {
+  color: var(--white);
+  border-color: var(--light-gray);
+  background-color: var(--light-gray);
+}
 /*# sourceMappingURL=base.css.map */

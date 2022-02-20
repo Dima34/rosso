@@ -56,14 +56,47 @@ const authOpen = document.getElementById("authorization-open")
 const authBlock = document.getElementById("authorization")
 const authClose = document.getElementById("authorization-close")
 
-authOpen.addEventListener("click", ()=>{
+function authOpenFucn() {
     authBlock.classList.add("active")
     showBlur()
     blockScroll();
-})
+}
 
-authClose.addEventListener("click", ()=>{
+function authCloseFucn() {
     authBlock.classList.remove("active")
     hideBlur()
     unblockScroll()
+}
+
+authOpen.addEventListener("click", ()=>{
+    authOpenFucn();
+})
+
+authClose.addEventListener("click", ()=>{
+    authCloseFucn();
+})
+
+// Cart
+const cartOpen = document.getElementById("cart-open")
+const cartBlock = document.getElementById("cart")
+const cartClose = document.getElementById("cart-close")
+
+function cartOpenFunc() {
+    cartBlock.classList.add("active")
+    showBlur()
+    blockScroll();
+}
+
+function cartCloseFunc(){
+    cartBlock.classList.remove("active")
+    hideBlur()
+    unblockScroll()
+}
+
+cartOpen.addEventListener("click", ()=>{
+    cartOpenFunc()
+})
+
+cartClose.addEventListener("click", ()=>{
+    cartCloseFunc()
 })
