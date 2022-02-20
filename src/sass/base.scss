@@ -89,7 +89,52 @@ header.search--opened{
     }
 }
 
+input{
+    &[type="text"],
+    &[type="password"],
+    &[type="tel"],
+    &[type="email"]{
+        width: 100%;
+        bottom: 0;
+        border: 0;
+        background: 0;
+        border-bottom: 1px solid var(--black);
+        color: var(--gray);
+        font:var(--body-1);
+
+        &::placeholder{
+            opacity: 1;
+            color: var(--gray);
+        }
+    }
+}
+
 input[type="password"]{
     font-family: 'password';
     letter-spacing: 7px;
+    font-size: 12px;
+
+    &::placeholder{
+        color: var(--black);
+    }
+}
+
+.button{
+    background: var(--black);
+    color: var(--white);
+    border: 1px solid transparent;
+    font: var(--h4);
+    text-align: center;
+
+    &:hover{
+        color: var(--black);
+        border-color: var(--black);
+        background-color: var(--white);
+    }
+
+    &:active{
+        color: var(--white);
+        border-color: var(--light-gray);
+        background-color: var(--light-gray);
+    }
 }

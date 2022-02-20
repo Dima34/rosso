@@ -54,6 +54,12 @@ button {
   cursor: pointer;
 }
 
+fieldset {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
 html {
   /*---Colors---*/
   --black: #444444;
@@ -208,7 +214,7 @@ p {
     --body-3: 400 14px / 150% "Montserrat";
     --body-4: 400 12px / 150% "Montserrat";
     /*---Fonts---*/
-    --header-height: 83px;
+    --header-height: 80px;
   }
 }
 @media screen and (max-width: 525px) {
@@ -371,8 +377,44 @@ header.search--opened .header-middle_default {
   display: block;
 }
 
+input[type=text], input[type=password], input[type=tel], input[type=email] {
+  width: 100%;
+  bottom: 0;
+  border: 0;
+  background: 0;
+  border-bottom: 1px solid var(--black);
+  color: var(--gray);
+  font: var(--body-1);
+}
+input[type=text]::placeholder, input[type=password]::placeholder, input[type=tel]::placeholder, input[type=email]::placeholder {
+  opacity: 1;
+  color: var(--gray);
+}
+
 input[type=password] {
   font-family: "password";
   letter-spacing: 7px;
+  font-size: 12px;
+}
+input[type=password]::placeholder {
+  color: var(--black);
+}
+
+.button {
+  background: var(--black);
+  color: var(--white);
+  border: 1px solid transparent;
+  font: var(--h4);
+  text-align: center;
+}
+.button:hover {
+  color: var(--black);
+  border-color: var(--black);
+  background-color: var(--white);
+}
+.button:active {
+  color: var(--white);
+  border-color: var(--light-gray);
+  background-color: var(--light-gray);
 }
 /*# sourceMappingURL=base.css.map */

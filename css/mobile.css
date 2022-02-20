@@ -17,6 +17,11 @@
     padding: 20px 5px;
   }
 
+  input[type=text], input[type=password], input[type=tel], input[type=email] {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
   .header-middle-list {
     display: none;
   }
@@ -67,18 +72,10 @@
   }
 
   .header_search-bar {
-    width: 100%;
-    bottom: 0;
-    border: 0;
-    background: 0;
     border-bottom: 1px solid var(--light-gray);
     padding: 7px 5px;
     color: var(--gray);
     font: var(--body-2);
-  }
-  .header_search-bar::placeholder {
-    opacity: 1;
-    color: var(--light-gray);
   }
 
   #header_search-bar-close {

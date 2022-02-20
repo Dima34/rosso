@@ -1,10 +1,29 @@
+const blur = document.getElementById("blur");
+const header = document.querySelector("header");
+const body = document.querySelector("body");
+
+function showBlur() {
+    blur.classList.add("active")
+}
+
+function hideBlur() {
+    blur.classList.remove("active")
+}
+
+function blockScroll() {
+    body.classList.add("scroll-block")
+}
+
+function unblockScroll() {
+    body.classList.remove("scroll-block")
+}
+
+
+// Search
 const searchOpen = document.getElementById("search-open");
 const searchClose = document.getElementById("header_search-bar-close");
 const searchBar = document.getElementById("search-bar");
 const searchResults = document.getElementById("search-block")
-const blur = document.getElementById("blur");
-const header = document.querySelector("header");
-const body = document.querySelector("body");
 
 searchOpen.addEventListener("click", ()=>{
     openSearch()
@@ -32,18 +51,19 @@ function closeSearch() {
     unblockScroll()
 }
 
-function showBlur() {
-    blur.classList.add("active")
-}
+// Authorization
+const authOpen = document.getElementById("authorization-open")
+const authBlock = document.getElementById("authorization")
+const authClose = document.getElementById("authorization-close")
 
-function hideBlur() {
-    blur.classList.remove("active")
-}
+authOpen.addEventListener("click", ()=>{
+    authBlock.classList.add("active")
+    showBlur()
+    blockScroll();
+})
 
-function blockScroll() {
-    body.classList.add("scroll-block")
-}
-
-function unblockScroll() {
-    body.classList.remove("scroll-block")
-}
+authClose.addEventListener("click", ()=>{
+    authBlock.classList.remove("active")
+    hideBlur()
+    unblockScroll()
+})
