@@ -29,7 +29,8 @@ gulp.task("watch", function(){
 
     browserSync.init({
       server: "./"
-    });
+    })
+    gulp.watch("./js/**/*.js").on('change', browserSync.reload),
     gulp.watch("./src/**/*.html", gulp.series("fileinclude")).on('change', browserSync.reload),
     gulp.watch("./src/sass/**/*.scss", gulp.series("sass-compile"))
 })

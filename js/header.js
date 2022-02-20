@@ -52,51 +52,76 @@ function closeSearch() {
 }
 
 // Authorization
-const authOpen = document.getElementById("authorization-open")
+const authOpenButton = document.getElementById("authorization-open")
 const authBlock = document.getElementById("authorization")
-const authClose = document.getElementById("authorization-close")
+const authCloseButton = document.getElementById("authorization-close")
 
-function authOpenFucn() {
+function authOpen() {
     authBlock.classList.add("active")
     showBlur()
     blockScroll();
 }
 
-function authCloseFucn() {
+function authClose() {
     authBlock.classList.remove("active")
     hideBlur()
     unblockScroll()
 }
 
-authOpen.addEventListener("click", ()=>{
-    authOpenFucn();
+authOpenButton.addEventListener("click", ()=>{
+    authOpen();
 })
 
-authClose.addEventListener("click", ()=>{
-    authCloseFucn();
+authCloseButton.addEventListener("click", ()=>{
+    authClose();
 })
 
 // Cart
-const cartOpen = document.getElementById("cart-open")
+const cartOpenButton = document.getElementById("cart-open")
 const cartBlock = document.getElementById("cart")
-const cartClose = document.getElementById("cart-close")
+const cartCloseButton = document.getElementById("cart-close")
 
-function cartOpenFunc() {
+function cartOpen() {
     cartBlock.classList.add("active")
     showBlur()
     blockScroll();
 }
 
-function cartCloseFunc(){
+function cartClose(){
     cartBlock.classList.remove("active")
     hideBlur()
     unblockScroll()
 }
 
-cartOpen.addEventListener("click", ()=>{
-    cartOpenFunc()
+cartOpenButton.addEventListener("click", ()=>{
+    cartOpen()
 })
 
-cartClose.addEventListener("click", ()=>{
-    cartCloseFunc()
+cartCloseButton.addEventListener("click", ()=>{
+    cartClose()
+})
+
+// Favorites
+const favoritesOpenButton = document.getElementById("favorites-open")
+const favoritesBlock = document.getElementById("favorites")
+const favoritesCloseButton = document.getElementById("favorites-close")
+
+function favoritesOpen() {
+    favoritesBlock.classList.add("active")
+    showBlur()
+    blockScroll();
+}
+
+function favoritesClose(){
+    favoritesBlock.classList.remove("active")
+    hideBlur()
+    unblockScroll()
+}
+
+favoritesOpenButton.addEventListener("click", ()=>{
+    favoritesOpen()
+})
+
+favoritesCloseButton.addEventListener("click", ()=>{
+    favoritesClose();
 })
