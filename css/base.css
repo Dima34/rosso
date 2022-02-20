@@ -211,7 +211,7 @@ p {
     --sub-title-2: 600 14px / 140% "Montserrat";
     --body-1: 400 18px / 150% "Montserrat";
     --body-2: 400 12px / 150% "Montserrat";
-    --body-3: 400 14px / 150% "Montserrat";
+    --body-3: 400 12px / 150% "Montserrat";
     --body-4: 400 12px / 150% "Montserrat";
     /*---Fonts---*/
     --header-height: 80px;
@@ -235,7 +235,7 @@ p {
     --sub-title-2: 600 14px / 140% "Montserrat";
     --body-1: 400 12px / 150% "Montserrat";
     --body-2: 400 12px / 150% "Montserrat";
-    --body-3: 400 14px / 150% "Montserrat";
+    --body-3: 400 12px / 150% "Montserrat";
     --body-4: 400 12px / 150% "Montserrat";
     /*---Fonts---*/
     --header-height: 77px;
@@ -505,6 +505,33 @@ input[type=password]::placeholder {
 
 #burger {
   display: none;
+}
+
+footer .wrapper:nth-of-type(1) {
+  max-width: 890px;
+  display: flex;
+  gap: 20px;
+  padding: 50px 10px 40px 10px;
+  justify-content: space-between;
+}
+footer .wrapper:nth-of-type(2) {
+  padding: 10px 57px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+footer h2 {
+  margin-bottom: 20px;
+}
+footer ul {
+  max-width: 179px;
+  width: 100%;
+}
+footer li {
+  margin-bottom: 10px;
+}
+footer li:last-child {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 1024px) {
