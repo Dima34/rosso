@@ -145,4 +145,98 @@
     .search-block__results{
         margin-bottom: 30px;
     }
+
+    // Auth
+    #authorization{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - var(--header-height));
+        bottom: 0;
+        left: 0;
+        display: none;
+
+        &.active{
+            display: block;
+        }
+
+        .wrapper{
+            height: 100%;
+            padding: 70px 15px;
+            display: flex;
+            justify-content: center;
+            overflow: auto;
+        }
+    }
+
+    .authorization-container{
+        max-width: 320px;
+        width: 100%;
+        height: fit-content;
+        background: var(--white);
+        padding: 40px 30px;
+        padding-bottom: 40px;
+        position: relative;
+
+        h2{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        input[type="text"]{
+            margin-bottom: 37px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+        }
+
+        input[type="submit"]{
+            padding: 20px;
+            max-width: 270px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    #authorization-close{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        padding: 5px;
+    }
+
+    .password-input{
+        position: relative;
+    }
+
+    .show-pass{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 5px;
+        padding-right: 0;
+        display: block;
+
+        svg{
+            display: block;
+        }
+
+        &.active{
+            svg{
+                path{
+                    fill: var(--black);
+                }
+            }
+        }
+    }
+
+    .authorization__pass-forgot{
+        text-align: right;
+        display: inline-block;
+        margin-top: 13px;
+        margin-bottom: 37px;
+    }
 }
