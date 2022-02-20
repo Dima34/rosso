@@ -51,3 +51,14 @@ src: local('RF Dewi Semibold'), local('RF-Dewi-Semibold'),
         url('/fonts/RFDewi-Semibold.ttf') format('truetype');
 
 }
+
+@font-face {
+        font-family: 'password';
+        src: url('../fonts/fontello.eot?12016094');
+        src: url('../fonts/fontello.eot?12016094#iefix') format('embedded-opentype'),
+                url('../fonts/fontello.woff?12016094') format('woff'),
+                url('../fonts/fontello.ttf?12016094') format('truetype'),
+                url('../fonts/fontello.svg?12016094#fontello') format('svg');
+        font-weight: normal;
+        font-style: normal;
+}

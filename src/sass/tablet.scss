@@ -1,5 +1,7 @@
+@import "./utils/_media-variables.scss";
+
 // tablet
-@media screen and (min-width: 525px) and (max-width: 1024px) {
+@media screen and (min-width: $mobile) and (max-width: $tablet) {
     header{
         border-bottom: 1px solid var(--light-gray);
 
@@ -25,8 +27,10 @@
         display: none;
     }
 
-    .burger-button p{
-        display: none;
+    .burger-button{
+        p{
+            display: none;
+        }
     }
 
     .header_button-set{
@@ -48,16 +52,13 @@
         svg{
             width: 18px;
             height: 18px;
+            display: block;
         }
     }
 
     .header_middle{
         width: 100%;
         padding-left: 14px;
-    }
-
-    .header-middle_search{
-        display: none;
     }
 
     .header-logo{
@@ -70,5 +71,97 @@
             height: auto;
             width: 159px;
         }
+    }
+
+    .header-middle_search{
+        display: none;
+        position: relative;
+        padding-right: 20px;
+    }
+
+    .header-middle-list{
+        display: flex;
+        gap: 14px;
+    }
+
+    .header-logo{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        
+        img{
+            height: 32px;
+            width: auto;
+        }
+    }
+
+    .header_search-bar{
+        width: 100%;
+        bottom: 0;
+        border: 0;
+        background: 0;
+        border-bottom: 1px solid var(--light-gray);
+        padding:7px 5px ;
+        color: var(--gray);
+        font:var(--body-2);
+
+        &::placeholder{
+            opacity: 1;
+            color: var(--light-gray);
+        }
+    }
+
+    #header_search-bar-close{
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        
+        svg{
+            display: block;
+            width: 20px;
+            height: 20px;
+
+            &:hover{
+                path{
+                    fill: var(--gray);
+                }
+            }
+        }
+    }
+
+    .header-middle-list{
+        display: none;
+    }
+
+    .search-block{
+        background: white;
+        border-bottom: 1px solid var(--light-gray);
+        padding-top: 35px;
+        padding-bottom: 57px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: calc(100vh - var(--header-height));
+        overflow: auto;
+
+        h2{
+            margin-bottom: 20px;
+        }
+
+        .wrapper{
+            max-width: 925px;
+            padding: 0 58px;
+        }
+
+        li{
+            margin-top: 10px;
+        }
+    }
+
+    .search-block__results{
+        margin-bottom: 30px;
     }
 }

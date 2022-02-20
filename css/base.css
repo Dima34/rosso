@@ -73,6 +73,8 @@ html {
   --body-2: 400 16px / 150% "Montserrat";
   --body-3: 400 14px / 150% "Montserrat";
   --body-4: 400 12px / 150% "Montserrat";
+  /*---Fonts---*/
+  --header-height: 184px;
 }
 
 /*---Colors---*/
@@ -161,7 +163,7 @@ p {
   font: var(--body-1);
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1365px) {
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
   html {
     /*---Colors---*/
     --black: #444444;
@@ -181,6 +183,56 @@ p {
     --body-2: 400 12px / 150% "Montserrat";
     --body-3: 400 14px / 150% "Montserrat";
     --body-4: 400 12px / 150% "Montserrat";
+    /*---Fonts---*/
+    --header-height: 140px;
+  }
+}
+@media screen and (min-width: 525px) and (max-width: 1024px) {
+  html {
+    /*---Colors---*/
+    --black: #444444;
+    --white: #FFFFFF;
+    --gray: #7A7A7A;
+    --light-gray: #C1C1C1;
+    /*---Fonts---*/
+    --h1: 600 48px / 110% "RF Dewi";
+    --h2: 600 32px / 110% "RF Dewi";
+    --h3: 600 24px / 120% "RF Dewi";
+    --h4: 600 20px / 120% "RF Dewi";
+    --h5: 600 18px / 120% "RF Dewi";
+    --h6: 600 16px / 120% "RF Dewi";
+    --sub-title-1: 600 18px / 140% "Montserrat";
+    --sub-title-2: 600 14px / 140% "Montserrat";
+    --body-1: 400 18px / 150% "Montserrat";
+    --body-2: 400 12px / 150% "Montserrat";
+    --body-3: 400 14px / 150% "Montserrat";
+    --body-4: 400 12px / 150% "Montserrat";
+    /*---Fonts---*/
+    --header-height: 83px;
+  }
+}
+@media screen and (max-width: 525px) {
+  html {
+    /*---Colors---*/
+    --black: #444444;
+    --white: #FFFFFF;
+    --gray: #7A7A7A;
+    --light-gray: #C1C1C1;
+    /*---Fonts---*/
+    --h1: 600 48px / 110% "RF Dewi";
+    --h2: 600 32px / 110% "RF Dewi";
+    --h3: 600 24px / 120% "RF Dewi";
+    --h4: 600 20px / 120% "RF Dewi";
+    --h5: 600 18px / 120% "RF Dewi";
+    --h6: 600 16px / 120% "RF Dewi";
+    --sub-title-1: 600 18px / 140% "Montserrat";
+    --sub-title-2: 600 14px / 140% "Montserrat";
+    --body-1: 400 18px / 150% "Montserrat";
+    --body-2: 400 12px / 150% "Montserrat";
+    --body-3: 400 14px / 150% "Montserrat";
+    --body-4: 400 12px / 150% "Montserrat";
+    /*---Fonts---*/
+    --header-height: 75px;
   }
 }
 /* montserrat-regular - latin_cyrillic */
@@ -220,6 +272,13 @@ p {
   font-weight: 600;
   src: local("RF Dewi Semibold"), local("RF-Dewi-Semibold"), url("/fonts/RFDewi-Semibold.woff2") format("woff2"), url("/fonts/RFDewi-Semibold.woff") format("woff"), url("/fonts/RFDewi-Semibold.ttf") format("truetype");
 }
+@font-face {
+  font-family: "password";
+  src: url("../fonts/fontello.eot?12016094");
+  src: url("../fonts/fontello.eot?12016094#iefix") format("embedded-opentype"), url("../fonts/fontello.woff?12016094") format("woff"), url("../fonts/fontello.ttf?12016094") format("truetype"), url("../fonts/fontello.svg?12016094#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   background-image: url("/img/background.svg");
   height: 1200px;
@@ -234,6 +293,10 @@ hr {
   margin: 0;
   border: 0;
   border-bottom: 1px solid var(--light-gray);
+}
+
+.scroll-block {
+  overflow: hidden;
 }
 
 .medium {
@@ -273,5 +336,43 @@ hr {
 
 #header-location span, .header-phone span {
   white-space: nowrap;
+}
+
+header.search--opened {
+  background: var(--white);
+}
+header.search--opened .header-middle_search {
+  display: block;
+}
+header.search--opened .header-middle_default {
+  display: none;
+}
+
+.search-block {
+  display: none;
+}
+.search-block.opened {
+  display: block;
+}
+
+#blur {
+  background: var(--black);
+  opacity: 0.9;
+  backdrop-filter: blur(65px);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+  overflow: auto;
+  display: none;
+}
+#blur.active {
+  display: block;
+}
+
+input[type=password] {
+  font-family: "password";
+  letter-spacing: 7px;
 }
 /*# sourceMappingURL=base.css.map */

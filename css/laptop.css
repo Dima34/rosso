@@ -64,6 +64,9 @@
 
   .header-middle_search {
     display: none;
+    position: relative;
+    padding-right: 30px;
+    padding-left: 70px;
   }
 
   .header-middle-list {
@@ -80,6 +83,62 @@
   .header-logo img {
     height: 32px;
     width: auto;
+  }
+
+  .header_search-bar {
+    width: 100%;
+    bottom: 0;
+    border: 0;
+    background: 0;
+    border-bottom: 1px solid var(--light-gray);
+    padding: 7px 5px;
+    color: var(--gray);
+    font: var(--body-2);
+  }
+  .header_search-bar::placeholder {
+    opacity: 1;
+    color: var(--light-gray);
+  }
+
+  #header_search-bar-close {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #header_search-bar-close svg {
+    display: block;
+    width: 15px;
+    height: 15px;
+  }
+  #header_search-bar-close svg:hover path {
+    fill: var(--gray);
+  }
+
+  .search-block {
+    background: white;
+    border-bottom: 1px solid var(--light-gray);
+    padding-top: 35px;
+    padding-bottom: 57px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    overflow: auto;
+  }
+  .search-block h2 {
+    margin-bottom: 20px;
+  }
+  .search-block .wrapper {
+    max-width: 925px;
+  }
+  .search-block li {
+    margin-top: 10px;
+  }
+
+  .search-block__results {
+    margin-bottom: 30px;
   }
 
   main .news .discount {
