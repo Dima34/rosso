@@ -20,23 +20,23 @@
   }
 
   #header-location, .header-phone,
-.header_nav-item a, .burger-button,
+.header_nav-item a, .catalogue-open,
 .header_button-set a, .header_button-set button,
 .header-middle-list a, .header-logo {
     padding: 10px 5px;
     display: block;
   }
 
-  #header-location, .header-phone, .burger-button {
+  #header-location, .header-phone, .catalogue-open {
     display: flex;
     align-items: center;
     gap: 6px;
   }
-  #header-location p, #header-location span, .header-phone p, .header-phone span, .burger-button p, .burger-button span {
+  #header-location p, #header-location span, .header-phone p, .header-phone span, .catalogue-open p, .catalogue-open span {
     padding-top: 1px;
   }
 
-  #header-location svg, .header-phone svg, .burger-button svg, .header_button-set svg {
+  #header-location svg, .header-phone svg, .catalogue-open svg, .header_button-set svg {
     width: 15px;
     height: 15px;
   }
@@ -138,17 +138,6 @@
     margin-bottom: 30px;
   }
 
-  #authorization {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - var(--header-height));
-    bottom: 0;
-    left: 0;
-    display: none;
-  }
-  #authorization.active {
-    display: block;
-  }
   #authorization .wrapper {
     height: 100%;
     padding: 70px 20px;
@@ -161,6 +150,7 @@
     max-width: 560px;
     width: 100%;
     height: fit-content;
+    height: -moz-fit-content;
     background: var(--white);
     padding: 80px;
     padding-bottom: 100px;
@@ -177,6 +167,7 @@
     display: flex;
     flex-direction: column;
     height: fit-content;
+    height: -moz-fit-content;
   }
   .authorization-container input[type=submit] {
     padding: 20px;
@@ -219,17 +210,6 @@
     margin-bottom: 37px;
   }
 
-  #cart {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - var(--header-height));
-    bottom: 0;
-    left: 0;
-    display: none;
-  }
-  #cart.active {
-    display: block;
-  }
   #cart .wrapper {
     width: 100%;
     overflow: auto;
@@ -283,6 +263,7 @@
     border-bottom: 1px solid var(--light-gray);
     width: 100%;
     height: fit-content;
+    height: -moz-fit-content;
   }
 
   .cart-item__main {
@@ -314,6 +295,7 @@
   .cart-item-remove {
     display: block;
     height: fit-content;
+    height: -moz-fit-content;
   }
 
   .cart-item__footer {
@@ -368,17 +350,6 @@
     margin-bottom: 26px;
   }
 
-  #favorites {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - var(--header-height));
-    bottom: 0;
-    left: 0;
-    display: none;
-  }
-  #favorites.active {
-    display: block;
-  }
   #favorites .wrapper {
     width: 100%;
     overflow: auto;
@@ -432,6 +403,7 @@
     border-bottom: 1px solid var(--light-gray);
     width: 100%;
     height: fit-content;
+    height: -moz-fit-content;
   }
 
   .favorites-item__main {
@@ -463,6 +435,7 @@
   .favorites-item-remove {
     display: block;
     height: fit-content;
+    height: -moz-fit-content;
   }
 
   .favorites-item__footer {
@@ -507,6 +480,73 @@
   }
   .favorites-empty h3 {
     margin-bottom: 26px;
+  }
+
+  #catalogue .wrapper {
+    width: 100%;
+    overflow: auto;
+    background: var(--white);
+  }
+
+  .catalogue__heading {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid var(--light-gray);
+  }
+  .catalogue__heading a {
+    padding: 46px;
+    display: block;
+    text-align: center;
+  }
+  .catalogue__heading a:last-child {
+    border-left: 1px solid var(--light-gray);
+  }
+  .catalogue__heading a:hover {
+    background: var(--light-gray);
+  }
+
+  .catalogue__main {
+    max-width: 1800px;
+    padding: 100px 20px 150px 20px;
+  }
+  .catalogue__main > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 50px;
+  }
+
+  .catalogue-item {
+    display: flex;
+    gap: 20px;
+  }
+  .catalogue-item a:hover {
+    color: var(--gray);
+  }
+  .catalogue-item button:hover {
+    color: var(--black);
+  }
+
+  .catalogue-item__thumb {
+    width: 60px;
+    height: 50px;
+  }
+
+  .catalogue-item__content h2 {
+    min-height: 50px;
+    margin-bottom: 25px;
+  }
+  .catalogue-item__content ul li {
+    margin-bottom: 6px;
+  }
+  .catalogue-item__content ul.folded {
+    margin-bottom: 9px;
+  }
+  .catalogue-item__content ul.folded li {
+    display: none;
+  }
+  .catalogue-item__content ul.folded li:nth-child(1), .catalogue-item__content ul.folded li:nth-child(2), .catalogue-item__content ul.folded li:nth-child(3) {
+    display: block;
   }
 
   main .news .discount {
