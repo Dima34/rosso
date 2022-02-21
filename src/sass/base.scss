@@ -328,6 +328,8 @@ input[type="password"]{
 }
 
 footer{
+    border-top: 1px solid var(--gray);
+
     .wrapper{
         &:nth-of-type(1){
             max-width: 890px;

@@ -745,5 +745,27 @@
     align-items: center;
     padding: 20px 15px;
   }
+
+  .contact-us {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .contact-us > div:first-child {
+    padding: 30px 28px;
+    border-bottom: 1px solid var(--gray);
+  }
+
+  .contact-us__section {
+    padding: 40px 34px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .contact-us__section:first-child {
+    border-bottom: 1px solid var(--gray);
+  }
+  .contact-us__section p:first-child {
+    margin-bottom: 40px;
+  }
 }
 /*# sourceMappingURL=mobile.css.map */

@@ -897,4 +897,29 @@ height: -moz-fit-content;
             }
         }
     }
+
+    .contact-us{
+        display: grid;
+        grid-template-columns:1fr;
+
+        &>div:first-child{
+            padding: 30px 28px;
+            border-bottom: 1px solid var(--gray);
+        }
+    }
+
+    .contact-us__section{
+        padding: 40px 34px;
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 20px;
+
+        &:first-child{
+            border-bottom: 1px solid var(--gray);
+        }
+
+        p:first-child{
+            margin-bottom: 40px;
+        }
+    }
 }

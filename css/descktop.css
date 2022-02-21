@@ -762,6 +762,28 @@
     padding: 46px 40px;
   }
 
+  .contact-us {
+    display: grid;
+    grid-template-columns: 33.3333333333% 1fr;
+  }
+  .contact-us > div:first-child {
+    padding: 100px 81px;
+    min-height: 824px;
+    border-right: 1px solid var(--gray);
+  }
+
+  .contact-us__section {
+    padding: 102px 83px;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+  }
+  .contact-us__section:first-child {
+    border-bottom: 1px solid var(--gray);
+  }
+  .contact-us__section p:first-child {
+    margin-bottom: 100px;
+  }
+
   .news-article_intro {
     padding: 200px 160px 50px 160px;
   }

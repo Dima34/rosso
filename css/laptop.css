@@ -763,6 +763,27 @@
     align-items: center;
   }
 
+  .contact-us {
+    display: grid;
+    grid-template-columns: 33.3333333333% 1fr;
+  }
+  .contact-us > div:first-child {
+    padding: 70px 56px;
+    border-right: 1px solid var(--gray);
+  }
+
+  .contact-us__section {
+    padding: 70px 56px;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+  }
+  .contact-us__section:first-child {
+    border-bottom: 1px solid var(--gray);
+  }
+  .contact-us__section p:first-child {
+    margin-bottom: 70px;
+  }
+
   main .news .discount {
     max-width: 1600px;
     margin: 0 auto;

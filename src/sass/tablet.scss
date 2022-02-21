@@ -873,6 +873,30 @@ height: -moz-fit-content;
         }
     }
 
+    .contact-us{
+        display: grid;
+        grid-template-columns:1fr;
+
+        &>div:first-child{
+            padding: 70px 56px 70px 37px;
+            border-bottom: 1px solid var(--gray);
+        }
+    }
+
+    .contact-us__section{
+        padding: 70px 56px;
+        display: grid;
+        grid-template-columns: 220px 1fr;
+
+        &:first-child{
+            border-bottom: 1px solid var(--gray);
+        }
+
+        p:first-child{
+            margin-bottom: 70px;
+        }
+    }
+
     .swiper-footer{
         border-bottom: 1px solid var(--gray);
         display: flex;
