@@ -266,12 +266,12 @@ p {
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/montserrat-v18-latin_cyrillic-600.woff2") format("woff2");
 }
-/* rf dewi - latin_cyrillic */
+/* rf dewi */
 @font-face {
   font-family: "RF Dewi";
   font-style: normal;
   font-weight: 600;
-  src: local("RF Dewi Semibold"), local("RF-Dewi-Semibold"), url("/fonts/RFDewiExpanded-Semibold.woff2") format("woff2");
+  src: local("RF Dewi Semibold"), local("RF-Dewi-Semibold"), url("../fonts/RFDewiExpanded-Semibold.woff2") format("woff2");
 }
 @font-face {
   font-family: "password";
