@@ -10,6 +10,7 @@ html {
 .wrapper{
     max-width: 1920px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 hr{
@@ -117,6 +118,29 @@ input[type="password"]{
     }
 }
 
+.swiper{
+    width: 100%;
+    overflow: hidden;
+    height: fit-content;
+    height: -moz-fit-content;
+}
+
+.swiper-wrapper{
+    height: fit-content;
+    height: -moz-fit-content;
+}
+
+.swiper-slide{
+    opacity: 0 !important;
+    transition: .4s linear;
+
+    &.swiper-slide-active{
+        opacity: 1 !important;
+    }
+}
+
+
+
 .button{
     background: var(--black);
     color: var(--white);
@@ -134,6 +158,62 @@ input[type="password"]{
         color: var(--white);
         border-color: var(--light-gray);
         background-color: var(--light-gray);
+    }
+}
+
+.arrow-button{
+    background: var(--black);
+    color: var(--white);
+    border: 1px solid transparent;
+    text-align: right;
+    padding-right: 30px;
+    position: relative;
+    transition: .3s;
+
+    &.white{
+        background: transparent;
+        color: var(--black);
+
+        &::after{
+            content: "";
+            background: url(../img/arrow-black.svg) center no-repeat;
+            background-size: contain; 
+            width: 16px;
+            height: 14px;  
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            transform: translateY(-50%);
+            transition: .3s;
+        }
+    }
+
+    &.white-bg{
+        background-color: var(--white);
+    }
+
+    &::after{
+        content: "";
+        background: url(../img/arrow.svg) center no-repeat;
+        background-size: contain;
+        width: 16px;
+        height: 14px;
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+        transition: .3s;
+    }
+
+    &:hover{
+        background: var(--gray);
+
+        &::after{
+            right: 0;
+        }
+    }
+
+    &:active{
     }
 }
 
@@ -332,6 +412,22 @@ footer{
             a:hover{
                 color: var(--black);
             }
+        }
+    }
+
+    .arrow-button{
+    
+        &.white{
+    
+            &::after{
+                width: 13px;
+                height: 14px;  
+            }
+        }
+    
+        &::after{
+            width: 13px;
+            height: 14px;  
         }
     }
 }

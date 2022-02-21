@@ -177,7 +177,7 @@ p {
     --gray: #7A7A7A;
     --light-gray: #C1C1C1;
     /*---Fonts---*/
-    --h1: 600 48px / 110% "RF Dewi";
+    --h1: 600 32px / 110% "RF Dewi";
     --h2: 600 32px / 110% "RF Dewi";
     --h3: 600 18px / 120% "RF Dewi";
     --h4: 600 20px / 120% "RF Dewi";
@@ -201,7 +201,7 @@ p {
     --gray: #7A7A7A;
     --light-gray: #C1C1C1;
     /*---Fonts---*/
-    --h1: 600 48px / 110% "RF Dewi";
+    --h1: 600 24px / 110% "RF Dewi";
     --h2: 600 32px / 110% "RF Dewi";
     --h3: 600 18px / 120% "RF Dewi";
     --h4: 600 20px / 120% "RF Dewi";
@@ -225,7 +225,7 @@ p {
     --gray: #7A7A7A;
     --light-gray: #C1C1C1;
     /*---Fonts---*/
-    --h1: 600 48px / 110% "RF Dewi";
+    --h1: 600 18px / 110% "RF Dewi";
     --h2: 600 32px / 110% "RF Dewi";
     --h3: 600 14px / 120% "RF Dewi";
     --h4: 600 20px / 120% "RF Dewi";
@@ -292,6 +292,7 @@ html {
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 hr {
@@ -396,6 +397,26 @@ input[type=password]::placeholder {
   color: var(--black);
 }
 
+.swiper {
+  width: 100%;
+  overflow: hidden;
+  height: fit-content;
+  height: -moz-fit-content;
+}
+
+.swiper-wrapper {
+  height: fit-content;
+  height: -moz-fit-content;
+}
+
+.swiper-slide {
+  opacity: 0 !important;
+  transition: 0.4s linear;
+}
+.swiper-slide.swiper-slide-active {
+  opacity: 1 !important;
+}
+
 .button {
   background: var(--black);
   color: var(--white);
@@ -414,6 +435,52 @@ input[type=password]::placeholder {
   background-color: var(--light-gray);
 }
 
+.arrow-button {
+  background: var(--black);
+  color: var(--white);
+  border: 1px solid transparent;
+  text-align: right;
+  padding-right: 30px;
+  position: relative;
+  transition: 0.3s;
+}
+.arrow-button.white {
+  background: transparent;
+  color: var(--black);
+}
+.arrow-button.white::after {
+  content: "";
+  background: url(../img/arrow-black.svg) center no-repeat;
+  background-size: contain;
+  width: 16px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+.arrow-button.white-bg {
+  background-color: var(--white);
+}
+.arrow-button::after {
+  content: "";
+  background: url(../img/arrow.svg) center no-repeat;
+  background-size: contain;
+  width: 16px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+.arrow-button:hover {
+  background: var(--gray);
+}
+.arrow-button:hover::after {
+  right: 0;
+}
 .button-white {
   color: var(--black);
   background-color: var(--white);
@@ -578,6 +645,15 @@ footer li:last-child {
   }
   .burger-content ul a:hover {
     color: var(--black);
+  }
+
+  .arrow-button.white::after {
+    width: 13px;
+    height: 14px;
+  }
+  .arrow-button::after {
+    width: 13px;
+    height: 14px;
   }
 }
 /*# sourceMappingURL=base.css.map */
