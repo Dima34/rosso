@@ -824,12 +824,15 @@ height: -moz-fit-content;
         border-left: 1px solid var(--gray);
         display: flex;
         gap: 15px;
-        padding: 21px;
+        padding: 11px;
 
         .swiper-prev, .swiper-next{
+            padding: 10px;
+            cursor: pointer;
             svg{
                 width: 15px;
                 height: 15px;
+                
             }
             
         }

@@ -1,4 +1,4 @@
-@media screen and (min-width: 525px) and (max-width: 1024px) {
+@media screen and (min-width: 525px) and (max-width: 1124px) {
   header {
     border-bottom: 1px solid var(--light-gray);
   }
@@ -53,17 +53,6 @@
     padding-left: 14px;
   }
 
-  .header-logo {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .header-logo img {
-    height: auto;
-    width: 159px;
-  }
-
   .header-middle_search {
     display: none;
     position: relative;
@@ -82,8 +71,8 @@
     transform: translate(-50%, -50%);
   }
   .header-logo img {
-    height: 32px;
-    width: auto;
+    height: auto;
+    width: 160px;
   }
 
   input.header_search-bar {
@@ -780,8 +769,12 @@
     height: 100%;
     border-left: 1px solid var(--gray);
     display: flex;
-    gap: 28px;
-    padding: 30px 30px;
+    gap: 8px;
+    padding: 20px 20px;
+  }
+  .swiper-footer__navigation > div {
+    padding: 10px;
+    cursor: pointer;
   }
 }
 /*# sourceMappingURL=tablet.css.map */

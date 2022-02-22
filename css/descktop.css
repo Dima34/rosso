@@ -6,17 +6,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1780px;
-    padding: 10px 0;
+    max-width: 1800px;
+    padding: 10px;
     position: relative;
   }
   header .wrapper:last-child {
-    padding: 36px 0;
+    padding: 36px 10px;
   }
 
   input[type=text], input[type=password], input[type=tel], input[type=email] {
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   #header-location,
@@ -755,8 +755,12 @@
     height: 100%;
     border-left: 1px solid var(--gray);
     display: flex;
-    gap: 28px;
-    padding: 46px 40px;
+    gap: 8px;
+    padding: 36px 30px;
+  }
+  .swiper-footer__navigation > div {
+    padding: 10px;
+    cursor: pointer;
   }
 
   .contact-us {

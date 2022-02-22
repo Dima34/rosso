@@ -9,12 +9,12 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            max-width: 1780px;
-            padding: 10px 0;
+            max-width: 1800px;
+            padding: 10px;
             position: relative;
 
             &:last-child {
-                padding: 36px 0;
+                padding: 36px 10px;
             }
         }
     }
@@ -24,8 +24,8 @@
         &[type="password"],
         &[type="tel"],
         &[type="email"]{
-            padding-top: 11px;
-            padding-bottom: 11px;
+            padding-top: 10px;
+            padding-bottom: 10px;
         } 
     }
 
@@ -910,10 +910,13 @@ height: -moz-fit-content;
         height: 100%;
         border-left: 1px solid var(--gray);
         display: flex;
-        gap: 28px;
-        padding: 46px 40px;
+        gap: 8px;
+        padding: 36px 30px;
 
-        
+        &>div{
+            padding: 10px;
+            cursor: pointer;
+        }
     }
 
     .contact-us{

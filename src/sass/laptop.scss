@@ -10,11 +10,11 @@
             align-items: center;
             justify-content: space-between;
             max-width: 1266px;
-            padding: 10px 10px;
+            padding: 10px 15px;
             position: relative;
 
             &:last-child{
-                padding: 20px 5px;
+                padding: 20px 15px;
             }
         }
     }
@@ -24,8 +24,8 @@
         &[type="password"],
         &[type="tel"],
         &[type="email"]{
-            padding-top: 11px;
-            padding-bottom: 11px;
+            padding-top: 10px;
+            padding-bottom: 10px;
         } 
     }
 
@@ -100,8 +100,8 @@
         transform: translate(-50%, -50%);
         
         img{
-            height: 32px;
-            width: auto;
+            height: auto;
+            width: 227px;
         }
     }
 
@@ -866,8 +866,13 @@ height: -moz-fit-content;
         height: 100%;
         border-left: 1px solid var(--gray);
         display: flex;
-        gap: 28px;
-        padding: 30px 30px;
+        gap: 8px;
+        padding: 20px 20px;
+
+        &>div{
+            padding: 10px;
+            cursor: pointer;
+        }
     }
     
     .partners{

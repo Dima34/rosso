@@ -68,18 +68,6 @@
         padding-left: 14px;
     }
 
-    .header-logo{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        
-        img{
-            height: auto;
-            width: 159px;
-        }
-    }
-
     .header-middle_search{
         display: none;
         position: relative;
@@ -98,8 +86,8 @@
         transform: translate(-50%, -50%);
         
         img{
-            height: 32px;
-            width: auto;
+            height: auto;
+            width: 160px;
         }
     }
 
@@ -926,8 +914,13 @@ height: -moz-fit-content;
         height: 100%;
         border-left: 1px solid var(--gray);
         display: flex;
-        gap: 28px;
-        padding: 30px 30px;
+        gap: 8px;
+        padding: 20px 20px;
+
+        &>div{
+            padding: 10px;
+            cursor: pointer;
+        }
     }
     
 }

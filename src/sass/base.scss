@@ -4,7 +4,7 @@
 @import "./utils/_fonts.scss";
 
 html {
-    background-image: url('/img/bg.png');
+    background-image: url('../img/bg.png');
 }
 
 .wrapper{
@@ -147,6 +147,11 @@ input[type="password"]{
     overflow: hidden;
     height: fit-content;
     height: -moz-fit-content;
+}
+
+.header-logo img{
+    width: 100%;
+    height: auto;
 }
 
 .swiper-wrapper{

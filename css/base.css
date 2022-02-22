@@ -169,7 +169,7 @@ p {
   font: var(--body-1);
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
+@media screen and (min-width: 1124px) and (max-width: 1366px) {
   html {
     /*---Colors---*/
     --black: #444444;
@@ -190,10 +190,10 @@ p {
     --body-3: 400 14px / 150% "Montserrat";
     --body-4: 400 12px / 150% "Montserrat";
     /*---Fonts---*/
-    --header-height: 140px;
+    --header-height: 146px;
   }
 }
-@media screen and (min-width: 525px) and (max-width: 1024px) {
+@media screen and (min-width: 525px) and (max-width: 1124px) {
   html {
     /*---Colors---*/
     --black: #444444;
@@ -214,7 +214,7 @@ p {
     --body-3: 400 12px / 150% "Montserrat";
     --body-4: 400 12px / 150% "Montserrat";
     /*---Fonts---*/
-    --header-height: 80px;
+    --header-height: 82px;
   }
 }
 @media screen and (max-width: 525px) {
@@ -281,7 +281,7 @@ p {
   font-style: normal;
 }
 html {
-  background-image: url("/img/bg.png");
+  background-image: url("../img/bg.png");
 }
 
 .wrapper {
@@ -395,6 +395,11 @@ input[type=password]::placeholder {
   overflow: hidden;
   height: fit-content;
   height: -moz-fit-content;
+}
+
+.header-logo img {
+  width: 100%;
+  height: auto;
 }
 
 .swiper-wrapper {
@@ -602,7 +607,7 @@ footer li:last-child {
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1124px) {
   #burger {
     background-image: url(../img/bg.png);
     max-width: 360px;

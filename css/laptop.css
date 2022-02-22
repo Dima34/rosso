@@ -1,4 +1,4 @@
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
+@media screen and (min-width: 1124px) and (max-width: 1366px) {
   header {
     border-bottom: 1px solid var(--light-gray);
   }
@@ -7,16 +7,16 @@
     align-items: center;
     justify-content: space-between;
     max-width: 1266px;
-    padding: 10px 10px;
+    padding: 10px 15px;
     position: relative;
   }
   header .wrapper:last-child {
-    padding: 20px 5px;
+    padding: 20px 15px;
   }
 
   input[type=text], input[type=password], input[type=tel], input[type=email] {
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   #header-location, .header-phone,
@@ -86,8 +86,8 @@
     transform: translate(-50%, -50%);
   }
   .header-logo img {
-    height: 32px;
-    width: auto;
+    height: auto;
+    width: 227px;
   }
 
   input.header_search-bar {
@@ -717,8 +717,12 @@
     height: 100%;
     border-left: 1px solid var(--gray);
     display: flex;
-    gap: 28px;
-    padding: 30px 30px;
+    gap: 8px;
+    padding: 20px 20px;
+  }
+  .swiper-footer__navigation > div {
+    padding: 10px;
+    cursor: pointer;
   }
 
   .partners {
