@@ -31,18 +31,42 @@ hr{
     font-weight: 600;
 }
 
-#header-location, .header-phone, 
-.header_nav-item a,.catalogue-open,
-.header_button-set a, .header_button-set button,
-.header-middle-list a, .header-logo{
-    &:hover, &:focus{
-        color: var(--black);
-        background: var(--light-gray);
-        border-radius: 10px;
+.header_nav-item a{
+    &:hover{
+        color: var(--black); 
+    }
+}
 
-        p,span{
+#header-location,
+.header-phone{
+    &:hover{
+        span{
             color: var(--black);
         }
+
+        svg path{
+            fill: var(--black);
+        }
+    }
+}
+
+.catalogue-open span,.header-middle-list a {
+    &:hover{
+        color: var(--gray);
+    }
+}
+
+.header_button-set>*{
+    &:hover{
+        svg path{
+            fill: var(--gray);
+        }
+    }
+}
+
+.footer-nav-section a{
+    &:hover{
+        color: var(--light-gray);
     }
 }
 
@@ -164,56 +188,60 @@ input[type="password"]{
 .arrow-button{
     background: var(--black);
     color: var(--white);
-    border: 1px solid transparent;
-    text-align: right;
-    padding-right: 30px;
-    position: relative;
-    transition: .3s;
-
-    &.white{
-        background: transparent;
-        color: var(--black);
+    
+    span{
+        color: inherit;
+        background-color: inherit;
+        border: 1px solid transparent;
+        text-align: right;
+        padding-right: 30px;
+        position: relative;
+        transition: .3s;
+        font: inherit;
 
         &::after{
             content: "";
-            background: url(../img/arrow-black.svg) center no-repeat;
-            background-size: contain; 
+            background-image: url(../img/arrow.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
             width: 16px;
-            height: 14px;  
+            height: 14px;
             position: absolute;
             top: 50%;
             right: 5px;
+            margin-top: 1px;;
             transform: translateY(-50%);
             transition: .3s;
         }
+    }
+    
+    &.white{
+        background: transparent;
+        color: var(--black);
+        span{
+            &::after{
+                content: "";
+                background-image: url(../img/arrow-black.svg);
+                width: 16px;
+                height: 14px;  
+                position: absolute;
+                top: 50%;
+                right: 5px;
+                transform: translateY(-50%);
+                transition: .3s;
+            }
+        }        
     }
 
     &.white-bg{
         background-color: var(--white);
     }
 
-    &::after{
-        content: "";
-        background: url(../img/arrow.svg) center no-repeat;
-        background-size: contain;
-        width: 16px;
-        height: 14px;
-        position: absolute;
-        top: 50%;
-        right: 5px;
-        transform: translateY(-50%);
-        transition: .3s;
-    }
-
     &:hover{
-        background: var(--gray);
-
-        &::after{
+        span::after{
             right: 0;
         }
-    }
-
-    &:active{
     }
 }
 

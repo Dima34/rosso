@@ -1,6 +1,8 @@
 const blur = document.getElementById("blur");
 const header = document.querySelector("header");
 const body = document.querySelector("body");
+const popups = document.querySelectorAll("[data-popup]")
+const popupTriggers = document.querySelectorAll("[data-popupTrigger]")
 
 function showBlur() {
     blur.classList.add("active")
@@ -19,11 +21,31 @@ function unblockScroll() {
 }
 
 function closeAll(){
-    closeSearch()
-    authClose()
-    cartClose()
-    burgerClose()
-    catalogueClose()
+    popups.forEach(el=>{
+        el.classList.remove("active")
+    })
+    popupTriggers.forEach(el=>{
+        el.classList.remove("active")
+    })
+    hideBlur()
+    unblockScroll()
+}
+
+function toogleMenu(trigger,menuElement, openFunc=()=>{}){
+    if(menuElement.classList.contains("active")){
+        closeAll()
+        trigger.classList.remove("active")
+        menuElement.classList.remove("active")
+        hideBlur()
+        unblockScroll();
+    } else{
+        closeAll()
+        openFunc()
+        trigger.classList.add("active")
+        menuElement.classList.add("active")
+        showBlur()
+        blockScroll();
+    }
 }
 
 function makeHeaderWhite(){
@@ -75,29 +97,14 @@ const authOpenButton = document.querySelectorAll(".authorization-open")
 const authBlock = document.getElementById("authorization")
 const authCloseButton = document.getElementById("authorization-close")
 
-function authOpen() {
-    authBlock.classList.add("active")
-    showBlur()
-    blockScroll();
-    makeHeaderWhite()
-}
-
-function authClose() {
-    authBlock.classList.remove("active")
-    hideBlur()
-    unblockScroll()
-    removeWhiteHeader()
-}
-
 authOpenButton.forEach(el=>{
     el.addEventListener("click", ()=>{
-        closeAll()
-        authOpen();
+        toogleMenu(el,authBlock)
     })
 })
 
 authCloseButton.addEventListener("click", ()=>{
-    authClose();
+    closeAll()
 })
 
 // Cart
@@ -105,75 +112,21 @@ const cartOpenButton = document.getElementById("cart-open")
 const cartBlock = document.getElementById("cart")
 const cartCloseButton = document.getElementById("cart-close")
 
-function cartOpen() {
-    cartBlock.classList.add("active")
-    showBlur()
-    blockScroll();
-    makeHeaderWhite()
-}
-
-function cartClose(){
-    cartBlock.classList.remove("active")
-    hideBlur()
-    unblockScroll()
-    removeWhiteHeader()
-}
-
 cartOpenButton.addEventListener("click", ()=>{
-    closeAll()
-    cartOpen()
+    toogleMenu(cartOpenButton,cartBlock)
 })
 
 cartCloseButton.addEventListener("click", ()=>{
-    cartClose()
+    closeAll()
 })
 
 // Catalogue
 const catalogueOpenButton = document.querySelectorAll(".catalogue-open")
 const catalogueBlock = document.getElementById("catalogue")
 
-function catalogueToggle() {
-
-    if(catalogueBlock.classList.contains("active")){
-        catalogueClose()
-    } else{
-        catalogueOpen()
-    }
-}
-
-function catalogueClose(){
-    catalogueButtonsRemoveClass()
-    catalogueBlock.classList.remove("active")
-    hideBlur()
-    unblockScroll();   
-    foldAll()    
-    removeWhiteHeader()
-}
-
-function catalogueOpen(){
-    closeAll()
-    catalogueButtonsAddClass()
-    catalogueBlock.classList.add("active")
-    showBlur()
-    blockScroll();
-    makeHeaderWhite()
-}
-
-function catalogueButtonsRemoveClass(){
-    catalogueOpenButton.forEach(el=>{
-        el.classList.remove("active")
-    })
-}
-
-function catalogueButtonsAddClass(){
-    catalogueOpenButton.forEach(el=>{
-        el.classList.add("active")
-    })
-}
-
 catalogueOpenButton.forEach(el=>{
     el.addEventListener("click", ()=>{
-        catalogueToggle()
+        toogleMenu(el,catalogueBlock)
     })
 })
 
@@ -204,34 +157,8 @@ function foldAll(){
 const burgerOpenButton = document.getElementById("burger-open")
 const burgerBlock = document.getElementById("burger")
 
-function burgerToggle() {
-    console.log(burgerBlock.classList.contains("active"));
-
-    if(burgerBlock.classList.contains("active")){
-        closeAll()
-    } else{
-        burgerOpen()
-    }
-}
-
-function burgerOpen() {
-    console.log(`open`);
-    burgerBlock.classList.add("active")
-    burgerOpenButton.classList.add("active")
-    showBlur()
-    blockScroll();
-}
-
-function burgerClose(){
-    console.log(`close`);
-    burgerBlock.classList.remove("active")
-    burgerOpenButton.classList.remove("active")
-    hideBlur()
-    unblockScroll()
-}
-
 burgerOpenButton.addEventListener("click", ()=>{
-    burgerToggle()
+    toogleMenu(burgerOpenButton,burgerBlock)
 })
 
 

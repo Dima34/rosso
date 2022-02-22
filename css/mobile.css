@@ -616,14 +616,10 @@
   }
 
   .popular__all .arrow-button {
-    padding: 20px 30px;
-    padding-right: 50px;
-  }
-  .popular__all .arrow-button::after {
-    right: 25px;
-  }
-  .popular__all .arrow-button::after:hover {
-    right: 20px;
+    padding: 30px;
+    width: 100%;
+    display: block;
+    text-align: left;
   }
 
   .slider {
@@ -743,7 +739,13 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+  }
+  .partners .arrow-button {
     padding: 20px 15px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: right;
   }
 
   .contact-us {

@@ -640,20 +640,12 @@
   .popular__all {
     display: flex;
   }
-  .popular__all div {
-    margin-top: auto;
-    width: 100%;
-    border-top: 1px solid var(--light-gray);
-  }
   .popular__all .arrow-button {
     padding: 36px 50px;
-    padding-right: 64px;
-  }
-  .popular__all .arrow-button::after {
-    right: 20px;
-  }
-  .popular__all .arrow-button::after:hover {
-    right: 15px;
+    width: 100%;
+    display: block;
+    margin-top: auto;
+    border-top: 1px solid var(--light-gray);
   }
 
   .slider {
@@ -730,6 +722,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .partners .arrow-button {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
   .swiper-footer {
@@ -1452,20 +1449,12 @@
   .popular__all {
     display: flex;
   }
-  .popular__all div {
-    margin-top: auto;
-    width: 100%;
-    border-top: 1px solid var(--light-gray);
-  }
   .popular__all .arrow-button {
     padding: 26px 35px;
-    padding-right: 55px;
-  }
-  .popular__all .arrow-button::after {
-    right: 25px;
-  }
-  .popular__all .arrow-button::after:hover {
-    right: 20px;
+    width: 100%;
+    display: block;
+    margin-top: auto;
+    border-top: 1px solid var(--light-gray);
   }
 
   .slider {
@@ -1572,6 +1561,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .partners .arrow-button {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
   .contact-us {
@@ -2288,18 +2282,11 @@
     object-fit: contain;
   }
 
-  .popular__all {
-    padding-bottom: 10px;
-  }
   .popular__all .arrow-button {
-    padding: 20px 64px;
-    padding-right: 55px;
-  }
-  .popular__all .arrow-button::after {
-    right: 25px;
-  }
-  .popular__all .arrow-button::after:hover {
-    right: 20px;
+    padding: 30px 64px;
+    width: 100%;
+    display: block;
+    text-align: left;
   }
 
   .slider {
@@ -2380,7 +2367,13 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+  }
+  .partners .arrow-button {
     padding: 20px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: right;
   }
 
   .contact-us {
@@ -3052,14 +3045,10 @@
   }
 
   .popular__all .arrow-button {
-    padding: 20px 30px;
-    padding-right: 50px;
-  }
-  .popular__all .arrow-button::after {
-    right: 25px;
-  }
-  .popular__all .arrow-button::after:hover {
-    right: 20px;
+    padding: 30px;
+    width: 100%;
+    display: block;
+    text-align: left;
   }
 
   .slider {
@@ -3179,7 +3168,13 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+  }
+  .partners .arrow-button {
     padding: 20px 15px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: right;
   }
 
   .contact-us {
