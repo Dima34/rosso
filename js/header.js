@@ -3,6 +3,7 @@ const header = document.querySelector("header");
 const body = document.querySelector("body");
 const popups = document.querySelectorAll("[data-popup]")
 const popupTriggers = document.querySelectorAll("[data-popupTrigger]")
+const closeTriggers = document.querySelectorAll("[data-popupCloseTrigger]")
 
 function showBlur() {
     blur.classList.add("active")
@@ -61,6 +62,12 @@ function toogleMenu(trigger,menuElement, openFunc=()=>{}){
         makeHeaderWhite()
     }
 }
+
+closeTriggers.forEach(el=>{
+    el.addEventListener("click", ()=>{
+        closeAll()
+    })
+})
 
 popupTriggers.forEach(el=>{
     el.addEventListener("click", ()=>{
