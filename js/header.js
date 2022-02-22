@@ -41,6 +41,10 @@ function closeAll(){
 }
 
 function toogleMenu(trigger,menuElement, openFunc=()=>{}){
+    // That statement allows us to close a mobile catalogue without opening burger(because them are on one button)
+    // *if catalogue opened burger button are active and burger arent, so we need to click burger button and don`t 
+    //  open the burger, kust close the catalogue, so we check if the button has cative and if it has we close all
+    //  popups and dont open the related to button popup
     if(menuElement.classList.contains("active") || trigger.classList.contains("active") ){
         closeAll()
         trigger.classList.remove("active")
