@@ -337,10 +337,10 @@ hr {
   white-space: nowrap;
 }
 
-header.search--opened .header-middle_search {
+.header_middle.active .header-middle_search {
   display: block;
 }
-header.search--opened .header-middle_default {
+.header_middle.active .header-middle_default {
   display: none;
 }
 

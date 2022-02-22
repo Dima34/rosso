@@ -20,6 +20,14 @@ function unblockScroll() {
     body.classList.remove("scroll-block")
 }
 
+function makeHeaderWhite(){
+    header.classList.add("white-bg");
+}
+
+function removeWhiteHeader(){
+    header.classList.remove("white-bg")
+}
+
 function closeAll(){
     popups.forEach(el=>{
         el.classList.remove("active")
@@ -29,10 +37,11 @@ function closeAll(){
     })
     hideBlur()
     unblockScroll()
+    removeWhiteHeader()
 }
 
 function toogleMenu(trigger,menuElement, openFunc=()=>{}){
-    if(menuElement.classList.contains("active")){
+    if(menuElement.classList.contains("active") || trigger.classList.contains("active") ){
         closeAll()
         trigger.classList.remove("active")
         menuElement.classList.remove("active")
@@ -45,52 +54,29 @@ function toogleMenu(trigger,menuElement, openFunc=()=>{}){
         menuElement.classList.add("active")
         showBlur()
         blockScroll();
+        makeHeaderWhite()
     }
 }
-
-function makeHeaderWhite(){
-    header.classList.add("white-bg");
-}
-
-function removeWhiteHeader(){
-    header.classList.remove("white-bg")
-}
-
 
 // Search
 const searchOpen = document.getElementById("search-open");
 const searchClose = document.getElementById("header_search-bar-close");
+const searchBlock = document.querySelector(".header_middle")
 const searchBar = document.getElementById("search-bar");
 const searchResults = document.getElementById("search-block")
 
 searchOpen.addEventListener("click", ()=>{
-    closeAll()
-    openSearch()
+    toogleMenu(searchOpen,searchBlock)
 })
 
 searchClose.addEventListener("click", ()=>{
-    closeSearch()
+    closeAll()
 })
 
 searchBar.addEventListener("input", ()=>{
     searchBar.value != "" ? searchResults.classList.add("opened") : searchResults.classList.remove("opened")
 })
 
-function openSearch() {
-    makeHeaderWhite();
-    showBlur()
-    blockScroll();
-    header.classList.add("search--opened")
-}
-
-function closeSearch() {
-    removeWhiteHeader();
-    searchResults.classList.remove("opened")
-    searchBar.value = ""
-    hideBlur()
-    unblockScroll()
-    header.classList.remove("search--opened")
-}
 
 // Authorization
 const authOpenButton = document.querySelectorAll(".authorization-open")
@@ -120,13 +106,27 @@ cartCloseButton.addEventListener("click", ()=>{
     closeAll()
 })
 
+// Burger
+const burgerOpenButton = document.getElementById("burger-open")
+const burgerBlock = document.getElementById("burger")
+
+burgerOpenButton.addEventListener("click", ()=>{
+    toogleMenu(burgerOpenButton,burgerBlock)
+})
+
 // Catalogue
 const catalogueOpenButton = document.querySelectorAll(".catalogue-open")
 const catalogueBlock = document.getElementById("catalogue")
 
+// Beacause catalugue pop up hasn`t his own close btn, so we must simulate it by 
+// Setting active burger btn to active (if we will clicl on it then all popups will close with catalogue)
+function createCatalogueClosebtn(){
+    burgerOpenButton.classList.add("active")
+}
+
 catalogueOpenButton.forEach(el=>{
     el.addEventListener("click", ()=>{
-        toogleMenu(el,catalogueBlock)
+        toogleMenu(el,catalogueBlock,createCatalogueClosebtn)
     })
 })
 
@@ -152,13 +152,3 @@ function foldAll(){
         el.parentNode.querySelector("ul").classList.add("folded")
     })
 }
-
-// Burger
-const burgerOpenButton = document.getElementById("burger-open")
-const burgerBlock = document.getElementById("burger")
-
-burgerOpenButton.addEventListener("click", ()=>{
-    toogleMenu(burgerOpenButton,burgerBlock)
-})
-
-
