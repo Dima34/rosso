@@ -31,6 +31,10 @@ hr{
     font-weight: 600;
 }
 
+span{
+    color: inherit;
+}
+
 .header_nav-item a{
     &:hover{
         color: var(--black); 
@@ -44,13 +48,10 @@ hr{
             color: var(--black);
         }
 
-        svg path{
-            fill: var(--black);
-        }
     }
 }
 
-.catalogue-open span,.header-middle-list a {
+.catalogue-open,.header-middle-list a {
     &:hover{
         color: var(--gray);
     }
@@ -360,6 +361,58 @@ input[type="password"]{
     display: none;
 }
 
+svg path{
+    fill: currentColor;
+}
+
+
+#burger-svg,
+#buger-close-svg,
+#open-search-ico,
+#auth-open-ico,
+#favorites-open-ico,
+#cart-open-ico
+{
+    fill: #444444;
+}
+
+.catalogue-open,
+.header_button-set button{
+
+    &:hover{
+        color: var(--light-gray);
+        
+    }
+}
+
+#location-ico,
+#phone-ico,
+#download-arrow
+{
+    fill: #7a7a7a;
+}
+
+.header-phone,
+#header-location{
+    &:hover{
+        color: var(--black);
+    }
+}
+
+#search-close-ico,
+#eye,
+#close-mark,
+#bin
+{
+    fill:#C1C1C1
+}
+
+#swiper-prev,
+#swiper-next{
+    fill: #ffffff;
+}
+
+
 footer{
     border-top: 1px solid var(--gray);
 
@@ -408,6 +461,14 @@ footer{
         left: 0;
         bottom: 0;
         display: none;
+
+        button, a{
+            color: var(--gray);
+
+            &:hover{
+                color: var(--black);
+            }
+        }
 
         &.active{
             display: block;
