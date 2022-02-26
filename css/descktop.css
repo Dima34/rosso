@@ -110,6 +110,10 @@
     top: 50%;
     transform: translate(-50%, -50%);
   }
+  .header-logo img {
+    width: 325px;
+    height: auto;
+  }
 
   .search-block {
     background: white;

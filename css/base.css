@@ -397,11 +397,6 @@ input[type=password]::placeholder {
   height: -moz-fit-content;
 }
 
-.header-logo img {
-  width: 100%;
-  height: auto;
-}
-
 .swiper-wrapper {
   height: fit-content;
   height: -moz-fit-content;
@@ -581,24 +576,13 @@ svg path {
   fill: currentColor;
 }
 
-#burger-svg,
-#buger-close-svg,
-#open-search-ico,
-#auth-open-ico,
-#favorites-open-ico,
-#cart-open-ico {
-  fill: #444444;
+.header_button-set button, .header_button-set a {
+  color: var(--black);
 }
 
 .catalogue-open:hover,
 .header_button-set button:hover {
   color: var(--light-gray);
-}
-
-#location-ico,
-#phone-ico,
-#download-arrow {
-  fill: #7a7a7a;
 }
 
 .header-phone:hover,
@@ -613,9 +597,13 @@ svg path {
   fill: #C1C1C1;
 }
 
-#swiper-prev,
-#swiper-next {
-  fill: #ffffff;
+.swiper-prev,
+.swiper-next {
+  color: #ffffff;
+}
+.swiper-prev:hover,
+.swiper-next:hover {
+  color: var(--light-gray);
 }
 
 footer {
