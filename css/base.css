@@ -572,8 +572,12 @@ input[type=password]::placeholder {
   display: none;
 }
 
-svg path {
+svg {
   fill: currentColor;
+}
+
+.swiper-slide {
+  width: 100% !important;
 }
 
 .header_button-set button, .header_button-set a {

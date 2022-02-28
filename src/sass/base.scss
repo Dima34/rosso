@@ -356,8 +356,12 @@ input[type="password"]{
     display: none;
 }
 
-svg path{
+svg{
     fill: currentColor;
+}
+
+.swiper-slide{
+    width: 100% !important;
 }
 
 
