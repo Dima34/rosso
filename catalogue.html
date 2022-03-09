@@ -4,151 +4,151 @@
 <head>
 	<link rel="stylesheet" />
 	
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/base.css">
-    <link id = "media" rel="stylesheet" href="">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/base.css">
+<link id = "media" rel="stylesheet" href="">
 
-    <script type="text/javascript">
-        const link = document.getElementById("media") 
+<script type="text/javascript">
+		const link = document.getElementById("media") 
 
-        function checkWidth(){
-            const innerWidth = window.innerWidth;
-            let href;
-            
-            if(window.matchMedia("screen and (max-width: 525px)").matches){
-                href = "css/mobile.css";
-                checkCurrentHref(href)                
-            } else if(window.matchMedia("screen and (min-width: 525px) and (max-width: 1124px)").matches){
-                href = "css/tablet.css";
-                checkCurrentHref(href)                
-            } else if(window.matchMedia("screen and (min-width: 1124px) and (max-width: 1366px)").matches){
-                href = "css/laptop.css";
-                checkCurrentHref(href)                
-            } else if(window.matchMedia("screen and (min-width: 1366px)").matches){
-                href = "css/descktop.css";
-                checkCurrentHref(href)                
-            }
-        }
+		function checkWidth(){
+				const innerWidth = window.innerWidth;
+				let href;
+				
+				if(window.matchMedia("screen and (max-width: 525px)").matches){
+						href = "css/mobile.css";
+						checkCurrentHref(href)
+				} else if(window.matchMedia("screen and (min-width: 525px) and (max-width: 1124px)").matches){
+						href = "css/tablet.css";
+						checkCurrentHref(href)
+				} else if(window.matchMedia("screen and (min-width: 1124px) and (max-width: 1366px)").matches){
+						href = "css/laptop.css";
+						checkCurrentHref(href)
+				} else if(window.matchMedia("screen and (min-width: 1366px)").matches){
+						href = "css/descktop.css";
+						checkCurrentHref(href)
+				}
+		}
 
-        function checkCurrentHref(href){
-            const currentHref = link.getAttribute("href")
+		function checkCurrentHref(href){
+				const currentHref = link.getAttribute("href")
 
-            if (!(href === currentHref)) {
-                setHref(href)
-            }
-        }
+				if (!(href === currentHref)) {
+						setHref(href)
+				}
+		}
 
-        function setHref(href){
-            link.setAttribute("href", href) 
-        }
+		function setHref(href){
+				link.setAttribute("href", href) 
+		}
 
-        checkWidth()
+		checkWidth()
 
-        window.requestAnimationFrame(()=>{
-            window.addEventListener('resize', function(event) {
-                checkWidth()
-            }, true);
-        })
-    </script>
-      
-    <noscript>
-        <link href="css/bundle.css" rel="stylesheet">
-    </noscript>
-    
-    
-    <title>РОССО - Каталог</title>
+		window.requestAnimationFrame(()=>{
+				window.addEventListener('resize', function(event) {
+						checkWidth()
+				}, true);
+		})
+</script>
+	
+<noscript>
+	<link href="css/bundle.css" rel="stylesheet">
+</noscript>
+
+
+<title>РОССО - Каталог</title>
 
 </head>
 
 
 <body>
 	<header>
-    <div class="wrapper">
-        <button id="header-location" class="gray">
-            <svg width="24" height="24"><use xlink:href="#location-ico"></use></svg>                
-            <span class="body-2">Санкт-Петербург</span>
-        </button>
+  <div class="wrapper">
+    <button id="header-location" class="gray">
+      <svg width="24" height="24"><use xlink:href="#location-ico"></use></svg>        
+      <span class="body-2">Санкт-Петербург</span>
+    </button>
 
-        <nav class="header_nav">
-            <ul class="header_nav-list">
-                <li class="header_nav-item"><a href="#" class="body-2 gray">О компании</a></li>
-                <li class="header_nav-item"><a href="#" class="body-2 gray">Бренды</a></li>
-                <li class="header_nav-item"><a href="#" class="body-2 gray">Доставка и оплата</a></li>
-                <li class="header_nav-item"><a href="#" class="body-2 gray">Гарантии</a></li>
-                <li class="header_nav-item"><a href="#" class="body-2 gray">Обмен / возврат</a></li>
-                <li class="header_nav-item"><a href="#" class="body-2 gray">Новости</a></li>
-                <li class="header_nav-item"><a href="#" class="body-2 gray">Статьи</a></li>
-                <li class="header_nav-item"><a href="#" class="body-2 gray">Контакты</a></li>
-            </ul>
-        </nav>
+    <nav class="header_nav">
+      <ul class="header_nav-list">
+        <li class="header_nav-item"><a href="#" class="body-2 gray">О компании</a></li>
+        <li class="header_nav-item"><a href="#" class="body-2 gray">Бренды</a></li>
+        <li class="header_nav-item"><a href="#" class="body-2 gray">Доставка и оплата</a></li>
+        <li class="header_nav-item"><a href="#" class="body-2 gray">Гарантии</a></li>
+        <li class="header_nav-item"><a href="#" class="body-2 gray">Обмен / возврат</a></li>
+        <li class="header_nav-item"><a href="#" class="body-2 gray">Новости</a></li>
+        <li class="header_nav-item"><a href="#" class="body-2 gray">Статьи</a></li>
+        <li class="header_nav-item"><a href="#" class="body-2 gray">Контакты</a></li>
+      </ul>
+    </nav>
 
-        <a href="tel:+74955067832" class="header-phone gray">
-            <svg width="24" height="24"><use xlink:href="#phone-ico"></use></svg>        
-            <span class="body-2">+7(495) 506-78-32</span>
-        </a>
-    </div>
-    <hr>
-    <div class="wrapper">
-        <button id="burger-open" data-popupTrigger="#burger">
-            <svg width="24" height="24"><use xlink:href="#burger-svg"></use></svg>
+    <a href="tel:+74955067832" class="header-phone gray">
+      <svg width="24" height="24"><use xlink:href="#phone-ico"></use></svg>    
+      <span class="body-2">+7(495) 506-78-32</span>
+    </a>
+  </div>
+  <hr>
+  <div class="wrapper">
+    <button id="burger-open" data-popupTrigger="#burger">
+      <svg width="24" height="24"><use xlink:href="#burger-svg"></use></svg>
 
-            <svg width="24" height="24">
-                <use xlink:href="#burger-close-svg"></use>
-            </svg>                                
-        </button>
-        
-        <button class="catalogue-open black" data-popupTrigger="#catalogue">
-            <svg width="24" height="24"><use xlink:href="#burger-svg"></use></svg>
-            <svg width="24" height="24"><use xlink:href="#burger-close-svg"></use></svg>                                
-            <span class="body-2  medium">Каталог</span>
-        </button>
-
-        <div class="header_middle" data-popup>
-            <div class="header-middle_default">
-                <ul class="header-middle-list">
-                    <li><a href="#" class="body-2 black">Новинки</a></li>
-                    <li><a href="#" class="body-2 black">Распродажа</a></li>
-                </ul>
-
-                <a href="/" class="header-logo"><img src="./img/logo.svg" alt="to main page" class="logo"></a>
-            </div>
-
-            <div class="header-middle_search">
-                <input type="text" name="header search" id="search-bar" class="header_search-bar" placeholder="Поиск товаров">
-                <button id="header_search-bar-close" data-popupCloseTrigger>
-                    <svg width="24" height="24"><use xlink:href="#search-close-ico"></use></svg>                     
-                </button>
-            </div>
-        </div>
+      <svg width="24" height="24">
+        <use xlink:href="#burger-close-svg"></use>
+      </svg>                
+    </button>
     
-        <ul class="header_button-set">
-            <li>
-                <button aria-label="open search" id="search-open" data-popupTrigger=".header_middle">
-                    <svg width="24" height="24"><use xlink:href="#open-search-ico"></use></svg>                       
-                </button>
-            </li>
+    <button class="catalogue-open black" data-popupTrigger="#catalogue">
+      <svg width="24" height="24"><use xlink:href="#burger-svg"></use></svg>
+      <svg width="24" height="24"><use xlink:href="#burger-close-svg"></use></svg>                
+      <span class="body-2  medium">Каталог</span>
+    </button>
 
-            <li>
-                <button aria-label="authorization" class="authorization-open" data-popupTrigger="#authorization">
-                    <svg width="24" height="24"><use xlink:href="#auth-open-ico"></use></svg>                       
-                </button>
-            </li>
-
-            <li>
-                <button aria-label="open favorites sidebar" class="favorites-open" data-popupTrigger="#favorites">                    
-                    <svg width="24" height="24"><use xlink:href="#favorites-open-ico"></use></svg>                                           
-                </button>
-            </li>
-
-            <li>
-                <button aria-label="open cart sidebar" id="cart-open" data-popupTrigger="#cart">
-                    <svg width="24" height="24"><use xlink:href="#cart-open-ico"></use></svg>                                           
-                </button>
-            </li>
+    <div class="header_middle" data-popup>
+      <div class="header-middle_default">
+        <ul class="header-middle-list">
+          <li><a href="#" class="body-2 black">Новинки</a></li>
+          <li><a href="#" class="body-2 black">Распродажа</a></li>
         </ul>
+
+        <a href="/" class="header-logo"><img src="./img/logo.svg" alt="to main page" class="logo"></a>
+      </div>
+
+      <div class="header-middle_search">
+        <input type="text" name="header search" id="search-bar" class="header_search-bar" placeholder="Поиск товаров">
+        <button id="header_search-bar-close" data-popupCloseTrigger>
+          <svg width="24" height="24"><use xlink:href="#search-close-ico"></use></svg>           
+        </button>
+      </div>
     </div>
+  
+    <ul class="header_button-set">
+      <li>
+        <button aria-label="open search" id="search-open" data-popupTrigger=".header_middle">
+          <svg width="24" height="24"><use xlink:href="#open-search-ico"></use></svg>             
+        </button>
+      </li>
+
+      <li>
+        <button aria-label="authorization" class="authorization-open" data-popupTrigger="#authorization">
+          <svg width="24" height="24"><use xlink:href="#auth-open-ico"></use></svg>             
+        </button>
+      </li>
+
+      <li>
+        <button aria-label="open favorites sidebar" class="favorites-open" data-popupTrigger="#favorites">          
+          <svg width="24" height="24"><use xlink:href="#favorites-open-ico"></use></svg>                       
+        </button>
+      </li>
+
+      <li>
+        <button aria-label="open cart sidebar" id="cart-open" data-popupTrigger="#cart">
+          <svg width="24" height="24"><use xlink:href="#cart-open-ico"></use></svg>                       
+        </button>
+      </li>
+    </ul>
+  </div>
 </header>
 
 	<main>
@@ -181,22 +181,22 @@
 		<div class="wrapper">
 			<section class="catalogue-hero black">
 				<div class="card">
-    <a href="#">
-        <img src="./img/popular-1.png" alt="Ручки мебельные">
-        <h2 class="h3 black">Ручки мебельные</h2>
-    </a>
+  <a href="#">
+    <img src="./img/popular-1.png" alt="Ручки мебельные">
+    <h2 class="h3 black">Ручки мебельные</h2>
+  </a>
 </div>
 				<div class="card">
-    <a href="#">
-        <img src="./img/popular-2.png" alt="Фасады мебельные">
-        <h2 class="h3 black">Фасады мебельные</h2>
-    </a>
+  <a href="#">
+    <img src="./img/popular-2.png" alt="Фасады мебельные">
+    <h2 class="h3 black">Фасады мебельные</h2>
+  </a>
 </div>
 				<a href="#" class="h1 black">
 					Новинки
 				</a>
 				<a href="#" class="arrow-button h1">
-					<span>Распродажа</span>                    
+					<span>Распродажа</span>          
 				</a>
 			</section>
 			<hr>
@@ -306,479 +306,479 @@
 	</main>
 
 	<footer class="black-bg white">
-    <div class="wrapper">
-        <div class="footer-nav-section">
-            <h2 class="body-2 semi-bold">Каталог</h2>
-            <ul>
-                <li><a href="#" class="body-3 white">Ручки мебельные</a></li>
-                <li><a href="#" class="body-3 white">Фасады мебельные</a></li>
-                <li><a href="#" class="body-3 white">Новинки</a></li>
-                <li><a href="#" class="body-3 white">Распродажа</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-nav-section">
-            <h2 class="body-2 semi-bold">Покупателю</h2>
-            <ul>
-                <li><a href="#" class="body-3 white">Доставка</a></li>
-                <li><a href="#" class="body-3 white">Возврат / обмен</a></li>
-                <li><a href="#" class="body-3 white">Гарантии</a></li>
-                <li><a href="#" class="body-3 white">Договор оферты</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-nav-section">
-            <h2 class="body-2 semi-bold">Компания</h2>
-            <ul>
-                <li><a href="#" class="body-3 white">О нас</a></li>
-                <li><a href="#" class="body-3 white">Парнеры</a></li>
-                <li><a href="#" class="body-3 white">Новости</a></li>
-                <li><a href="#" class="body-3 white">Дипломы / сертификаты</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-nav-section">
-            <h2 class="body-2 semi-bold">Мы принимаем</h2>
-            <ul>
-                <li><a href="#" class="body-3 white">Mastercard</a></li>
-                <li><a href="#" class="body-3 white">Visa</a></li>
-                <li><a href="#" class="body-3 white">JСВ</a></li>
-                <li><a href="#" class="body-3 white">МИР</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-nav-section">
-            <h2 class="body-2 semi-bold">Социальные сети</h2>
-            <ul>
-                <li><a href="#" class="body-3 white">Instagram</a></li>
-                <li><a href="#" class="body-3 white">Вконтакте</a></li>
-            </ul>
-        </div>
+  <div class="wrapper">
+    <div class="footer-nav-section">
+      <h2 class="body-2 semi-bold">Каталог</h2>
+      <ul>
+        <li><a href="#" class="body-3 white">Ручки мебельные</a></li>
+        <li><a href="#" class="body-3 white">Фасады мебельные</a></li>
+        <li><a href="#" class="body-3 white">Новинки</a></li>
+        <li><a href="#" class="body-3 white">Распродажа</a></li>
+      </ul>
     </div>
 
-    <hr>
-
-    <div class="wrapper">
-        <p class="body-3 gray">2011-2020 © РОССО - комплектующие и фурнитура для мебели высокого качества.</p>
-        <p class="body-3 gray">Политика конфиденциальности</p>
+    <div class="footer-nav-section">
+      <h2 class="body-2 semi-bold">Покупателю</h2>
+      <ul>
+        <li><a href="#" class="body-3 white">Доставка</a></li>
+        <li><a href="#" class="body-3 white">Возврат / обмен</a></li>
+        <li><a href="#" class="body-3 white">Гарантии</a></li>
+        <li><a href="#" class="body-3 white">Договор оферты</a></li>
+      </ul>
     </div>
+
+    <div class="footer-nav-section">
+      <h2 class="body-2 semi-bold">Компания</h2>
+      <ul>
+        <li><a href="#" class="body-3 white">О нас</a></li>
+        <li><a href="#" class="body-3 white">Парнеры</a></li>
+        <li><a href="#" class="body-3 white">Новости</a></li>
+        <li><a href="#" class="body-3 white">Дипломы / сертификаты</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-nav-section">
+      <h2 class="body-2 semi-bold">Мы принимаем</h2>
+      <ul>
+        <li><a href="#" class="body-3 white">Mastercard</a></li>
+        <li><a href="#" class="body-3 white">Visa</a></li>
+        <li><a href="#" class="body-3 white">JСВ</a></li>
+        <li><a href="#" class="body-3 white">МИР</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-nav-section">
+      <h2 class="body-2 semi-bold">Социальные сети</h2>
+      <ul>
+        <li><a href="#" class="body-3 white">Instagram</a></li>
+        <li><a href="#" class="body-3 white">Вконтакте</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="wrapper">
+    <p class="body-3 gray">2011-2020 © РОССО - комплектующие и фурнитура для мебели высокого качества.</p>
+    <p class="body-3 gray">Политика конфиденциальности</p>
+  </div>
 </footer>
 	<div id="blur"></div>
 
 <div class="search-block popup" id="search-block" data-popup>
-    <div class="wrapper">
-        <div class="search-block__results">
-            <h2 class="body-2 light-gray">Результаты поиска</h2>
-            <ul>
-                <li class=""><a href="#" class="body-2 black">Ручки мебельные</a></li>
-                <li class=""><a href="#" class="body-2 black">Фасады кухонные</a></li>
-                <li class=""><a href="#" class="body-2 black">Механизмы для фасадов</a></li>
-            </ul>
-        </div>
-        <div class="search-block__recently">
-            <h2 class="body-2 light-gray">Популярные поисковые запросы</h2>
-            <ul>
-                <li class=""><a href="#" class="body-2 black">Ручки мебельные</a></li>
-                <li class=""><a href="#" class="body-2 black">Фасады кухонные</a></li>
-                <li class=""><a href="#" class="body-2 black">Механизмы для фасадов</a></li>
-            </ul>
-        </div>
-    </div>
+  <div class="wrapper">
+  <div class="search-block__results">
+    <h2 class="body-2 light-gray">Результаты поиска</h2>
+    <ul>
+    <li class=""><a href="#" class="body-2 black">Ручки мебельные</a></li>
+    <li class=""><a href="#" class="body-2 black">Фасады кухонные</a></li>
+    <li class=""><a href="#" class="body-2 black">Механизмы для фасадов</a></li>
+    </ul>
+  </div>
+  <div class="search-block__recently">
+    <h2 class="body-2 light-gray">Популярные поисковые запросы</h2>
+    <ul>
+    <li class=""><a href="#" class="body-2 black">Ручки мебельные</a></li>
+    <li class=""><a href="#" class="body-2 black">Фасады кухонные</a></li>
+    <li class=""><a href="#" class="body-2 black">Механизмы для фасадов</a></li>
+    </ul>
+  </div>
+  </div>
 </div>
 
 <div id="authorization" data-popup>
-    <div class="wrapper">
-        <div class="authorization-container">
-            <h2 class="h4 black">Вход для поставщиков</h2>
-            <form action="">
-                <label for="fname" class="body-1 black">Логин</label>
-                <input type="text" id="fname" name="fname" placeholder="example.ee">
-                <label for="lname" class="body-1 black">Пароль</label>
-                <fieldset class="password-input">
-                    <input type="password" id="lname" name="lname" placeholder="&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;">
-                    <button class="show-pass">
-                        <svg width="22" height="15" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="#eye"></use>
-                        </svg>                            
-                    </button>
-                </fieldset>    
-                <a href="" class="authorization__pass-forgot body-2 light-gray">Забыли пароль?</a>
-                <input type="submit" value="Войти" class="button">            
-            </form> 
-              
-            <button id="authorization-close" data-popupCloseTrigger>
-                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#close-mark"></use>
-                </svg>
-            </button>
-        </div>
-    </div>
+  <div class="wrapper">
+  <div class="authorization-container">
+    <h2 class="h4 black">Вход для поставщиков</h2>
+    <form action="POST">
+    <label for="fname" class="body-1 black">Логин</label>
+    <input type="text" id="fname" name="fname" placeholder="example.ee">
+    <label for="lname" class="body-1 black">Пароль</label>
+    <fieldset class="password-input">
+      <input type="password" id="lname" name="lname" placeholder="&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;">
+      <button class="show-pass">
+      <svg width="22" height="15" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#eye"></use>
+      </svg>        
+      </button>
+    </fieldset>  
+    <a href="" class="authorization__pass-forgot body-2 light-gray">Забыли пароль?</a>
+    <input type="submit" value="Войти" class="button">    
+    </form> 
+    
+    <button id="authorization-close" data-popupCloseTrigger>
+    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+      <use xlink:href="#close-mark"></use>
+    </svg>
+    </button>
+  </div>
+  </div>
 </div>
 
 <div id="cart" data-popup>
-    <div class="wrapper">
-        <div class="cart-block">
-            <div class="cart-main">
-                <div class="cart-header">
-                    <h2 class="h3 black">Корзина</h2>
-                    <button id="cart-close" data-popupCloseTrigger>
-                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="#close-mark"></use>
-                        </svg>
-                    </button>
-                </div>
-
-                <div class="cart-lineitem">
-                    <div class="cart-item">
-                        <div class="cart-item__main">
-                            <img src="./img/cart-item-1.png" alt="Ручка-скоба Verona 11.4149.12, черный мат. лак, 160/177, Metakor" class="cart-item__thumb">
-                            <div class="cart-item__header">
-                                <p class="body-1 light-gray">5а640</p>
-                                <button class="cart-item-remove">
-                                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                                        <use xlink:href="#bin"></use>
-                                    </svg>                                        
-                                </button>
-                            </div>
-                            <h2>
-                                <a href="#" class="body-2 black">
-                                    Ручка-скоба Verona 11.4149.12, черный мат. лак, 160/177, Metakor
-                                </a>
-                            </h2>                            
-                        </div>
-                        <div class="cart-item__footer">
-                            <div class="cart-item__amount">
-                                <h3 class="body-2 black">Количество:</h3>
-                                <select name="amount">
-                                    <option value="1" selected>1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                </select>
-                            </div>
-                            <p class="cart-item__price h3 black">740 ₽</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cart-summary">
-                    <h3 class="body-1 black">Итого:</h3>
-                    <p class="h3 black">1533 ₽</p>
-                </div>
-
-                <!-- <div class="cart-empty">
-                    <h3 class="h4 black">
-                        Ваша корзина пуста
-                    </h3>
-                    <p class="black">
-                        Для совершения заказа добавьте понравившиеся товары в корзину через каталог.
-                    </p>
-                </div> -->
-
-            </div>
-            <div class="cart-footer">
-                <button class="button-white">Продолжить покупки</button>
-                <a href="" class="button">Оформить заказ</a>
-            </div>
-            <!-- <div class="cart-empty-footer">
-                <a href="#" class="button">Перейти в покупкам</a>
-            </div> -->
-        </div>
+  <div class="wrapper">
+  <div class="cart-block">
+    <div class="cart-main">
+    <div class="cart-header">
+      <h2 class="h3 black">Корзина</h2>
+      <button id="cart-close" data-popupCloseTrigger>
+      <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#close-mark"></use>
+      </svg>
+      </button>
     </div>
+
+    <div class="cart-lineitem">
+      <div class="cart-item">
+      <div class="cart-item__main">
+        <img src="./img/cart-item-1.png" alt="Ручка-скоба Verona 11.4149.12, черный мат. лак, 160/177, Metakor" class="cart-item__thumb">
+        <div class="cart-item__header">
+        <p class="body-1 light-gray">5а640</p>
+        <button class="cart-item-remove">
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="#bin"></use>
+          </svg>          
+        </button>
+        </div>
+        <h2>
+        <a href="#" class="body-2 black">
+          Ручка-скоба Verona 11.4149.12, черный мат. лак, 160/177, Metakor
+        </a>
+        </h2>        
+      </div>
+      <div class="cart-item__footer">
+        <div class="cart-item__amount">
+        <h3 class="body-2 black">Количество:</h3>
+        <select name="amount">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        </div>
+        <p class="cart-item__price h3 black">740 ₽</p>
+      </div>
+      </div>
+    </div>
+
+    <div class="cart-summary">
+      <h3 class="body-1 black">Итого:</h3>
+      <p class="h3 black">1533 ₽</p>
+    </div>
+
+    <!-- <div class="cart-empty">
+      <h3 class="h4 black">
+      Ваша корзина пуста
+      </h3>
+      <p class="black">
+      Для совершения заказа добавьте понравившиеся товары в корзину через каталог.
+      </p>
+    </div> -->
+
+    </div>
+    <div class="cart-footer">
+    <button class="button-white">Продолжить покупки</button>
+    <a href="" class="button">Оформить заказ</a>
+    </div>
+    <!-- <div class="cart-empty-footer">
+    <a href="#" class="button">Перейти в покупкам</a>
+    </div> -->
+  </div>
+  </div>
 </div>
 
 <div id="favorites" data-popup>
-    <div class="wrapper">
-        <div class="favorites-block">
-            <div class="favorites-main">
-                <div class="favorites-header">
-                    <h2 class="h3 black">Избранное</h2>
-                    <button id="favorites-close" data-popupCloseTrigger>
-                        <svg width="24" height="24"   xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="#close-mark"></use>
-                        </svg>
-                    </button>
-                </div>
-
-                <div class="favorites-lineitem">
-                    <div class="favorites-item">
-                        <div class="favorites-item__main">
-                            <img src="./img/cart-item-1.png" alt="Ручка-скоба Verona 11.4149.12, черный мат. лак, 160/177, Metakor" class="favorites-item__thumb">
-                            <div class="favorites-item__header">
-                                <p class="body-1 light-gray">5а640</p>
-                                <button class="favorites-item-remove">
-                                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                                        <use xlink:href="#bin"></use>
-                                    </svg>                                        
-                                </button>
-                            </div>
-                            <h2>
-                                <a href="#" class="body-2 black">
-                                    Ручка-скоба Verona 11.4149.12, черный мат. лак, 160/177, Metakor
-                                </a>
-                            </h2>                            
-                        </div>
-                        <div class="favorites-item__footer">
-                            <div class="favorites-item__amount">
-                                <h3 class="body-2 black">Количество:</h3>
-                                <select name="amount">
-                                    <option value="1" selected>1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                </select>
-                            </div>
-                            <p class="favorites-item__price h3 black">740 ₽</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- <div class="favorites-empty">
-                    <h3 class="h4 black">
-                        Ваш список пуст
-                    </h3>
-                    <p class="black">
-                        Для добавления предмета, добавьте его в избранное через каталог
-                    </p>
-                </div> -->
-
-            </div>
-            <div class="favorites-footer">
-                <button class="button">Добавить все товары в корзину</button>
-            </div>
-        </div>
+  <div class="wrapper">
+  <div class="favorites-block">
+    <div class="favorites-main">
+    <div class="favorites-header">
+      <h2 class="h3 black">Избранное</h2>
+      <button id="favorites-close" data-popupCloseTrigger>
+      <svg width="24" height="24"   xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#close-mark"></use>
+      </svg>
+      </button>
     </div>
+
+    <div class="favorites-lineitem">
+      <div class="favorites-item">
+      <div class="favorites-item__main">
+        <img src="./img/cart-item-1.png" alt="Ручка-скоба Verona 11.4149.12, черный мат. лак, 160/177, Metakor" class="favorites-item__thumb">
+        <div class="favorites-item__header">
+        <p class="body-1 light-gray">5а640</p>
+        <button class="favorites-item-remove">
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="#bin"></use>
+          </svg>          
+        </button>
+        </div>
+        <h2>
+        <a href="#" class="body-2 black">
+          Ручка-скоба Verona 11.4149.12, черный мат. лак, 160/177, Metakor
+        </a>
+        </h2>        
+      </div>
+      <div class="favorites-item__footer">
+        <div class="favorites-item__amount">
+        <h3 class="body-2 black">Количество:</h3>
+        <select name="amount">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        </div>
+        <p class="favorites-item__price h3 black">740 ₽</p>
+      </div>
+      </div>
+    </div>
+
+
+    <!-- <div class="favorites-empty">
+      <h3 class="h4 black">
+      Ваш список пуст
+      </h3>
+      <p class="black">
+      Для добавления предмета, добавьте его в избранное через каталог
+      </p>
+    </div> -->
+
+    </div>
+    <div class="favorites-footer">
+    <button class="button">Добавить все товары в корзину</button>
+    </div>
+  </div>
+  </div>
 </div>
 
 <div id="catalogue" data-popup>
-    <div class="wrapper">
-        <div class="catalogue__heading">
-            <a href="#" class="h3 black">Ручки мебельные</a>
-            <a href="#" class="h3 black">Фасады мебельные</a>
-        </div>
-        <div class="catalogue__main">
-            <ul>
-                <li class="catalogue-item">
-                    <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
-                    <div class="catalogue-item__content">
-                        <h2><a href="#" class="sub-title-1 black">Выдвижные системы и наполнение для кухни</a></h2>
-                        <ul class="folded">
-                            <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
-                            <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
-                            <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
-                        </ul>
-                        <button class="catalogue-item__unfold body-2 gray">Показать все</button>
-                    </div>                    
-                </li>
+  <div class="wrapper">
+  <div class="catalogue__heading">
+    <a href="#" class="h3 black">Ручки мебельные</a>
+    <a href="#" class="h3 black">Фасады мебельные</a>
+  </div>
+  <div class="catalogue__main">
+    <ul>
+    <li class="catalogue-item">
+      <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
+      <div class="catalogue-item__content">
+      <h2><a href="#" class="sub-title-1 black">Выдвижные системы и наполнение для кухни</a></h2>
+      <ul class="folded">
+        <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
+        <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
+        <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
+        <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
+        <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
+        <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
+      </ul>
+      <button class="catalogue-item__unfold body-2 gray">Показать все</button>
+      </div>      
+    </li>
 
-                <li class="catalogue-item">
-                    <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
-                    <div class="catalogue-item__content">
-                        <h2><a href="#" class="sub-title-1 black">Выдвижные системы</a></h2>
-                        <ul class="folded">
-                            <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
-                            <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
-                            <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
-                        </ul>
-                        <button class="catalogue-item__unfold body-2 gray">Показать все</button>
-                    </div>                    
-                </li>
+    <li class="catalogue-item">
+      <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
+      <div class="catalogue-item__content">
+      <h2><a href="#" class="sub-title-1 black">Выдвижные системы</a></h2>
+      <ul class="folded">
+        <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
+        <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
+        <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
+        <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
+        <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
+        <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
+      </ul>
+      <button class="catalogue-item__unfold body-2 gray">Показать все</button>
+      </div>      
+    </li>
 
-                <li class="catalogue-item">
-                    <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
-                    <div class="catalogue-item__content">
-                        <h2><a href="#" class="sub-title-1 black">Выдвижные системы и наполнение для кухни</a></h2>
-                    </div>                    
-                </li>
+    <li class="catalogue-item">
+      <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
+      <div class="catalogue-item__content">
+      <h2><a href="#" class="sub-title-1 black">Выдвижные системы и наполнение для кухни</a></h2>
+      </div>      
+    </li>
 
-                <li class="catalogue-item">
-                    <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
-                    <div class="catalogue-item__content">
-                        <h2><a href="#" class="sub-title-1 black">Выдвижные системы</a></h2>
-                        <ul>
-                            <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
-                            <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
-                        </ul>
-                    </div>                    
-                </li>
+    <li class="catalogue-item">
+      <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
+      <div class="catalogue-item__content">
+      <h2><a href="#" class="sub-title-1 black">Выдвижные системы</a></h2>
+      <ul>
+        <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
+        <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
+        <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
+      </ul>
+      </div>      
+    </li>
 
-                <li class="catalogue-item">
-                    <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
-                    <div class="catalogue-item__content">
-                        <h2><a href="#" class="sub-title-1 black">Выдвижные системы и наполнение для кухни</a></h2>
-                        <ul class="folded">
-                            <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
-                            <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
-                            <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
-                        </ul>
-                        <button class="catalogue-item__unfold body-2 gray">Показать все</button>
-                    </div>                    
-                </li>
+    <li class="catalogue-item">
+      <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
+      <div class="catalogue-item__content">
+      <h2><a href="#" class="sub-title-1 black">Выдвижные системы и наполнение для кухни</a></h2>
+      <ul class="folded">
+        <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
+        <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
+        <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
+        <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
+        <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
+        <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
+      </ul>
+      <button class="catalogue-item__unfold body-2 gray">Показать все</button>
+      </div>      
+    </li>
 
-                <li class="catalogue-item">
-                    <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
-                    <div class="catalogue-item__content">
-                        <h2><a href="#" class="sub-title-1 black">Выдвижные системы</a></h2>
-                        <ul class="folded">
-                            <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
-                            <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
-                            <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
-                        </ul>
-                        <button class="catalogue-item__unfold body-2 gray">Показать все</button>
-                    </div>                    
-                </li>
+    <li class="catalogue-item">
+      <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
+      <div class="catalogue-item__content">
+      <h2><a href="#" class="sub-title-1 black">Выдвижные системы</a></h2>
+      <ul class="folded">
+        <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
+        <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
+        <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
+        <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
+        <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
+        <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
+      </ul>
+      <button class="catalogue-item__unfold body-2 gray">Показать все</button>
+      </div>      
+    </li>
 
-                <li class="catalogue-item">
-                    <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
-                    <div class="catalogue-item__content">
-                        <h2><a href="#" class="sub-title-1 black">Выдвижные системы и наполнение для кухни</a></h2>
-                    </div>                    
-                </li>
+    <li class="catalogue-item">
+      <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
+      <div class="catalogue-item__content">
+      <h2><a href="#" class="sub-title-1 black">Выдвижные системы и наполнение для кухни</a></h2>
+      </div>      
+    </li>
 
-                <li class="catalogue-item">
-                    <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
-                    <div class="catalogue-item__content">
-                        <h2><a href="#" class="sub-title-1 black">Выдвижные системы</a></h2>
-                        <ul>
-                            <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
-                            <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
-                        </ul>
-                    </div>                    
-                </li>
+    <li class="catalogue-item">
+      <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
+      <div class="catalogue-item__content">
+      <h2><a href="#" class="sub-title-1 black">Выдвижные системы</a></h2>
+      <ul>
+        <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
+        <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
+        <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
+      </ul>
+      </div>      
+    </li>
 
-                <li class="catalogue-item">
-                    <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
-                    <div class="catalogue-item__content">
-                        <h2><a href="#" class="sub-title-1 black">Выдвижные системы и наполнение для кухни</a></h2>
-                        <ul class="folded">
-                            <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
-                            <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
-                            <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
-                        </ul>
-                        <button class="catalogue-item__unfold body-2 gray">Показать все</button>
-                    </div>                    
-                </li>
+    <li class="catalogue-item">
+      <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
+      <div class="catalogue-item__content">
+      <h2><a href="#" class="sub-title-1 black">Выдвижные системы и наполнение для кухни</a></h2>
+      <ul class="folded">
+        <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
+        <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
+        <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
+        <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
+        <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
+        <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
+      </ul>
+      <button class="catalogue-item__unfold body-2 gray">Показать все</button>
+      </div>      
+    </li>
 
-                <li class="catalogue-item">
-                    <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
-                    <div class="catalogue-item__content">
-                        <h2><a href="#" class="sub-title-1 black">Выдвижные системы</a></h2>
-                        <ul class="folded">
-                            <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
-                            <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
-                            <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
-                            <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
-                            <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
-                        </ul>
-                        <button class="catalogue-item__unfold body-2 gray">Показать все</button>
-                    </div>                    
-                </li>
+    <li class="catalogue-item">
+      <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
+      <div class="catalogue-item__content">
+      <h2><a href="#" class="sub-title-1 black">Выдвижные системы</a></h2>
+      <ul class="folded">
+        <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
+        <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
+        <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
+        <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
+        <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
+        <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
+        <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
+        <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
+        <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
+        <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
+        <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
+        <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
+      </ul>
+      <button class="catalogue-item__unfold body-2 gray">Показать все</button>
+      </div>      
+    </li>
 
-                <li class="catalogue-item">
-                    <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
-                    <div class="catalogue-item__content">
-                        <h2><a href="#" class="sub-title-1 black">Выдвижные системы и наполнение для кухни</a></h2>
-                    </div>                    
-                </li>
+    <li class="catalogue-item">
+      <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
+      <div class="catalogue-item__content">
+      <h2><a href="#" class="sub-title-1 black">Выдвижные системы и наполнение для кухни</a></h2>
+      </div>      
+    </li>
 
-                <li class="catalogue-item">
-                    <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
-                    <div class="catalogue-item__content">
-                        <h2><a href="#" class="sub-title-1 black">Выдвижные системы</a></h2>
-                        <ul>
-                            <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
-                            <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
-                            <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
-                        </ul>
-                    </div>                    
-                </li>
-            </ul>
-        </div>
-        <div class="catalogue__footer">
-            <ul>
-                <li>
-                    <a href="#" class="body-2 gray">Каталог Pocco 2021 
-                        <span>
-                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#download-arrow"></use>
-                            </svg>                        
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="body-2 gray">Каталог ручек 
-                        <span>
-                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#download-arrow"></use>
-                            </svg>                        
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="body-2 gray">Каталог “Философия черного” 
-                        <span>
-                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="#download-arrow"></use>
-                            </svg>                        
-                        </span>
-                    </a>
-                </li>
-            </ul>         
-            
-            
-        </div>
-    </div>
+    <li class="catalogue-item">
+      <img src="./img/catalogue-1.png" alt="Выдвижные системы и наполнение для кухни" class="catalogue-item__thumb">
+      <div class="catalogue-item__content">
+      <h2><a href="#" class="sub-title-1 black">Выдвижные системы</a></h2>
+      <ul>
+        <li><a href="#" class="body-2 black">Корзины в нижние модули</a></li>
+        <li><a href="#" class="body-2 black">Корзины в верхние модули</a></li>
+        <li><a href="#" class="body-2 black">Пеналы кухонные</a></li>
+      </ul>
+      </div>      
+    </li>
+    </ul>
+  </div>
+  <div class="catalogue__footer">
+    <ul>
+    <li>
+      <a href="#" class="body-2 gray">Каталог Pocco 2021 
+      <span>
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#download-arrow"></use>
+        </svg>      
+      </span>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="body-2 gray">Каталог ручек 
+      <span>
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#download-arrow"></use>
+        </svg>      
+      </span>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="body-2 gray">Каталог “Философия черного” 
+      <span>
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#download-arrow"></use>
+        </svg>      
+      </span>
+      </a>
+    </li>
+    </ul>   
+    
+    
+  </div>
+  </div>
 </div>
 
 <nav id="burger" data-popup>
-    <button class="catalogue-open body-4 gray" data-popupTrigger="#catalogue" data-customOpenFunction = "createCatalogueClosebtn">
-        Каталог
-    </button>
-    <div class="burger-content">
-        <ul>
-            <li><a href="#" class="body-4 gray">Новинки</a></li>
-            <li><a href="#" class="body-4 gray">Распродажа</a></li>
-        </ul>
-        <ul>
-            <li><a href="#" class="body-4 gray">О компании</a></li>
-            <li><a href="#" class="body-4 gray">Бренды</a></li>
-            <li><a href="#" class="body-4 gray">Доставка и оплата</a></li>
-            <li><a href="#" class="body-4 gray">Гарантии</a></li>
-            <li><a href="#" class="body-4 gray">Обмен / возврат</a></li>
-            <li><a href="#" class="body-4 gray">Новости</a></li>
-            <li><a href="#" class="body-4 gray">Статьи</a></li>
-            <li><a href="#" class="body-4 gray">Контакты</a></li>
-        </ul>
-        <ul>
-            <li><button class="body-4 gray" data-popupTrigger="#favorites">Избранное</button></li>
-            <li><button class="body-4 gray" data-popupTrigger="#authorization">Вход для поставщиков</button></li>
-        </ul>
-    </div>
+  <button class="catalogue-open body-4 gray" data-popupTrigger="#catalogue" data-customOpenFunction = "createCatalogueClosebtn">
+  Каталог
+  </button>
+  <div class="burger-content">
+  <ul>
+    <li><a href="#" class="body-4 gray">Новинки</a></li>
+    <li><a href="#" class="body-4 gray">Распродажа</a></li>
+  </ul>
+  <ul>
+    <li><a href="#" class="body-4 gray">О компании</a></li>
+    <li><a href="#" class="body-4 gray">Бренды</a></li>
+    <li><a href="#" class="body-4 gray">Доставка и оплата</a></li>
+    <li><a href="#" class="body-4 gray">Гарантии</a></li>
+    <li><a href="#" class="body-4 gray">Обмен / возврат</a></li>
+    <li><a href="#" class="body-4 gray">Новости</a></li>
+    <li><a href="#" class="body-4 gray">Статьи</a></li>
+    <li><a href="#" class="body-4 gray">Контакты</a></li>
+  </ul>
+  <ul>
+    <li><button class="body-4 gray" data-popupTrigger="#favorites">Избранное</button></li>
+    <li><button class="body-4 gray" data-popupTrigger="#authorization">Вход для поставщиков</button></li>
+  </ul>
+  </div>
 </nav>
 	<svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
 	<symbol id="burger-svg" viewBox="0 0 24 24">

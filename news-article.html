@@ -2,252 +2,252 @@
 <html lang="ru" class="primary-white-background">
 
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/base.css">
-    <link id = "media" rel="stylesheet" href="">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/base.css">
+<link id = "media" rel="stylesheet" href="">
 
-    <script type="text/javascript">
-        const link = document.getElementById("media") 
+<script type="text/javascript">
+		const link = document.getElementById("media") 
 
-        function checkWidth(){
-            const innerWidth = window.innerWidth;
-            let href;
-            
-            if(window.matchMedia("screen and (max-width: 525px)").matches){
-                href = "css/mobile.css";
-                checkCurrentHref(href)                
-            } else if(window.matchMedia("screen and (min-width: 525px) and (max-width: 1124px)").matches){
-                href = "css/tablet.css";
-                checkCurrentHref(href)                
-            } else if(window.matchMedia("screen and (min-width: 1124px) and (max-width: 1366px)").matches){
-                href = "css/laptop.css";
-                checkCurrentHref(href)                
-            } else if(window.matchMedia("screen and (min-width: 1366px)").matches){
-                href = "css/descktop.css";
-                checkCurrentHref(href)                
-            }
-        }
+		function checkWidth(){
+				const innerWidth = window.innerWidth;
+				let href;
+				
+				if(window.matchMedia("screen and (max-width: 525px)").matches){
+						href = "css/mobile.css";
+						checkCurrentHref(href)
+				} else if(window.matchMedia("screen and (min-width: 525px) and (max-width: 1124px)").matches){
+						href = "css/tablet.css";
+						checkCurrentHref(href)
+				} else if(window.matchMedia("screen and (min-width: 1124px) and (max-width: 1366px)").matches){
+						href = "css/laptop.css";
+						checkCurrentHref(href)
+				} else if(window.matchMedia("screen and (min-width: 1366px)").matches){
+						href = "css/descktop.css";
+						checkCurrentHref(href)
+				}
+		}
 
-        function checkCurrentHref(href){
-            const currentHref = link.getAttribute("href")
+		function checkCurrentHref(href){
+				const currentHref = link.getAttribute("href")
 
-            if (!(href === currentHref)) {
-                setHref(href)
-            }
-        }
+				if (!(href === currentHref)) {
+						setHref(href)
+				}
+		}
 
-        function setHref(href){
-            link.setAttribute("href", href) 
-        }
+		function setHref(href){
+				link.setAttribute("href", href) 
+		}
 
-        checkWidth()
+		checkWidth()
 
-        window.requestAnimationFrame(()=>{
-            window.addEventListener('resize', function(event) {
-                checkWidth()
-            }, true);
-        })
-    </script>
-      
-    <noscript>
-        <link href="css/bundle.css" rel="stylesheet">
-    </noscript>
-    
-    
-    <title>РОССО - Новость</title>
+		window.requestAnimationFrame(()=>{
+				window.addEventListener('resize', function(event) {
+						checkWidth()
+				}, true);
+		})
+</script>
+	
+<noscript>
+	<link href="css/bundle.css" rel="stylesheet">
+</noscript>
+
+
+<title>РОССО - Новость</title>
 
 
 <body>
-    <header>
-    <div class="wrapper">
-        <button id="header-location" class="gray">
-            <svg width="24" height="24"><use xlink:href="#location-ico"></use></svg>                
-            <span class="body-2">Санкт-Петербург</span>
-        </button>
+  <header>
+  <div class="wrapper">
+    <button id="header-location" class="gray">
+      <svg width="24" height="24"><use xlink:href="#location-ico"></use></svg>        
+      <span class="body-2">Санкт-Петербург</span>
+    </button>
 
-        <nav class="header_nav">
-            <ul class="header_nav-list">
-                <li class="header_nav-item"><a href="#" class="body-2 gray">О компании</a></li>
-                <li class="header_nav-item"><a href="#" class="body-2 gray">Бренды</a></li>
-                <li class="header_nav-item"><a href="#" class="body-2 gray">Доставка и оплата</a></li>
-                <li class="header_nav-item"><a href="#" class="body-2 gray">Гарантии</a></li>
-                <li class="header_nav-item"><a href="#" class="body-2 gray">Обмен / возврат</a></li>
-                <li class="header_nav-item"><a href="#" class="body-2 gray">Новости</a></li>
-                <li class="header_nav-item"><a href="#" class="body-2 gray">Статьи</a></li>
-                <li class="header_nav-item"><a href="#" class="body-2 gray">Контакты</a></li>
-            </ul>
-        </nav>
+    <nav class="header_nav">
+      <ul class="header_nav-list">
+        <li class="header_nav-item"><a href="#" class="body-2 gray">О компании</a></li>
+        <li class="header_nav-item"><a href="#" class="body-2 gray">Бренды</a></li>
+        <li class="header_nav-item"><a href="#" class="body-2 gray">Доставка и оплата</a></li>
+        <li class="header_nav-item"><a href="#" class="body-2 gray">Гарантии</a></li>
+        <li class="header_nav-item"><a href="#" class="body-2 gray">Обмен / возврат</a></li>
+        <li class="header_nav-item"><a href="#" class="body-2 gray">Новости</a></li>
+        <li class="header_nav-item"><a href="#" class="body-2 gray">Статьи</a></li>
+        <li class="header_nav-item"><a href="#" class="body-2 gray">Контакты</a></li>
+      </ul>
+    </nav>
 
-        <a href="tel:+74955067832" class="header-phone gray">
-            <svg width="24" height="24"><use xlink:href="#phone-ico"></use></svg>        
-            <span class="body-2">+7(495) 506-78-32</span>
-        </a>
-    </div>
-    <hr>
-    <div class="wrapper">
-        <button id="burger-open" data-popupTrigger="#burger">
-            <svg width="24" height="24"><use xlink:href="#burger-svg"></use></svg>
+    <a href="tel:+74955067832" class="header-phone gray">
+      <svg width="24" height="24"><use xlink:href="#phone-ico"></use></svg>    
+      <span class="body-2">+7(495) 506-78-32</span>
+    </a>
+  </div>
+  <hr>
+  <div class="wrapper">
+    <button id="burger-open" data-popupTrigger="#burger">
+      <svg width="24" height="24"><use xlink:href="#burger-svg"></use></svg>
 
-            <svg width="24" height="24">
-                <use xlink:href="#burger-close-svg"></use>
-            </svg>                                
-        </button>
-        
-        <button class="catalogue-open black" data-popupTrigger="#catalogue">
-            <svg width="24" height="24"><use xlink:href="#burger-svg"></use></svg>
-            <svg width="24" height="24"><use xlink:href="#burger-close-svg"></use></svg>                                
-            <span class="body-2  medium">Каталог</span>
-        </button>
-
-        <div class="header_middle" data-popup>
-            <div class="header-middle_default">
-                <ul class="header-middle-list">
-                    <li><a href="#" class="body-2 black">Новинки</a></li>
-                    <li><a href="#" class="body-2 black">Распродажа</a></li>
-                </ul>
-
-                <a href="/" class="header-logo"><img src="./img/logo.svg" alt="to main page" class="logo"></a>
-            </div>
-
-            <div class="header-middle_search">
-                <input type="text" name="header search" id="search-bar" class="header_search-bar" placeholder="Поиск товаров">
-                <button id="header_search-bar-close" data-popupCloseTrigger>
-                    <svg width="24" height="24"><use xlink:href="#search-close-ico"></use></svg>                     
-                </button>
-            </div>
-        </div>
+      <svg width="24" height="24">
+        <use xlink:href="#burger-close-svg"></use>
+      </svg>                
+    </button>
     
-        <ul class="header_button-set">
-            <li>
-                <button aria-label="open search" id="search-open" data-popupTrigger=".header_middle">
-                    <svg width="24" height="24"><use xlink:href="#open-search-ico"></use></svg>                       
-                </button>
-            </li>
+    <button class="catalogue-open black" data-popupTrigger="#catalogue">
+      <svg width="24" height="24"><use xlink:href="#burger-svg"></use></svg>
+      <svg width="24" height="24"><use xlink:href="#burger-close-svg"></use></svg>                
+      <span class="body-2  medium">Каталог</span>
+    </button>
 
-            <li>
-                <button aria-label="authorization" class="authorization-open" data-popupTrigger="#authorization">
-                    <svg width="24" height="24"><use xlink:href="#auth-open-ico"></use></svg>                       
-                </button>
-            </li>
-
-            <li>
-                <button aria-label="open favorites sidebar" class="favorites-open" data-popupTrigger="#favorites">                    
-                    <svg width="24" height="24"><use xlink:href="#favorites-open-ico"></use></svg>                                           
-                </button>
-            </li>
-
-            <li>
-                <button aria-label="open cart sidebar" id="cart-open" data-popupTrigger="#cart">
-                    <svg width="24" height="24"><use xlink:href="#cart-open-ico"></use></svg>                                           
-                </button>
-            </li>
+    <div class="header_middle" data-popup>
+      <div class="header-middle_default">
+        <ul class="header-middle-list">
+          <li><a href="#" class="body-2 black">Новинки</a></li>
+          <li><a href="#" class="body-2 black">Распродажа</a></li>
         </ul>
+
+        <a href="/" class="header-logo"><img src="./img/logo.svg" alt="to main page" class="logo"></a>
+      </div>
+
+      <div class="header-middle_search">
+        <input type="text" name="header search" id="search-bar" class="header_search-bar" placeholder="Поиск товаров">
+        <button id="header_search-bar-close" data-popupCloseTrigger>
+          <svg width="24" height="24"><use xlink:href="#search-close-ico"></use></svg>           
+        </button>
+      </div>
     </div>
+  
+    <ul class="header_button-set">
+      <li>
+        <button aria-label="open search" id="search-open" data-popupTrigger=".header_middle">
+          <svg width="24" height="24"><use xlink:href="#open-search-ico"></use></svg>             
+        </button>
+      </li>
+
+      <li>
+        <button aria-label="authorization" class="authorization-open" data-popupTrigger="#authorization">
+          <svg width="24" height="24"><use xlink:href="#auth-open-ico"></use></svg>             
+        </button>
+      </li>
+
+      <li>
+        <button aria-label="open favorites sidebar" class="favorites-open" data-popupTrigger="#favorites">          
+          <svg width="24" height="24"><use xlink:href="#favorites-open-ico"></use></svg>                       
+        </button>
+      </li>
+
+      <li>
+        <button aria-label="open cart sidebar" id="cart-open" data-popupTrigger="#cart">
+          <svg width="24" height="24"><use xlink:href="#cart-open-ico"></use></svg>                       
+        </button>
+      </li>
+    </ul>
+  </div>
 </header>
 
-    <main>
-        <section class="news">
-            <div class="discount">
-                <p class="sub-title-1 sub-title">03-08-2020</p>
-                <h1 class="h1 title">Сентябрьская акция: скидка 5%!</h1>
-            </div>
+  <main>
+    <section class="news">
+      <div class="discount">
+        <p class="sub-title-1 sub-title">03-08-2020</p>
+        <h1 class="h1 title">Сентябрьская акция: скидка 5%!</h1>
+      </div>
 
-            <hr>
+      <hr>
 
-            <div class="discount-2">
-                <div class="block_left"></div>
+      <div class="discount-2">
+        <div class="block_left"></div>
 
-                <div class="block_right">
-                    <div class="block_right-wrapper">
-                        <p class="body-1">Акция -5% действует на все розничные цены, кроме товаров из разделов "Новинки", "Распродажа" и "Механизмы трансформации".</p>
-                    </div>
-                </div>
-            </div>
-
-            <hr>
-
-            <div class="navigation-news">
-                
-            </div>
-        </section>
-
-        <section class="news-article">
-            <div class="wrapper news-article_intro">
-                <p class="sub-title-1 light-gray semi-bold">03-08-2020</p>
-                <h1 class="h1 semi-bold black">Сентябрьская акция: скидка 5%!</h1>
-            </div>
-
-            <hr>
-
-            <div class="wrapper news-article_main">
-                <div></div>
-                <div class="news_main-intro">
-                    <p class="black">Акция -5% действует на все розничные цены, кроме товаров из разделов "Новинки", "Распродажа" и "Механизмы трансформации".</p>
-                </div>
-            </div>   
-        </section>
-    </main>
-
-    <footer class="primary-black-background primary-white">
-        <div class="wrapper">
-            <div class="block_links">
-                <p class="body-2 title">Каталог</p>
-                <div class="links">
-                    <a href="#" class="body-3 link primary-white">Ручки мебельные</a>
-                    <a href="#" class="body-3 link primary-white">Фасады мебельные</a>
-                    <a href="#" class="body-3 link primary-white">Новинки</a>
-                    <a href="#" class="body-3 link primary-white">Распродажа</a>
-                </div>
-            </div>
-
-            <div class="block_links">
-                <p class="body-2 title">Покупателю</p>
-                <div class="links">
-                    <a href="#" class="body-3 link primary-white">Доставка</a>
-                    <a href="#" class="body-3 link primary-white">Возврат / обмен</a>
-                    <a href="#" class="body-3 link primary-white">Гарантии</a>
-                    <a href="#" class="body-3 link primary-white">Договор оферты</a>
-                </div>
-            </div>
-
-            <div class="block_links">
-                <p class="body-2 title">Компания</p>
-                <div class="links">
-                    <a href="#" class="body-3 link primary-white">О нас</a>
-                    <a href="#" class="body-3 link primary-white">Парнеры</a>
-                    <a href="#" class="body-3 link primary-white">Новости</a>
-                    <a href="#" class="body-3 link primary-white">Дипломы / сертификаты</a>
-                </div>
-            </div>
-
-            <div class="block_links">
-                <p class="body-2 title">Мы принимаем</p>
-                <div class="links">
-                    <a href="#" class="body-3 link primary-white">Mastercard</a>
-                    <a href="#" class="body-3 link primary-white">Visa</a>
-                    <a href="#" class="body-3 link primary-white">JСВ</a>
-                    <a href="#" class="body-3 link primary-white">МИР</a>
-                </div>
-            </div>
-
-            <div class="block_links">
-                <p class="body-2 title">Социальные сети</p>
-                <div class="links">
-                    <a href="#" class="body-3 link primary-white">Instagram</a>
-                    <a href="#" class="body-3 link primary-white">Вконтакте</a>
-                </div>
-            </div>
+        <div class="block_right">
+          <div class="block_right-wrapper">
+            <p class="body-1">Акция -5% действует на все розничные цены, кроме товаров из разделов "Новинки", "Распродажа" и "Механизмы трансформации".</p>
+          </div>
         </div>
+      </div>
 
-        <div class="line"></div>
+      <hr>
 
-        <div class="wrapper-two">
-            <p class="body-3 secondary-gray">2011-2020 © РОССО - комплектующие и фурнитура для мебели высокого качества.</p>
-            <p class="body-3 secondary-gray">Политика конфиденциальности</p>
+      <div class="navigation-news">
+        
+      </div>
+    </section>
+
+    <section class="news-article">
+      <div class="wrapper news-article_intro">
+        <p class="sub-title-1 light-gray semi-bold">03-08-2020</p>
+        <h1 class="h1 semi-bold black">Сентябрьская акция: скидка 5%!</h1>
+      </div>
+
+      <hr>
+
+      <div class="wrapper news-article_main">
+        <div></div>
+        <div class="news_main-intro">
+          <p class="black">Акция -5% действует на все розничные цены, кроме товаров из разделов "Новинки", "Распродажа" и "Механизмы трансформации".</p>
         </div>
-    </footer>
+      </div>   
+    </section>
+  </main>
+
+  <footer class="primary-black-background primary-white">
+    <div class="wrapper">
+      <div class="block_links">
+        <p class="body-2 title">Каталог</p>
+        <div class="links">
+          <a href="#" class="body-3 link primary-white">Ручки мебельные</a>
+          <a href="#" class="body-3 link primary-white">Фасады мебельные</a>
+          <a href="#" class="body-3 link primary-white">Новинки</a>
+          <a href="#" class="body-3 link primary-white">Распродажа</a>
+        </div>
+      </div>
+
+      <div class="block_links">
+        <p class="body-2 title">Покупателю</p>
+        <div class="links">
+          <a href="#" class="body-3 link primary-white">Доставка</a>
+          <a href="#" class="body-3 link primary-white">Возврат / обмен</a>
+          <a href="#" class="body-3 link primary-white">Гарантии</a>
+          <a href="#" class="body-3 link primary-white">Договор оферты</a>
+        </div>
+      </div>
+
+      <div class="block_links">
+        <p class="body-2 title">Компания</p>
+        <div class="links">
+          <a href="#" class="body-3 link primary-white">О нас</a>
+          <a href="#" class="body-3 link primary-white">Парнеры</a>
+          <a href="#" class="body-3 link primary-white">Новости</a>
+          <a href="#" class="body-3 link primary-white">Дипломы / сертификаты</a>
+        </div>
+      </div>
+
+      <div class="block_links">
+        <p class="body-2 title">Мы принимаем</p>
+        <div class="links">
+          <a href="#" class="body-3 link primary-white">Mastercard</a>
+          <a href="#" class="body-3 link primary-white">Visa</a>
+          <a href="#" class="body-3 link primary-white">JСВ</a>
+          <a href="#" class="body-3 link primary-white">МИР</a>
+        </div>
+      </div>
+
+      <div class="block_links">
+        <p class="body-2 title">Социальные сети</p>
+        <div class="links">
+          <a href="#" class="body-3 link primary-white">Instagram</a>
+          <a href="#" class="body-3 link primary-white">Вконтакте</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="wrapper-two">
+      <p class="body-3 secondary-gray">2011-2020 © РОССО - комплектующие и фурнитура для мебели высокого качества.</p>
+      <p class="body-3 secondary-gray">Политика конфиденциальности</p>
+    </div>
+  </footer>
 
 
 </body>
