@@ -93,29 +93,28 @@ searchBar.addEventListener("input", ()=>{
 // Beacause catalugue pop up hasn`t his own close btn, so we must simulate it by 
 // Setting active burger btn to active (if we will clicl on it then all popups will close with catalogue)
 function createCatalogueClosebtn(){
-    let burgerBtn = document.getElementById("burger-open")
-    burgerBtn.classList.add("active")
+	let burgerBtn = document.getElementById("burger-open")
+	burgerBtn.classList.add("active")
 }
 
-const unfoldButton = document.querySelectorAll(".catalogue-item__unfold");
+const unfoldButton = document.querySelectorAll(".catalogue-item__unfold, .catalogue-card__unfold")
 
 unfoldButton.forEach(el=>{
-    const list = el.parentNode.querySelector("ul");
+	const list = el.parentNode.querySelector("ul");
 
-    el.addEventListener("click",()=>{
-        if(list.classList.contains("folded")){
-            list.classList.remove("folded")
-            el.style.display = "none"
-        }
-    })
+	el.addEventListener("click",()=>{
+			if(list.classList.contains("folded")){
+					list.classList.remove("folded")
+					el.style.display = "none"
+			}
+	})
     
 })
 
 function foldAll(){
-    const unfoldButton = document.querySelectorAll(".catalogue-item__unfold")
 
-    unfoldButton.forEach(el=>{
-        el.style.display = "block"
-        el.parentNode.querySelector("ul").classList.add("folded")
-    })
+	unfoldButton.forEach(el=>{
+			el.style.display = "block"
+			el.parentNode.querySelector("ul").classList.add("folded")
+	})
 }

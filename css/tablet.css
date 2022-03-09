@@ -776,5 +776,75 @@
     padding: 10px;
     cursor: pointer;
   }
+
+  .breadcrumbs .wrapper {
+    padding: 13px 32px;
+  }
+  .breadcrumbs a, .breadcrumbs ul {
+    gap: 11px;
+  }
+  .breadcrumbs svg {
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+  }
+
+  .catalogue-hero .card {
+    border-bottom: 1px solid var(--light-gray);
+  }
+  .catalogue-hero .card a {
+    padding: 62px 30px 15px 30px;
+    gap: 40px;
+  }
+  .catalogue-hero .card img {
+    width: 100px;
+    height: 100px;
+  }
+  .catalogue-hero > *:nth-child(2n-1) {
+    border-right: 1px solid var(--light-gray);
+  }
+  .catalogue-hero > a {
+    padding: 36px 32px;
+  }
+  .catalogue-hero .arrow-button span {
+    padding-right: 70px;
+  }
+  .catalogue-hero .arrow-button span:after {
+    width: 27px;
+    height: 23px;
+  }
+
+  .catalogue-main {
+    display: grid;
+    grid-template-columns: 33% 67%;
+  }
+  .catalogue-main > div {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid var(--light-gray);
+    border-right: 1px solid var(--light-gray);
+  }
+
+  .catalogue-card {
+    padding: 40px 45px 50px 45px;
+  }
+  .catalogue-card img {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 40px;
+  }
+  .catalogue-card h2 {
+    padding-bottom: 15px;
+  }
+  .catalogue-card ul {
+    padding-top: 10px;
+  }
+  .catalogue-card ul li {
+    margin-bottom: 3px;
+  }
+  .catalogue-card ul.folded {
+    margin-bottom: 8px;
+  }
 }
 /*# sourceMappingURL=tablet.css.map */

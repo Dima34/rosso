@@ -180,12 +180,12 @@ p {
     --h1: 600 32px / 110% "RF Dewi";
     --h2: 600 32px / 110% "RF Dewi";
     --h3: 600 18px / 120% "RF Dewi";
-    --h4: 600 20px / 120% "RF Dewi";
+    --h4: 600 16px / 120% "RF Dewi";
     --h5: 600 18px / 120% "RF Dewi";
     --h6: 600 16px / 120% "RF Dewi";
     --sub-title-1: 600 14px / 140% "Montserrat";
     --sub-title-2: 600 14px / 140% "Montserrat";
-    --body-1: 400 18px / 150% "Montserrat";
+    --body-1: 400 14px / 150% "Montserrat";
     --body-2: 400 14px / 150% "Montserrat";
     --body-3: 400 14px / 150% "Montserrat";
     --body-4: 400 12px / 150% "Montserrat";
@@ -204,7 +204,7 @@ p {
     --h1: 600 24px / 110% "RF Dewi";
     --h2: 600 32px / 110% "RF Dewi";
     --h3: 600 18px / 120% "RF Dewi";
-    --h4: 600 20px / 120% "RF Dewi";
+    --h4: 600 18px / 120% "RF Dewi";
     --h5: 600 18px / 120% "RF Dewi";
     --h6: 600 16px / 120% "RF Dewi";
     --sub-title-1: 600 18px / 140% "Montserrat";
@@ -640,6 +640,94 @@ footer li:last-child {
   margin-bottom: 0;
 }
 
+.card a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 35px 50px;
+  height: 100%;
+}
+.card a img {
+  margin-top: auto;
+  object-fit: contain;
+  width: 320px;
+  height: 320px;
+}
+.card a h2 {
+  display: block;
+  margin-top: auto;
+  margin-right: auto;
+}
+
+.breadcrumbs {
+  border-bottom: 1px solid var(--light-gray);
+}
+.breadcrumbs ul {
+  display: flex;
+  gap: 25px;
+}
+.breadcrumbs a {
+  display: flex;
+  gap: 25px;
+}
+.breadcrumbs li:last-child a {
+  margin-right: 0;
+}
+.breadcrumbs li:last-child svg {
+  display: none;
+}
+
+.catalogue-hero {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: max-content min-content;
+}
+
+.catalogue-card {
+  padding: 75px 80px 50px 80px;
+}
+.catalogue-card img {
+  width: 170px;
+  height: 170px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 75px;
+}
+.catalogue-card h2 {
+  padding-bottom: 25px;
+}
+.catalogue-card ul {
+  border-top: 1px solid var(--light-gray);
+  padding-top: 30px;
+}
+.catalogue-card ul li {
+  margin-bottom: 12px;
+}
+.catalogue-card ul.folded {
+  margin-bottom: 12px;
+}
+.catalogue-card ul.folded li {
+  display: none;
+}
+.catalogue-card ul.folded li:nth-child(1), .catalogue-card ul.folded li:nth-child(2), .catalogue-card ul.folded li:nth-child(3) {
+  display: block;
+}
+
+.catlogue-more {
+  display: none;
+}
+
+@media screen and (max-width: 1366px) {
+  .card a {
+    padding: 25px 35px;
+  }
+  .card a img {
+    width: 230px;
+    height: 230px;
+  }
+}
 @media screen and (max-width: 1124px) {
   #burger {
     background-image: url(../img/bg.png);

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru" class="primary-white-background">
+
+<head>
+	<link rel="stylesheet" />
+	@@include("./partials/head.html", {title:"РОССО - Каталог"})
+</head>
+
+
+<body>
+	@@include("./partials/header.html")
+
+	<main>
+		@@include("./partials/breadcrumbs.html",
+		{
+			links: ["Главная", "Каталог"]
+		})
+
+		<div class="wrapper">
+			<section class="catalogue-hero black">
+				@@include("./partials/card.html", {
+				title: "Ручки мебельные",
+				image: "./img/popular-1.png"
+				})
+				@@include("./partials/card.html", {
+				title: "Фасады мебельные",
+				image: "./img/popular-2.png"
+				})
+				<a href="#" class="h1 black">
+					Новинки
+				</a>
+				<a href="#" class="arrow-button h1">
+					<span>Распродажа</span>                    
+				</a>
+			</section>
+			<hr>
+
+			<section class="catalogue-main">
+				<div class="catalogue-card">
+					<img src="./img/catalogue-main-1.png" alt="Мойки и смесители">
+					<h2><a href="#" class="h4 bold black">Мойки и смесители</a></h2>
+					<ul class="folded">
+						<li><a href="#" class="body-1 black">Мойки кухонные</a></li>
+						<li><a href="#" class="body-1 black">Смесители</a></li>
+						<li><a href="#" class="body-1 black">Аксессуары</a></li>
+						<li><a href="#" class="body-1 black">Корзины в нижние модули</a></li>
+						<li><a href="#" class="body-1 black">Корзины в верхние модули</a></li>
+						<li><a href="#" class="body-1 black">Пеналы кухонные</a></li>
+					</ul>
+					<button class="catalogue-card__unfold body-1 gray">Показать все</button>
+				</div>
+				<div class="catalogue-card">
+					<img src="./img/catalogue-main-2.png" alt="Мойки и смесители">
+					<h2><a href="#" class="h4 bold black">Мойки и смесители</a></h2>
+					<ul class="">
+						<li><a href="#" class="body-1 black">Мойки кухонные</a></li>
+						<li><a href="#" class="body-1 black">Смесители</a></li>
+						<li><a href="#" class="body-1 black">Аксессуары</a></li>
+					</ul>
+				</div>
+				<div class="catalogue-card">
+					<img src="./img/catalogue-main-2.png" alt="Мойки и смесители">
+					<h2><a href="#" class="h4 bold black">Мойки и смесители и люстры</a></h2>
+					
+				</div>
+				<div class="catalogue-card">
+					<img src="./img/catalogue-main-1.png" alt="Мойки и смесители">
+					<h2><a href="#" class="h4 bold black">Мойки и смесители и люстры</a></h2>
+					<ul class="folded">
+						<li><a href="#" class="body-1 black">Мойки кухонные</a></li>
+						<li><a href="#" class="body-1 black">Смесители</a></li>
+						<li><a href="#" class="body-1 black">Аксессуары</a></li>
+						<li><a href="#" class="body-1 black">Корзины в нижние модули</a></li>
+						<li><a href="#" class="body-1 black">Корзины в верхние модули</a></li>
+						<li><a href="#" class="body-1 black">Пеналы кухонные</a></li>
+					</ul>
+				</div>
+				<div class="catalogue-card">
+					<img src="./img/catalogue-main-1.png" alt="Мойки и смесители">
+					<h2><a href="#" class="h4 bold black">Мойки и смесители</a></h2>
+					<ul class="folded">
+						<li><a href="#" class="body-1 black">Мойки кухонные</a></li>
+						<li><a href="#" class="body-1 black">Смесители</a></li>
+						<li><a href="#" class="body-1 black">Аксессуары</a></li>
+						<li><a href="#" class="body-1 black">Корзины в нижние модули</a></li>
+						<li><a href="#" class="body-1 black">Корзины в верхние модули</a></li>
+						<li><a href="#" class="body-1 black">Пеналы кухонные</a></li>
+					</ul>
+					<button class="catalogue-card__unfold body-1 gray">Показать все</button>
+				</div>
+				<div class="catalogue-card">
+					<img src="./img/catalogue-main-2.png" alt="Мойки и смесители">
+					<h2><a href="#" class="h4 bold black">Мойки и смесители</a></h2>
+					<ul class="">
+						<li><a href="#" class="body-1 black">Мойки кухонные</a></li>
+						<li><a href="#" class="body-1 black">Смесители</a></li>
+						<li><a href="#" class="body-1 black">Аксессуары</a></li>
+					</ul>
+				</div>
+				<div class="catalogue-card">
+					<img src="./img/catalogue-main-2.png" alt="Мойки и смесители">
+					<h2><a href="#" class="h4 bold black">Мойки и смесители и люстры</a></h2>
+					
+				</div>
+				<div class="catalogue-card">
+					<img src="./img/catalogue-main-2.png" alt="Мойки и смесители">
+					<h2><a href="#" class="h4 bold black">Мойки и смесители и люстры</a></h2>
+					<ul class="folded">
+						<li><a href="#" class="body-1 black">Мойки кухонные</a></li>
+						<li><a href="#" class="body-1 black">Смесители</a></li>
+						<li><a href="#" class="body-1 black">Аксессуары</a></li>
+						<li><a href="#" class="body-1 black">Корзины в нижние модули</a></li>
+						<li><a href="#" class="body-1 black">Корзины в верхние модули</a></li>
+						<li><a href="#" class="body-1 black">Пеналы кухонные</a></li>
+					</ul>
+				</div>
+				<div class="catalogue-card">
+					<img src="./img/catalogue-main-1.png" alt="Мойки и смесители">
+					<h2><a href="#" class="h4 bold black">Мойки и смесители</a></h2>
+					<ul class="folded">
+						<li><a href="#" class="body-1 black">Мойки кухонные</a></li>
+						<li><a href="#" class="body-1 black">Смесители</a></li>
+						<li><a href="#" class="body-1 black">Аксессуары</a></li>
+						<li><a href="#" class="body-1 black">Корзины в нижние модули</a></li>
+						<li><a href="#" class="body-1 black">Корзины в верхние модули</a></li>
+						<li><a href="#" class="body-1 black">Пеналы кухонные</a></li>
+					</ul>
+					<button class="catalogue-card__unfold body-1 gray">Показать все</button>
+				</div>
+			</section>
+
+			<button class="arrow-button body-3 white catlogue-more">
+				<span>Смотреть дальше 
+					<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+						<use xlink:href="#swiper-next"></use>
+					</svg>
+				</span>
+			</button>
+		</div>
+	</main>
+
+	@@include("./partials/footer.html")
+	@@include("./partials/header-popups.html")
+	@@include("./partials/svg.html")
+
+	<script src="./js/header.js"></script>
+
+</body>
+
+
+</html>

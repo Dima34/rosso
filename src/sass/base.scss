@@ -443,6 +443,117 @@ footer{
     }    
 }
 
+.card{
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 35px 50px;
+        height: 100%;
+
+        img{
+            margin-top: auto;
+            object-fit: contain;
+            width: 320px;
+            height: 320px;
+        }
+
+        h2{
+            display: block;
+            margin-top: auto;
+            margin-right: auto;
+        }
+    } 
+}
+
+.breadcrumbs{
+	border-bottom: 1px solid var(--light-gray);
+	
+	ul{
+		display: flex;
+		gap: 25px;
+	}
+
+	a{
+		display: flex;
+		gap: 25px;
+	}
+
+	li:last-child{
+		a{
+			margin-right: 0;
+		}
+
+		svg{
+			display: none;
+		}
+	}
+}
+
+.catalogue-hero{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: max-content min-content;
+}
+
+.catalogue-card{
+	padding: 75px 80px 50px 80px;
+
+	img{
+		width: 170px;
+		height: 170px;
+		object-fit: contain;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 75px;
+	}
+
+	h2{
+		padding-bottom: 25px;
+		
+	}
+
+	ul{
+		border-top: 1px solid var(--light-gray);
+		padding-top: 30px;
+
+		li{
+			margin-bottom: 12px;
+		}
+
+		&.folded{
+			margin-bottom: 12px;
+
+			li{
+					display: none;
+
+					&:nth-child(1),
+					&:nth-child(2),
+					&:nth-child(3){
+							display: block;
+					}
+			}
+		}
+	}
+}
+
+.catlogue-more{
+	display: none;
+}
+
+@media screen and (max-width: $laptop) {
+	.card{
+		a{
+			padding: 25px 35px;
+			img{
+				width: 230px;
+				height: 230px;
+			}
+		}
+	}	
+}
+
 @media screen and (max-width: $tablet) {
     #burger{
         background-image: url(../img/bg.png);
@@ -519,4 +630,5 @@ footer{
         }
     }
 }
+
 
