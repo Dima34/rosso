@@ -97,24 +97,3 @@ function createCatalogueClosebtn(){
 	burgerBtn.classList.add("active")
 }
 
-const unfoldButton = document.querySelectorAll(".catalogue-item__unfold, .catalogue-card__unfold")
-
-unfoldButton.forEach(el=>{
-	const list = el.parentNode.querySelector("ul");
-
-	el.addEventListener("click",()=>{
-			if(list.classList.contains("folded")){
-					list.classList.remove("folded")
-					el.style.display = "none"
-			}
-	})
-  
-})
-
-function foldAll(){
-
-	unfoldButton.forEach(el=>{
-			el.style.display = "block"
-			el.parentNode.querySelector("ul").classList.add("folded")
-	})
-}

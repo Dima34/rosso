@@ -228,9 +228,9 @@ p {
     --h1: 600 18px / 110% "RF Dewi";
     --h2: 600 32px / 110% "RF Dewi";
     --h3: 600 14px / 120% "RF Dewi";
-    --h4: 600 20px / 120% "RF Dewi";
+    --h4: 600 14px / 120% "RF Dewi";
     --h5: 600 18px / 120% "RF Dewi";
-    --h6: 600 16px / 120% "RF Dewi";
+    --h6: 600 14px / 120% "RF Dewi";
     --sub-title-1: 600 14px / 140% "Montserrat";
     --sub-title-2: 600 14px / 140% "Montserrat";
     --body-1: 400 12px / 150% "Montserrat";
@@ -282,6 +282,11 @@ p {
 }
 html {
   background-image: url("../img/bg.png");
+}
+
+header {
+  z-index: 2;
+  position: relative;
 }
 
 .wrapper {
@@ -355,11 +360,11 @@ span {
   background: var(--black);
   opacity: 0.9;
   backdrop-filter: blur(65px);
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: calc(100vh - var(--header-height));
+  height: 100vh;
   overflow: auto;
   display: none;
 }
@@ -705,21 +710,199 @@ footer li:last-child {
 .catalogue-card ul li {
   margin-bottom: 12px;
 }
-.catalogue-card ul.folded {
+.catalogue-card ul.foldedList {
   margin-bottom: 12px;
-}
-.catalogue-card ul.folded li {
-  display: none;
-}
-.catalogue-card ul.folded li:nth-child(1), .catalogue-card ul.folded li:nth-child(2), .catalogue-card ul.folded li:nth-child(3) {
-  display: block;
 }
 
 .catlogue-more {
   display: none;
 }
 
-@media screen and (max-width: 1366px) {
+button {
+  border-style: none;
+}
+
+.accordion-trigger {
+  width: 100%;
+}
+
+.accordion-title {
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.accordion-trigger[aria-expanded=true] .accordion-icon {
+  transform: rotate(-180deg);
+}
+
+/* For Edge bug https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/4806035/ */
+.accordion-panel[hidden] {
+  display: none;
+}
+
+.catalogue__filter-group button {
+  display: block;
+  margin-left: auto;
+}
+.catalogue__filter-group input {
+  display: none;
+}
+.catalogue__filter-group input:checked + label:not(.box-label, .color-selection-label)::before {
+  display: block;
+}
+.catalogue__filter-group input:checked + label.color-selection-label::after {
+  display: block;
+}
+.catalogue__filter-group input:checked + label.color-selection-label::before {
+  display: block;
+}
+.catalogue__filter-group input:checked + label.box-label {
+  background: var(--gray);
+  border-color: var(--gray);
+  color: var(--white);
+}
+.catalogue__filter-group label {
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+}
+.catalogue__filter-group label span:last-child {
+  display: block;
+  width: fit-content;
+  width: -moz-fit-content;
+  margin-left: auto;
+}
+.catalogue__filter-group label.color-selection-label::after {
+  display: none;
+}
+.catalogue__filter-group label.color-selection-label .filter-color {
+  margin-right: 20px;
+  margin-top: 2px;
+}
+.catalogue__filter-group label:not(.box-label, .color-selection-label),
+.catalogue__filter-group label.color-selection-label {
+  position: relative;
+}
+.catalogue__filter-group label:not(.box-label, .color-selection-label)::after,
+.catalogue__filter-group label.color-selection-label::after {
+  content: "";
+  position: absolute;
+  border: 1px solid var(--gray);
+  box-sizing: border-box;
+}
+.catalogue__filter-group label:not(.box-label, .color-selection-label)::before,
+.catalogue__filter-group label.color-selection-label::before {
+  content: "";
+  position: absolute;
+  background: var(--black);
+  box-sizing: border-box;
+  display: none;
+}
+
+.box-selection-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-label {
+  font-display: auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--gray);
+  color: var(--black);
+}
+
+.filter__range-slider {
+  height: 1px;
+  background: var(--light-gray);
+}
+
+.products-filter-price-slider {
+  position: relative;
+  width: 100%;
+}
+
+.ui-widget-header {
+  position: absolute;
+  height: 1px;
+  top: 0;
+  width: 80%;
+  background: var(--black);
+}
+
+.ui-state-default {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  top: -7px;
+  border-radius: 50%;
+  background: var(--black);
+  cursor: pointer;
+}
+
+.products-filter-price-slider-value {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalogue-content__more {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 42px;
+  border-top: 1px solid var(--light-gray);
+}
+.catalogue-content__more svg {
+  transform: rotate(90deg);
+}
+.catalogue-content__more span {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.catalogue-content__more span:after {
+  display: none;
+}
+
+.catalogue-content__open-filter,
+.catalogue-filters__close {
+  display: none;
+}
+
+.catalogue-card-big,
+.catalogue-card-big__info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.catalogue-card-big__info > div {
+  margin-top: auto;
+}
+
+.catalogue-card-big__price span:first-child {
+  color: var(--light-gray);
+  padding: 0 10px;
+  margin-right: 10px;
+  position: relative;
+}
+.catalogue-card-big__price span:first-child::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 1px;
+  width: 100%;
+  background: var(--light-gray);
+}
+
+@media screen and (max-width: 1367px) {
   .card a {
     padding: 25px 35px;
   }
