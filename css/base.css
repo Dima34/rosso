@@ -207,7 +207,7 @@ p {
     --h4: 600 18px / 120% "RF Dewi";
     --h5: 600 18px / 120% "RF Dewi";
     --h6: 600 16px / 120% "RF Dewi";
-    --sub-title-1: 600 18px / 140% "Montserrat";
+    --sub-title-1: 600 14px / 140% "Montserrat";
     --sub-title-2: 600 14px / 140% "Montserrat";
     --body-1: 400 12px / 150% "Montserrat";
     --body-2: 400 12px / 150% "Montserrat";
@@ -399,24 +399,33 @@ input[type=password]::placeholder {
   color: var(--black);
 }
 
-.swiper {
+.slider .swiper {
   width: 100%;
   overflow: hidden;
   height: fit-content;
   height: -moz-fit-content;
 }
-
-.swiper-wrapper {
+.slider .swiper-wrapper {
   height: fit-content;
   height: -moz-fit-content;
 }
-
-.swiper-slide {
+.slider .swiper-slide {
   opacity: 0 !important;
   transition: 0.4s linear;
 }
-.swiper-slide.swiper-slide-active {
+.slider .swiper-slide.swiper-slide-active {
   opacity: 1 !important;
+}
+.slider .swiper-slide {
+  width: 100% !important;
+}
+.slider .swiper-prev,
+.slider .swiper-next {
+  color: #ffffff;
+}
+.slider .swiper-prev:hover,
+.slider .swiper-next:hover {
+  color: var(--light-gray);
 }
 
 .button {
@@ -585,10 +594,6 @@ svg {
   fill: currentColor;
 }
 
-.swiper-slide {
-  width: 100% !important;
-}
-
 .header_button-set button, .header_button-set a {
   color: var(--black);
 }
@@ -608,15 +613,6 @@ svg {
 #close-mark,
 #bin {
   fill: #C1C1C1;
-}
-
-.swiper-prev,
-.swiper-next {
-  color: #ffffff;
-}
-.swiper-prev:hover,
-.swiper-next:hover {
-  color: var(--light-gray);
 }
 
 footer {
@@ -890,13 +886,13 @@ button {
   margin-top: auto;
 }
 
-.catalogue-card-big__price span:first-child {
+.is-sale span:first-child {
   color: var(--light-gray);
   padding: 0 10px;
   margin-right: 10px;
   position: relative;
 }
-.catalogue-card-big__price span:first-child::after {
+.is-sale span:first-child::after {
   content: "";
   position: absolute;
   left: 0;
@@ -904,6 +900,10 @@ button {
   height: 1px;
   width: 100%;
   background: var(--light-gray);
+}
+
+.product__title-mobile {
+  display: none;
 }
 
 @media screen and (max-width: 1367px) {

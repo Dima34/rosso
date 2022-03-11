@@ -1,6 +1,6 @@
 'use strict';
 
-Array.prototype.slice.call(document.querySelectorAll('.catalogue__filter-group')).forEach(function (accordion, accordionIndex) {
+Array.prototype.slice.call(document.querySelectorAll("*[data-accordion]")).forEach(function (accordion, accordionIndex) {
     const triggerEls = document.querySelectorAll(".accordion-trigger")
     const panelEls = document.querySelectorAll(".accordion-panel")
 
