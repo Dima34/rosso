@@ -1190,8 +1190,13 @@ height: -moz-fit-content;
 	}
 
 	#catalogue-filters{
-		padding: 33px 60px 55px 60px;
+		padding: 33px 30px 55px 30px;
 		border-bottom: 1px solid var(--light-gray);
+	}
+
+	.cataloguer-filters__container{
+		max-width: 220px;
+		margin: 0 auto;
 	}
 
 	.catalogue-filters__header{

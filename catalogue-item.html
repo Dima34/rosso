@@ -232,152 +232,154 @@
 
 			<section class="catalogue-item__main">
 				<aside id="catalogue-filters" data-popup>
-					<button class="catalogue-filters__close" data-popupCloseTrigger>
-						<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-							<use xlink:href="#close-mark"></use>
-						</svg>
-					</button>
-					<div class="catalogue-filters__header">
-						<h2 class="sub-title-1">Фильтры</h2>
-						<button class="sub-title-1 gray">Очистить все</button>
-					</div>
-					<hr>
-					<div class="catalogue__filter-group black">
-						<h3>
-							<button class="accordion-trigger">
-								<span class="accordion-title black sub-title-1">
-									Материал
-									<svg class="accordion-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
-										<use xlink:href="#arrow-down"></use>
-									</svg>
-								</span>
-							</button>
-						</h3>
-						<div class="accordion-panel">
-							<div 
-								data-foldedContainer
-								data-foldedAmount="4" 
-								data-foldedButtonText="Показать все"
-								data-foldedButtonClass = "body-2 gray"
-							>
-								<ul data-foldedList class="body-2">
-									<li>
-										<input type="checkbox" id="item" name="">
-										<label for="item">Металл <span>121</span></label>
-									</li>
-									<li>
-										<input type="checkbox" id="item1" name="">
-										<label for="item1">Метал/пластик <span>11</span></label>
-									</li>
-									<li>
-										<input type="checkbox" id="item2" name="">
-										<label for="item2">Пластик <span>54</span></label>
-									</li>
-									<li>
-										<input type="checkbox" id="item3" name="">
-										<label for="item3">Дерево <span>89</span></label>
-									</li>
-									<li>
-										<input type="checkbox" id="item4" name="">
-										<label for="item4">Стекло <span>163</span></label>
-									</li>
-								</ul>
-							</div>
+					<div class="cataloguer-filters__container">
+						<button class="catalogue-filters__close" data-popupCloseTrigger>
+							<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href="#close-mark"></use>
+							</svg>
+						</button>
+						<div class="catalogue-filters__header">
+							<h2 class="sub-title-1 black">Фильтры</h2>
+							<button class="sub-title-1 gray regular">Очистить все</button>
 						</div>
-
-						<h3>
-							<button class="accordion-trigger">
-								<span class="accordion-title black sub-title-1">
-									Цвет
-									<svg class="accordion-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
-										<use xlink:href="#arrow-down"></use>
-									</svg>
-								</span>
-							</button>
-						</h3>
-						<div class="accordion-panel">
-							<div 
-								data-foldedContainer
-								data-foldedAmount="4" 
-								data-foldedButtonText="Показать все"
-								data-foldedButtonClass = "body-2 gray"
-							>
-								<ul data-foldedList class="body-2">
-									<li>
-										<input type="checkbox" id="item13" name="">
-										<label for="item13" class="body-2 color-selection-label">
-											<span class="filter-color">
-												<img width="20" height="20" src="./img/color-1.png" alt="">
-											</span>
-											Металл <span>121</span></label>
-									</li>
-									<li>
-										<input type="checkbox" id="item11" name="">
-										<label for="item11" class="body-2 color-selection-label">
-											<span class="filter-color">
-												<img width="20" height="20" src="./img/color-2.png" alt="">
-											</span>
-											Метал/пластик <span>11</span></label>
-									</li>
-									
-								</ul>
-							</div>
-						</div>
-
-						<h3>
-							<button class="accordion-trigger">
-								<span class="accordion-title black sub-title-1">
-									Размер
-									<svg class="accordion-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
-										<use xlink:href="#arrow-down"></use>
-									</svg>
-								</span>
-							</button>
-						</h3>
-						<div class="accordion-panel">
-							<div 
-								data-foldedContainer
-								data-foldedAmount="4" 
-								data-foldedButtonText="Показать все"
-								data-foldedButtonClass = "body-2 gray"
-							>
-								<ul data-foldedList class="body-2 box-selection-container">
-									<li>
-										<input type="checkbox" id="item23" name="">
-										<label class="box-label body-2" for="item23">500</label>
-									</li>
-									<li>
-										<input type="checkbox" id="item12" name="">
-										<label class="box-label body-2" for="item12">0</label>
-									</li>
-									<li>
-										<input type="checkbox" id="item22" name="">
-										<label class="box-label body-2" for="item22">10000</label>
-									</li>
-								</ul>
-							</div>
-						</div>
-
-						<h3 class="sub-title-1">Цена</h3>
-						<div>
-							<div class="filter__range-slider">
-								<div class="products-filter-price-slider">
-									<div class="ui-widget-header" style="left: 0%; width: 80%;"></div>
-									<span class="ui-state-default" style="left: 0%;"></span>
-									<span class="ui-state-default" style="left: 80%;"></span>
+						<hr>
+						<div class="catalogue__filter-group black">
+							<h3>
+								<button class="accordion-trigger">
+									<span class="accordion-title black sub-title-1">
+										Материал
+										<svg class="accordion-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+											<use xlink:href="#arrow-down"></use>
+										</svg>
+									</span>
+								</button>
+							</h3>
+							<div class="accordion-panel">
+								<div 
+									data-foldedContainer
+									data-foldedAmount="4" 
+									data-foldedButtonText="Показать все"
+									data-foldedButtonClass = "body-2 gray"
+								>
+									<ul data-foldedList class="body-2">
+										<li>
+											<input type="checkbox" id="item" name="">
+											<label for="item">Металл <span>121</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="item1" name="">
+											<label for="item1">Метал/пластик <span>11</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="item2" name="">
+											<label for="item2">Пластик <span>54</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="item3" name="">
+											<label for="item3">Дерево <span>89</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="item4" name="">
+											<label for="item4">Стекло <span>163</span></label>
+										</li>
+									</ul>
 								</div>
+							</div>
 	
-								<div class="products-filter-price-slider-value">
-									<span class="body-2 black">0₽</span>
-									<span class="body-2 black">900000₽</span>
+							<h3>
+								<button class="accordion-trigger">
+									<span class="accordion-title black sub-title-1">
+										Цвет
+										<svg class="accordion-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+											<use xlink:href="#arrow-down"></use>
+										</svg>
+									</span>
+								</button>
+							</h3>
+							<div class="accordion-panel">
+								<div 
+									data-foldedContainer
+									data-foldedAmount="4" 
+									data-foldedButtonText="Показать все"
+									data-foldedButtonClass = "body-2 gray"
+								>
+									<ul data-foldedList class="body-2">
+										<li>
+											<input type="checkbox" id="item13" name="">
+											<label for="item13" class="body-2 color-selection-label">
+												<span class="filter-color">
+													<img width="20" height="20" src="./img/color-1.png" alt="">
+												</span>
+												Металл <span>121</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="item11" name="">
+											<label for="item11" class="body-2 color-selection-label">
+												<span class="filter-color">
+													<img width="20" height="20" src="./img/color-2.png" alt="">
+												</span>
+												Метал/пластик <span>11</span></label>
+										</li>
+										
+									</ul>
 								</div>
-						</div>
+							</div>
+	
+							<h3>
+								<button class="accordion-trigger">
+									<span class="accordion-title black sub-title-1">
+										Размер
+										<svg class="accordion-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+											<use xlink:href="#arrow-down"></use>
+										</svg>
+									</span>
+								</button>
+							</h3>
+							<div class="accordion-panel">
+								<div 
+									data-foldedContainer
+									data-foldedAmount="4" 
+									data-foldedButtonText="Показать все"
+									data-foldedButtonClass = "body-2 gray"
+								>
+									<ul data-foldedList class="body-2 box-selection-container">
+										<li>
+											<input type="checkbox" id="item23" name="">
+											<label class="box-label body-2" for="item23">500</label>
+										</li>
+										<li>
+											<input type="checkbox" id="item12" name="">
+											<label class="box-label body-2" for="item12">0</label>
+										</li>
+										<li>
+											<input type="checkbox" id="item22" name="">
+											<label class="box-label body-2" for="item22">10000</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+	
+							<h3 class="sub-title-1">Цена</h3>
+							<div>
+								<div class="filter__range-slider">
+									<div class="products-filter-price-slider">
+										<div class="ui-widget-header" style="left: 0%; width: 80%;"></div>
+										<span class="ui-state-default" style="left: 0%;"></span>
+										<span class="ui-state-default" style="left: 80%;"></span>
+									</div>
+		
+									<div class="products-filter-price-slider-value">
+										<span class="body-2 black">0₽</span>
+										<span class="body-2 black">900000₽</span>
+									</div>
+							</div>
+							</div>
 						</div>
 					</div>
 				</aside>
 				<div class="catalogue-content">
 					<div class="catalogue-content__header">
-						<button class="catalogue-content__open-filter body-2" data-popupTrigger="#catalogue-filters">
+						<button class="catalogue-content__open-filter body-2 semi-bold" data-popupTrigger="#catalogue-filters">
 							Фильтры
 						</button>
 						<div class="catalogue-content__sorting">

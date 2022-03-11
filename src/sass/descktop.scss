@@ -539,11 +539,11 @@ height: -moz-fit-content;
 	// catalogue
 	#catalogue{
 			
-			.wrapper{
-					width: 100%;
-					overflow: auto;
-					background: var(--white);
-			}
+		.wrapper{
+				width: 100%;
+				overflow: auto;
+				background: var(--white);
+		}
 	}
 
 	.catalogue__heading{
@@ -1117,8 +1117,14 @@ height: -moz-fit-content;
 	}
 
 	#catalogue-filters{
-		padding: 35px 85px 55px 85px;
+		padding: 35px 35px 55px 35px;
 		border-bottom: 1px solid var(--light-gray);
+	}
+
+	.cataloguer-filters__container{
+		max-width: 310px;
+		width: 100%;
+		margin: 0 auto;
 	}
 
 	.catalogue-filters__header{
