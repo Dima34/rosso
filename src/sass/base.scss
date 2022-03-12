@@ -28,6 +28,13 @@ hr{
   overflow: hidden;
 }
 
+button, a, .carousel-btn,
+.product-also__button{
+	&:focus{
+		outline-color: var(--black);
+	}
+}
+
 .regular{
 	font-weight: 400;
 }
@@ -754,6 +761,10 @@ button {
 
 .product__title-mobile{
 	display: none;
+}
+
+.product-carousel{
+	z-index: 0;
 }
 
 @media screen and (max-width: $laptop+1) {

@@ -1418,7 +1418,7 @@
     display: grid;
     grid-template-columns: 45.7540263543% 1fr;
     background-color: var(--white);
-    border-top: 1px solid var(--white);
+    border-top: 1px solid var(--light-gray);
   }
   .product-reviews > div {
     padding: 60px;

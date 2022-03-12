@@ -5,6 +5,10 @@
 	header{
 			border-bottom: 1px solid var(--light-gray);
 
+			hr{
+				display: none;
+			}
+
 			.wrapper{
 					display: flex;
 					align-items: center;

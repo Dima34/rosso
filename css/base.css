@@ -305,6 +305,11 @@ hr {
   overflow: hidden;
 }
 
+button:focus, a:focus, .carousel-btn:focus,
+.product-also__button:focus {
+  outline-color: var(--black);
+}
+
 .regular {
   font-weight: 400;
 }
@@ -904,6 +909,10 @@ button {
 
 .product__title-mobile {
   display: none;
+}
+
+.product-carousel {
+  z-index: 0;
 }
 
 @media screen and (max-width: 1367px) {

@@ -1352,6 +1352,7 @@
     display: grid;
     grid-template-columns: 45.8333333333% 1fr;
     color: var(--white);
+    border-top: 1px solid var(--light-gray);
   }
   .product-reviews > div {
     padding: 80px;
@@ -2903,7 +2904,7 @@
     display: grid;
     grid-template-columns: 45.7540263543% 1fr;
     background-color: var(--white);
-    border-top: 1px solid var(--white);
+    border-top: 1px solid var(--light-gray);
   }
   .product-reviews > div {
     padding: 60px;
@@ -3043,6 +3044,9 @@
 @media screen and (min-width: 525px) and (max-width: 1124px) {
   header {
     border-bottom: 1px solid var(--light-gray);
+  }
+  header hr {
+    display: none;
   }
   header .wrapper {
     display: flex;
@@ -4594,6 +4598,9 @@
   }
   header .wrapper:last-child {
     padding: 20px 5px;
+  }
+  header hr {
+    display: none;
   }
   header .header-middle-list, header .catalogue-open {
     display: none;
