@@ -30,6 +30,8 @@ hr{
 
 button, a, .carousel-btn,
 .product-also__button{
+	cursor: pointer;
+
 	&:focus{
 		outline-color: var(--black);
 	}

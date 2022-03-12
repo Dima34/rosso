@@ -305,6 +305,10 @@ hr {
   overflow: hidden;
 }
 
+button, a, .carousel-btn,
+.product-also__button {
+  cursor: pointer;
+}
 button:focus, a:focus, .carousel-btn:focus,
 .product-also__button:focus {
   outline-color: var(--black);
