@@ -2014,4 +2014,147 @@ height: -moz-fit-content;
 		align-items: center;
 		gap: 10px;
 	}
+
+	.facade-category-hero{
+		display: grid;
+		grid-template-columns: calc(calc(340% * 100) / 1920) calc(calc(740% * 100) / 1920) 1fr;
+		grid-template-rows: 1fr;
+
+		div{
+			&:nth-of-type(1){
+				position: relative;
+				grid-row: 1/4;
+
+				img{
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+
+			&:nth-of-type(2){
+				display: flex;
+				align-items: flex-end;
+				padding: 80px 40px;
+				min-height: 275px;
+				border-bottom: 1px solid var(--light-gray);
+			}
+
+			&:nth-of-type(3){
+				border-left: 1px solid var(--light-gray);
+				border-bottom: 1px solid var(--light-gray);
+			}
+
+			&:nth-of-type(4){
+				min-height: 260px;
+				padding: 40px;
+				display: flex;
+				justify-content: center;
+
+				p{
+					max-width: 400px;
+				}
+			}
+
+			&:nth-of-type(5){
+				border-left: 1px solid var(--light-gray);
+			}
+		}			
+
+		.arrow-button{
+			grid-column: 2/4;
+			padding: 30px 60px;
+			text-align: right;
+		}
+	}
+
+	.facade-category-brand{
+		display: grid;
+		grid-template-columns: calc(calc(480% * 100) / 1920) 1fr 1fr 1fr 1fr;
+		border-bottom: 1px solid var(--light-gray);
+	
+		&>div{
+			border-right: 1px solid var(--light-gray);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 20px;
+
+			img{
+				max-width: 170px;
+				max-height: 115px;
+			}
+
+			&:nth-of-type(1){
+				padding: 60px 55px;
+
+				h2{
+					margin-right: auto;					
+				}
+			}
+
+			&:last-child{
+				border: 0;
+			}
+		}
+	}
+
+	.catalogue-content__heading{
+		padding: 60px;
+		border-bottom: 1px solid var(--light-gray);
+	}
+
+	.facade-card{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.facade-card__picture{
+		padding: 70px 20px;
+		display: flex;
+		position: relative;
+		justify-content: center;
+
+		img{
+			max-height: 370px;
+			max-width: 185px;
+			object-fit: cover;
+		}
+
+		p{
+			position: absolute;
+			right: 15px;
+			bottom: 15px;
+		}
+	}
+
+	.facade-card__content{
+		display: flex;
+		flex-direction: column;
+		border-top: 1px solid var(--light-gray);
+		height: 100%;
+
+		h2,a{
+			padding: 20px;
+			display: block;
+			width: 100%;
+			text-align: center;
+		}
+
+		h2{
+			height: 100%;
+		}
+	}
+
+	.facade-content__main{
+		display: grid;
+		grid-template-columns: 33.33% 33.33% 33.33%;
+
+		&>div{
+			&:nth-of-type(2n),
+			&:nth-of-type(2n+1){
+				border-right: 1px solid var(--light-gray);
+			}
+		}
+	}
 }

@@ -2,7 +2,7 @@
 <html lang="ru" class="primary-white-background">
 
 <head>
-	@@include("./partials/head.html", {title:"РОССО - Каталог"})
+	@@include("./partials/head.html", {title:"РОССО - Фасады"})
 </head>
 
 
@@ -12,52 +12,42 @@
 	<main>
 		@@include("./partials/breadcrumbs.html",
 		{
-		links: ["Главная", "Каталог", "Подробнее"]
+		links: ["Главная", "Фасады"]
 		})
 
 		<div class="wrapper">
-			<section class="catalogue-category-hero  ">
+			<section class="facade-category-hero">
 				<div>
-					<img loading="lazy" decoding="async" src="./img/catalogue-category-hero_image.png" alt="">
+					<img loading="lazy" decoding="async" src="./img/facade-category.png" alt="">
 				</div>
 				<div>
-					<h1 class="h1">Мебельные ручки</h1>
+					<h1 class="h1">
+						Пленочные фасады
+					</h1>
 				</div>
 				<div></div>
 				<div>
-					<p class="body-2">
-						Ручки являются базовой составляющей мебельного дизайна и способны кардинально
-						изменить стилистику и настроение комплекта мебели. Мы абсолютно убеждены,
-						что правильно подобранные мебельные ручки играют важную роль в формировании
-						добавленной стоимости продукта.
+					<p class="  body-2">
+						Эти фасады настолько прочны и устойчивы к химическому воздействию, что вы можете даже наносить на них рисунки или надписи: маркером на водной основе – на глянцевой поверхности, мелками– на матовой. 
 					</p>
 				</div>
-				<div>
-					<img loading="lazy" decoding="async" src="./img/catalogue-category-hero_image-1.png" alt="">
-				</div>
+				<div></div>
+				<a href="#" class="arrow-button h3">
+					<span>Нужна помощь?</span>
+				</a>
 			</section>
-			<hr>
 
-			<section class="catalogue-brand-hero  ">
-				<div>
-					<img loading="lazy" decoding="async" src="./img/catalogue-brand-hero.png" alt="">
-				</div>
-				<div>
-					<h1 class="h1">REJS</h1>
-				</div>
-				<div>
-					<p class="body-2">REJS – крупнейший польский производитель мебельных аксессуаров. Широчайшая номенклатура
-						выпускаемых изделий удачно сочетается с высоким качеством и доступной ценой. В настоящее время компания Rejs
-						способна конкурировать по качеству своих изделий с производителями из Германии и Италии.</p>
-				</div>
-				<div>
-					<a href="#" class="arrow-button h4">
-						<span>Подробнеее о бренде</span>
-					</a>
-				</div>
-			</section>
-			<hr>
+			<div class="facade-category-brand">
+				<div><h2 class="h3">Бренды</h2></div>
+				<div><img src="./img/facade-brand-1.png" alt=""></div>
+				<div><img src="./img/facade-brand-2.png" alt=""></div>
+				<div><img src="./img/facade-brand-3.png" alt=""></div>
+				<div><img src="./img/facade-brand-4.png" alt=""></div>
+			</div>
 
+			<div class="catalogue-content__heading">
+				<h2 class="h3">Каталог товаров</h2>
+			</div>
 			<section class="catalogue-item__main">
 				<aside id="catalogue-filters" data-popup>
 					<div class="cataloguer-filters__container">
@@ -206,6 +196,7 @@
 					</div>
 				</aside>
 				<div class="catalogue-content">
+					
 					<div class="catalogue-content__header">
 						<button class="open-filter body-2 semi-bold" data-popupTrigger="#catalogue-filters">
 							Фильтры
@@ -219,44 +210,34 @@
 								<option value="4">Со скидкой</option>
 							</select>
 						</div>
+						
 					</div>
-					<div class="catalogue-content__main">
-						@@include("./partials/catalogue-card.html",
-						{title : "Ручка-кнопка"})
-						@@include("./partials/catalogue-card.html",
-						{title : "Ручка-кнопка"})
-						@@include("./partials/catalogue-card.html",
-						{title : "Ручка-кнопка"})
-						@@include("./partials/catalogue-card.html",
-						{title : "Ручка-кнопка"})
-						@@include("./partials/catalogue-card.html",
-						{title : "Ручка-кнопка"})
-						@@include("./partials/catalogue-card.html",
-						{title : "Ручка-кнопка"})
-						@@include("./partials/catalogue-card.html",
-						{title : "Ручка-кнопка"})
-						@@include("./partials/catalogue-card.html",
-						{title : "Ручка-кнопка"})
-						@@include("./partials/catalogue-card.html",
-						{title : "Ручка-кнопка"})
-						@@include("./partials/catalogue-card.html",
-						{title : "Ручка-кнопка"})
-						@@include("./partials/catalogue-card.html",
-						{title : "Ручка-кнопка"})
-						@@include("./partials/catalogue-card.html",
-						{title : "Ручка-кнопка"})
-						@@include("./partials/catalogue-card.html",
-						{title : "Ручка-кнопка"})
+					<div class="facade-content__main">
+						@@include("./partials/facade-card.html",{
+							title: "Техас",
+							image: "./img/facade-item-1.png"
+						})
+						@@include("./partials/facade-card.html",{
+							title: "Техас",
+							image: "./img/facade-item-2.png"
+						})
+						@@include("./partials/facade-card.html",{
+							title: "Техас",
+							image: "./img/facade-item-3.png"
+						})
+						@@include("./partials/facade-card.html",{
+							title: "Техас",
+							image: "./img/facade-item-1.png"
+						})
+						@@include("./partials/facade-card.html",{
+							title: "Техас",
+							image: "./img/facade-item-2.png"
+						})
 					</div>
-					<button class="catalogue-content__more h4 white arrow-button">
-						<span>Смотреть дальше
-							<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg">
-								<use xlink:href="#swiper-next"></use>
-							</svg>
-						</span>
-					</button>
 				</div>
 			</section>
+
+			@@include("./partials/facade-leave-question.html")
 		</div>
 	</main>
 
@@ -265,8 +246,6 @@
 	@@include("./partials/svg.html")
 
 	<script src="./js/header.js"></script>
-	<script src="./js/accordion.js"></script>
-	<script src="./js/folded.js"></script>
 
 </body>
 
