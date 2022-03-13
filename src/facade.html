@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru" class="primary-white-background">
+
+<head>
+	@@include("./partials/head.html", {title:"РОССО - Фасады"})
+</head>
+
+
+<body>
+	@@include("./partials/header.html")
+
+	<main>
+		@@include("./partials/breadcrumbs.html",
+		{
+		links: ["Главная", "Фасады"]
+		})
+
+		<div class="wrapper">
+			<section class="facade-hero">
+				<div>
+					<img loading="lazy" decoding="async " src="./img/facade-1.png" alt="">
+				</div>
+				<div>
+					<h1 class="h1">Фасады для мебели оптом</h1>
+				</div>
+				<div></div>
+				<div>
+					<p class="body-2">
+						Rosso является оптовым поставщиком мебельных фасадов для кухни. Оптовые партии товара доставляются с заводов производителей с полным комплектом документов.
+					</p>
+				</div>
+				<div>
+					<button class="arrow-button h3">
+						<span>
+							Нужна помощь?
+						</span>
+					</button>
+				</div>
+				<div>
+					<img loading="lazy" decoding="async " src="./img/facade-2.png" alt="">
+				</div>
+			</section>
+			<hr>		
+			<section class="facade-main">
+				<div class="facade-main__header">
+					<h2 class="  h3">Каталог фасадов</h2>
+				</div>
+				<div class="facade-main__grid">
+					<div class="facade-main__item">
+						<div class="facade-main__item-content">
+							<h2 class="  h3">Акриловые фасады</h2>
+							<p class="body-2  ">Акриловый пластик — это новейшая разработка современной технологии.
+								Наносят такой покрытие двумя способами: с одной стороны дверцы или с обеих сторон.</p>
+						</div>
+						<a href="#" class="arrow-button white h6"><span>Подробнее</span></a>
+					</div>
+
+					<div class="facade-main__item">
+						<div class="facade-main__item-content">
+							<h2 class="  h3">Акриловые фасады</h2>
+							<p class="body-2  ">
+								Акриловый пластик — это новейшая разработка современной технологии.
+								Наносят такой покрытие двумя способами: с одной стороны дверцы или с обеих сторон.
+								Акриловый пластик — это новейшая разработка современной технологии.
+								Наносят такой покрытие двумя способами: с одной стороны дверцы или с обеих сторон.
+							</p>
+						</div>
+						<a href="#" class="arrow-button white h6"><span>Подробнее</span></a>
+					</div>
+
+					<div class="facade-main__item has-bg" style="background-image: url(./img/facade-3.png);">
+						<div class="facade-main__item-content">
+							<h2 class="  h3">Акриловые фасады</h2>
+							<p class="body-2  ">Акриловый пластик — это новейшая разработка современной технологии.
+								Наносят такой покрытие двумя способами: с одной стороны дверцы или с обеих сторон.</p>
+						</div>
+						<a href="#" class="arrow-button white h6"><span>Подробнее</span></a>
+					</div>
+				</div>
+			</section>	
+
+			@@include("./partials/facade-leave-question.html")
+		</div>
+	</main>
+
+	@@include("./partials/footer.html")
+	@@include("./partials/header-popups.html")
+	@@include("./partials/svg.html")
+
+	<script src="./js/header.js"></script>
+
+</body>
+
+
+</html>

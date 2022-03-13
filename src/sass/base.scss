@@ -769,6 +769,21 @@ button {
 	z-index: 0;
 }
 
+.facade-main__item{
+
+	&.has-bg{
+		background-size: cover;
+
+		a,p,h2{
+			color: var(--white);
+		}
+
+		a span::after{
+			background-image: url(../img/arrow.svg);
+		}
+	}
+}
+
 @media screen and (max-width: $laptop+1) {
 	.card{
 		a{

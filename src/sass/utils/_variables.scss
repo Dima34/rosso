@@ -26,6 +26,11 @@ html {
 }
 
 /*---Colors---*/
+
+h1,h2,h3,p,a,span{
+	color: var(--black);
+}
+
 .black-bg {
   background-color: var(--black);
 }
@@ -135,7 +140,7 @@ p {
 
     /*---Fonts---*/
     --h1: 600 24px / 110% 'RF Dewi';
-    --h2: 600 32px / 110% 'RF Dewi';
+    --h2: 600 16px / 110% 'RF Dewi';
     --h3: 600 18px / 120% 'RF Dewi';
     --h4: 600 18px / 120% 'RF Dewi';
     --h5: 600 18px / 120% 'RF Dewi';
@@ -162,7 +167,7 @@ p {
 
     /*---Fonts---*/
     --h1: 600 18px / 110% 'RF Dewi';
-    --h2: 600 32px / 110% 'RF Dewi';
+    --h2: 600 14px / 110% 'RF Dewi';
     --h3: 600 14px / 120% 'RF Dewi';
     --h4: 600 14px / 120% 'RF Dewi';
     --h5: 600 18px / 120% 'RF Dewi';
