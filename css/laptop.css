@@ -1680,7 +1680,7 @@
     border-top: 1px solid var(--light-gray);
     text-align: right;
   }
-  .facade-form .arrow-button div {
+  .facade-form .arrow-button p {
     display: block;
     max-width: 625px;
     padding: 30px 60px;

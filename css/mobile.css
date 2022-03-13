@@ -1663,7 +1663,7 @@
     border-top: 1px solid var(--light-gray);
     text-align: right;
   }
-  .facade-form .arrow-button div {
+  .facade-form .arrow-button p {
     padding: 20px;
   }
 
