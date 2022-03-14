@@ -933,6 +933,61 @@ button {
   background-image: url(../img/arrow.svg);
 }
 
+.image-link img {
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+.image-link.hover img {
+  filter: grayscale(0%);
+}
+
+.facade-item-type__color-selection img,
+.facade-item-type__front-selection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.facade-item-type__color-selection button.selected,
+.facade-item-type__front-selection button.selected {
+  border: 1px solid var(--black);
+}
+.facade-item-type__color-selection button.selected img,
+.facade-item-type__front-selection button.selected img {
+  border: 8px solid transparent;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.facade-card {
+  height: 100%;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+}
+.article-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#facade-make-order {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: calc(100vh - var(--header-height));
+  justify-content: center;
+  width: 100%;
+  overflow: auto;
+}
+#facade-make-order.active {
+  display: flex;
+}
+
 @media screen and (max-width: 1367px) {
   .card a {
     padding: 25px 35px;

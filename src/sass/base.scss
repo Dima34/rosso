@@ -784,6 +784,71 @@ button {
 	}
 }
 
+.image-link{
+	img{
+		filter: grayscale(100%);
+		transition: .3s;
+	}
+
+	&.hover{
+		img{
+			filter: grayscale(0%);
+		}
+	}
+}
+
+.facade-item-type__color-selection,
+.facade-item-type__front-selection{
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	button.selected{
+		border: 1px solid var(--black);
+	
+		img{
+			border: 8px solid transparent
+		}
+	}
+}
+
+.swiper-slide{
+	height: auto;
+}
+
+.facade-card{
+	height: 100%;
+}
+
+.article-card{
+	display: flex;
+	flex-direction: column;
+
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+#facade-make-order{
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: calc(100vh - var(--header-height));
+	justify-content: center;
+	width: 100%;
+	overflow: auto;
+
+	&.active{
+		display: flex;
+	}
+}
+
+
 @media screen and (max-width: $laptop+1) {
 	.card{
 		a{

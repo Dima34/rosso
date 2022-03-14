@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ru" class="primary-white-background">
+
+<head>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	@@include("./partials/head.html", {title:"РОССО - Фасады"})
+</head>
+
+
+<body>
+	@@include("./partials/header.html")
+
+	<main>
+		@@include("./partials/breadcrumbs.html",
+		{
+		links: ["Главная", "Фасады"]
+		})
+
+		<div class="wrapper">
+			<div class="facacde-item-hero white-bg">
+				<div>
+					<img src="./img/facade-item-1.png" alt="facade item">
+					<img src="./img/facade-brand-1.png" alt="">
+				</div>
+				<div>
+					<div class="facade-item-hero__content">
+						<div class="facade-item-hero__heading">
+							<h2 class="h3 semi-bold">Фрезеровка «Лассо»</h2>
+							<p class="h3 semi-bold">
+								от 5670 ₽/м2 
+							</p>
+						</div>
+						<hr>
+						<div class="facade-item-hero__info">
+							<div>
+								<h3 class="sub-title-1 semi-bold">Описание</h3>
+								<p class="body-1">
+									Фрезеровку Лассо отличает оригинальный декор по углам фасада.
+									<br><br>
+									Классический стиль вековых традиций поможет создать незабываемый дизайн Вашего интерьера.
+									<br><br>
+									Преимущества:
+									- шпон не подвержен усушке и набуханию, а значит ваш фасад никогда не «рассохнется»
+									- используемый нами шпон, имеет постоянный цвет и рисунок, а значит, ваши фасады будут похожи между собой. У дерева текстура на каждом фасаде своя, «природная»;
+									- богатый выбор текстур и расцветок.
+								</p>
+							</div>
+							<div>
+								<h3 class="sub-title-1 semi-bold">Характеристики</h3>
+								<ul>
+									<li>
+										<h4 class="body-2">Производитель</h4>
+										<a href="#" class="body-2 gray">Fabriche</a>
+									</li>
+									<li>
+										<h4 class="body-2">Максимальный размер</h4>
+										<p class="body-2 gray">2300*596 мм</p>
+									</li>
+									<li>
+										<h4 class="body-2">Ширина рамки</h4>
+										<p class="body-2 gray">83 мм</p>
+									</li>
+									<li>
+										<h4 class="body-2">Стиль</h4>
+										<p class="body-2 gray">Классика</p>
+									</li>
+									<li>
+										<h4 class="body-2">Толщина</h4>
+										<p class="body-2 gray">19 мм</p>
+									</li>
+									<li>
+										<h4 class="body-2">Срок изготовления</h4>
+										<p class="body-2 gray">4-5 недель</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="facade-item-hero__controls">
+						<button class="h3">Заказать</button>
+						<button class="arrow-button h3" data-popupTrigger="#facade-make-order"><span>Нужна помощь?</span></button>
+					</div>
+				</div>
+			</div>
+
+			<section class="facade-item-heading white-bg">
+				<h2 class="h3">Цветовые решения</h2>
+			</section>
+			<section class="facade-item-type-selection white-bg" data-typeSelection>
+				<div>
+					<img data-typeImageDest src="./img/facade-item-1.png" alt="">
+					<h2 data-typeTextDest class="body-1">615 Оксайд серый камень</h2>
+				</div>
+				<div>
+					<div class="facade-item-type-selection__main">
+						<div data-accordion>
+							<h3>
+								<button class="accordion-trigger">
+									<span class="accordion-title sub-title-1">
+										Фантазийные
+										<svg class="accordion-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+											<use xlink:href="#arrow-down"></use>
+										</svg>
+									</span>
+								</button>
+							</h3>
+							<div class="accordion-panel">
+								<div class="facade-item-type__color-selection">
+									<button
+										data-typeButton 
+										data-typeBigImage="./img/facade-item-1.png"
+										data-typeName = "615 Оксайд серый камень"
+									>
+										<img src="./img/texture-1.png" alt="">
+									</button>
+
+									<button
+										data-typeButton 
+										data-typeBigImage="./img/facade-item-2.png"
+										data-typeName = "235 Оксайд Красный камень"
+									>
+										<img src="./img/texture-2.png" alt="">
+									</button>
+
+									<button
+										data-typeButton 
+										data-typeBigImage="./img/facade-item-3.png"
+										data-typeName = "178 Оксайд Мокрый камень"
+									>
+										<img src="./img/texture-3.png" alt="">
+									</button>
+								</div>	
+							</div>
+							<hr>
+							<h3>
+								<button class="accordion-trigger">
+									<span class="accordion-title sub-title-1">
+										Другие
+										<svg class="accordion-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+											<use xlink:href="#arrow-down"></use>
+										</svg>
+									</span>
+								</button>
+							</h3>
+							<div class="accordion-panel">
+								<div class="facade-item-type__color-selection">
+									<button
+										data-typeButton
+										data-typeBigImage="./img/facade-item-1.png"
+										data-typeName = "615 Оксайд серый камень"
+									>
+										<img src="./img/texture-1.png" alt="">
+									</button>
+
+									<button
+										data-typeButton 
+										data-typeBigImage="./img/facade-item-2.png"
+										data-typeName = "235 Оксайд Красный камень"
+									>
+										<img src="./img/texture-2.png" alt="">
+									</button>
+
+									<button
+										data-typeButton 
+										data-typeBigImage="./img/facade-item-3.png"
+										data-typeName = "178 Оксайд Мокрый камень"
+									>
+										<img src="./img/texture-3.png" alt="">
+									</button>
+								</div>
+							</div>
+							<hr>
+						</div>
+					</div>
+					<button class="arrow-button white h3"><span>Нужна помощь?</span></button>
+				</div>
+			</section>
+
+			<section class="facade-item-heading white-bg">
+				<h2 class="h3">Варианты исполнения</h2>
+			</section>
+			<section class="facade-item-type-selection white-bg" data-typeSelection>
+				<div>
+					<img data-typeImageDest src="./img/facade-front-3.png" alt="">
+					<h2 data-typeTextDest class="body-1">Витрина решетка</h2>
+				</div>
+				<div>
+					<div class="facade-item-type-selection__main">
+						<div class="facade-item-type__front-selection">
+							<button
+								data-typeButton
+								data-typeBigImage="./img/facade-front-3.png"
+								data-typeName = "Витрина решетка"
+							>
+								<img src="./img/facade-front-3.png" alt="">
+							</button>
+
+							<button
+								data-typeButton
+								data-typeBigImage="./img/facade-front-1.png"
+								data-typeName = "Витрина решетка"
+							>
+								<img src="./img/facade-front-1.png" alt="">
+							</button>
+
+							<button
+								data-typeButton
+								data-typeBigImage="./img/facade-front-2.png"
+								data-typeName = "Витрина решетка закрытая"
+							>
+								<img src="./img/facade-front-2.png" alt="">
+							</button>
+
+							<button
+								data-typeButton
+								data-typeBigImage="./img/facade-front-4.png"
+								data-typeName = "Витрина решетка 1"
+							>
+								<img src="./img/facade-front-4.png" alt="">
+							</button>
+
+							<button
+								data-typeButton
+								data-typeBigImage="./img/facade-front-5.png"
+								data-typeName = "Витрина закрытая"
+							>
+								<img src="./img/facade-front-5.png" alt="">
+							</button>
+
+							<button
+								data-typeButton
+								data-typeBigImage="./img/facade-front-6.png"
+								data-typeName = "Витрина решетка двойная"
+							>
+								<img src="./img/facade-front-6.png" alt="">
+							</button>
+						</div>
+					</div>
+					<button class="arrow-button white h3"><span>Нужна помощь?</span></button>
+				</div>
+			</section>
+
+			<section class="facade-item-heading black-bg ">
+				<h2 class="h3 white">Фото в интерьере</h2>
+			</section>
+			<hr>
+			<section class="facade-gallery black-bg white">
+				<div>
+					<div></div>
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img loading="lazy" decoding="async" src="./img/swiper.png" alt="swiper image"></div>
+							<div class="swiper-slide"><img loading="lazy" decoding="async" src="./img/swiper.png" alt="swiper image"></div>
+							<div class="swiper-slide"><img loading="lazy" decoding="async" src="./img/swiper.png" alt="swiper image"></div>
+							<div class="swiper-slide"><img loading="lazy" decoding="async" src="./img/swiper.png" alt="swiper image"></div>
+							<div class="swiper-slide"><img loading="lazy" decoding="async" src="./img/swiper.png" alt="swiper image"></div>
+							<div class="swiper-slide"><img loading="lazy" decoding="async" src="./img/swiper.png" alt="swiper image"></div>
+							<div class="swiper-slide"><img loading="lazy" decoding="async" src="./img/swiper.png" alt="swiper image"></div>
+							<div class="swiper-slide"><img loading="lazy" decoding="async" src="./img/swiper.png" alt="swiper image"></div>
+							<div class="swiper-slide"><img loading="lazy" decoding="async" src="./img/swiper.png" alt="swiper image"></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="swiper-footer">
+					<div class="pagination h3"></div>
+					<div class="swiper-footer__navigation">
+						<div class="swiper-prev">
+							<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href="#swiper-prev"></use>
+							</svg>
+						</div>
+						<div class="swiper-next">
+							<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href="#swiper-next"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="facade-item-heading white-bg">
+				<h2 class="h3">Варианты исполнения</h2>
+			</section>
+			<section class="facade-item-more white-bg">
+				<hr>
+				<div class="product-also__contnet">
+					<div class="product-also__slider" id="slider-1" >
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								@@include("./partials/facade-card.html",
+								{title : "Ручка-кнопка",
+									image : "./img/facade-item-1.png"
+								})
+							</div>
+							<div class="swiper-slide">
+								@@include("./partials/simple-card.html",
+								{title : "Ручка-кнопка",
+									image : "./img/facade-item-1.png"
+								})
+							</div>
+							<div class="swiper-slide">
+								@@include("./partials/simple-card.html",
+								{title : "Ручка-кнопка",
+									image : "./img/facade-item-1.png"
+								})
+							</div>
+							<div class="swiper-slide">
+								@@include("./partials/facade-card.html",
+								{title : "Ручка-кнопка",
+									image : "./img/facade-item-1.png"
+								})
+							</div>
+						</div>
+					</div>
+					<div class="product-also__slider-footer">
+						<div class="product-also__controls">
+							<div class="product-also-prev product-also__button" id="prev-1">
+								<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="#arrow"></use>
+								</svg>
+							</div>
+							<div class="product-also-next product-also__button" id="next-1">
+								<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="#arrow"></use>
+								</svg>
+							</div>
+							
+						</div>
+						
+						<div class="product-also-pagination" id="pagination-1"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="facade-item-heading white-bg">
+				<h2 class="h3">Варианты исполнения</h2>
+			</section>
+			<section class="facade-item-more white-bg">
+				<hr>
+				<div class="product-also__contnet">
+					<div class="product-also__slider" id="slider-2">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								@@include("./partials/facade-card.html",
+								{title : "Ручка-кнопка",
+									image : "./img/elements-1.png"
+								})
+							</div>
+							<div class="swiper-slide">
+								@@include("./partials/simple-card.html",
+								{title : "Ручка-кнопка",
+									image : "./img/elements-2.png"
+								})
+							</div>
+							<div class="swiper-slide">
+								@@include("./partials/simple-card.html",
+								{title : "Ручка-кнопка",
+									image : "./img/elements-3.png"
+								})
+							</div>
+							<div class="swiper-slide">
+								@@include("./partials/facade-card.html",
+								{title : "Ручка-кнопка",
+									image : "./img/elements-1.png"
+								})
+							</div>
+						</div>
+					</div>
+					<div class="product-also__slider-footer">
+						<div class="product-also__controls">
+							<div class="product-also-prev product-also__button" id="prev-2">
+								<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="#arrow"></use>
+								</svg>
+							</div>
+							<div class="product-also-next product-also__button" id="next-2">
+								<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="#arrow"></use>
+								</svg>
+							</div>
+							
+						</div>
+						
+						<div class="product-also-pagination" id="pagination-2"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="facade-item-heading white-bg">
+				<h2 class="h3">Варианты исполнения</h2>
+			</section>
+			<section class="facade-item-more white-bg">
+				<hr>
+				<div class="product-also__contnet">
+					<div class="product-also__slider" id="slider-3">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								@@include("./partials/article-card.html")
+							</div>
+							<div class="swiper-slide">
+								@@include("./partials/article-card.html")
+							</div>
+							<div class="swiper-slide">
+								@@include("./partials/article-card.html")
+							</div>
+						</div>
+					</div>
+					<div class="product-also__slider-footer">
+						<div class="product-also__controls">
+							<div class="product-also-prev product-also__button" id="prev-3">
+								<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="#arrow"></use>
+								</svg>
+							</div>
+							<div class="product-also-next product-also__button" id="next-3">
+								<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="#arrow"></use>
+								</svg>
+							</div>
+						</div>
+						
+						<div class="product-also-pagination" id="pagination-3"></div>
+					</div>
+				</div>
+			</section>
+
+			@@include("./partials/facade-leave-question.html")
+		</div>
+	</main>
+
+	@@include("./partials/footer.html")
+	@@include("./partials/header-popups.html")
+	@@include("./partials/svg.html")
+
+	<div id="facade-make-order" data-popup>
+		<div class="facade-make-order__container">
+			<div class="facade-make-order__heading">
+				<h2 class="h3">Оставить заявку на фасад</h2>
+				<button data-popupCloseTrigger>
+					<svg class="accordion-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+						<use xlink:href="#close-mark"></use>
+					</svg>
+				</button>
+			</div>
+			<hr>
+			<div class="facade-make-order__main">
+				@@include("./partials/facade-form.html")
+			</div>
+		</div>
+	</div>
+
+	<script src="./js/header.js"></script>
+	<script src="./js/accordion.js"></script>
+	<script src="./js/type-selection.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<script>
+		var swiper = new Swiper(".swiper", {
+			pagination: {
+				el: "#pagination-1",
+				type: "fraction",
+			},
+			effect: "fade",
+			allowTouchMove: false,
+			navigation: {
+				nextEl: "#next-1",
+				prevEl: "#prev-1",
+			},
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+		});
+
+		var swiper1 = new Swiper("#slider-1", {
+			slidesPerView: 2, 
+			pagination: {
+				el: "#pagination-1",
+				type: "progressbar",
+			},
+			navigation: {
+				nextEl: "#next-1",
+				prevEl: "#prev-1",
+			},
+			breakpoints: {
+				// when window width is >= 320px
+				525: {
+					slidesPerView: 3
+				}
+			}
+		});
+
+		var swiper2 = new Swiper("#slider-2", {
+			slidesPerView: 2, 
+			pagination: {
+				el: "#pagination-2",
+				type: "progressbar",
+			},
+			navigation: {
+				nextEl: "#next-2",
+				prevEl: "#prev-2",
+			},
+			breakpoints: {
+				// when window width is >= 320px
+				525: {
+					slidesPerView: 3
+				}
+			}
+		});
+
+		var swiper3 = new Swiper("#slider-3", {
+			slidesPerView: 1, 
+			pagination: {
+				el: "#pagination-3",
+				type: "progressbar",
+			},
+			navigation: {
+				nextEl: "#next-3",
+				prevEl: "#prev-3",
+			},
+			breakpoints: {
+				// when window width is >= 320px
+				525: {
+					slidesPerView: 2
+				}
+			}
+		});
+	</script>
+</body>
+
+
+</html>
