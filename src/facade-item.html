@@ -267,10 +267,10 @@
 					<div class="swiper-footer__navigation">
 						<div class="swiper-prev">
 							<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
-								<use xlink:href="#swiper-prev"></use>
+								<use xlink:href="#swiper-prev" id="prev-0"></use>
 							</svg>
 						</div>
-						<div class="swiper-next">
+						<div class="swiper-next" id="next-0">
 							<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
 								<use xlink:href="#swiper-next"></use>
 							</svg>
@@ -458,14 +458,14 @@
 	<script>
 		var swiper = new Swiper(".swiper", {
 			pagination: {
-				el: "#pagination-1",
+				el: ".pagination",
 				type: "fraction",
 			},
 			effect: "fade",
 			allowTouchMove: false,
 			navigation: {
-				nextEl: "#next-1",
-				prevEl: "#prev-1",
+				nextEl: "#next-0",
+				prevEl: "#prev-0",
 			},
 			autoplay: {
 				delay: 5000,

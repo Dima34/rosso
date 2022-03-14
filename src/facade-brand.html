@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru" class="primary-white-background">
+
+<head>
+	@@include("./partials/head.html", {title:"РОССО - Фасады"})
+</head>
+
+
+<body>
+	@@include("./partials/header.html")
+
+	<main>
+		@@include("./partials/breadcrumbs.html",
+		{
+		links: ["Главная", "Фасады"]
+		})
+
+		<div class="wrapper">
+			<section class="catalogue-brand-hero">
+				<div>
+					<img loading="lazy" decoding="async" src="./img/brand-13.png" alt="">
+				</div>
+				<div>
+					<h1 class="h1">Fabriche</h1>
+				</div>
+				<div>
+					<p class="body-2">Фабрика фасадов Fabriche – молодое, современное, динамично развивающееся предприятие международного уровня, созданное на основе российско-итальянского партнерства.</p>
+				</div>
+				<div>
+					<a href="#" class="arrow-button h4">
+						<span>Подробнеее о бренде</span>
+					</a>
+				</div>
+			</section>
+			<hr>
+
+			<section class="facade-main">
+				<div class="facade-main__header">
+					<h2 class="  h3">Каталог фасадов</h2>
+				</div>
+				<div class="facade-main__grid">
+					<div class="facade-main__item">
+						<div class="facade-main__item-content">
+							<h2 class="  h3">Акриловые фасады</h2>
+							<p class="body-2  ">Акриловый пластик — это новейшая разработка современной технологии.
+								Наносят такой покрытие двумя способами: с одной стороны дверцы или с обеих сторон.</p>
+						</div>
+						<a href="#" class="arrow-button white h6"><span>Подробнее</span></a>
+					</div>
+
+					<div class="facade-main__item">
+						<div class="facade-main__item-content">
+							<h2 class="  h3">Акриловые фасады</h2>
+							<p class="body-2  ">
+								Акриловый пластик — это новейшая разработка современной технологии.
+								Наносят такой покрытие двумя способами: с одной стороны дверцы или с обеих сторон.
+								Акриловый пластик — это новейшая разработка современной технологии.
+								Наносят такой покрытие двумя способами: с одной стороны дверцы или с обеих сторон.
+							</p>
+						</div>
+						<a href="#" class="arrow-button white h6"><span>Подробнее</span></a>
+					</div>
+
+					<div class="facade-main__item has-bg" style="background-image: url(./img/facade-3.png);">
+						<div class="facade-main__item-content">
+							<h2 class="  h3">Акриловые фасады</h2>
+							<p class="body-2  ">Акриловый пластик — это новейшая разработка современной технологии.
+								Наносят такой покрытие двумя способами: с одной стороны дверцы или с обеих сторон.</p>
+						</div>
+						<a href="#" class="arrow-button white h6"><span>Подробнее</span></a>
+					</div>
+				</div>
+			</section>	
+			<hr>
+			<section class="catalogue-content__heading">
+				<h2 class="h3">Каталог товаров</h2>
+			</section>
+			<section class="catalogue-item__main">
+				<aside id="catalogue-filters" data-popup>
+					<div class="cataloguer-filters__container">
+						<button class="catalogue-filters__close" data-popupCloseTrigger>
+							<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href="#close-mark"></use>
+							</svg>
+						</button>
+						<div class="catalogue-filters__header">
+							<h2 class="sub-title-1  ">Фильтры</h2>
+							<button class="sub-title-1 gray regular">Очистить все</button>
+						</div>
+						<hr>
+						<div class="catalogue__filter-group  " data-accordion>
+							<h3>
+								<button class="accordion-trigger">
+									<span class="accordion-title   sub-title-1">
+										Материал
+										<svg class="accordion-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+											<use xlink:href="#arrow-down"></use>
+										</svg>
+									</span>
+								</button>
+							</h3>
+							<div class="accordion-panel">
+								<div 
+									data-foldedContainer
+									data-foldedAmount="4" 
+									data-foldedButtonText="Показать все"
+									data-foldedButtonClass = "body-2 gray"
+								>
+									<ul data-foldedList class="body-2">
+										<li>
+											<input type="checkbox" id="item" name="">
+											<label for="item">Металл <span>121</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="item1" name="">
+											<label for="item1">Метал/пластик <span>11</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="item2" name="">
+											<label for="item2">Пластик <span>54</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="item3" name="">
+											<label for="item3">Дерево <span>89</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="item4" name="">
+											<label for="item4">Стекло <span>163</span></label>
+										</li>
+									</ul>
+								</div>
+							</div>
+	
+							<h3>
+								<button class="accordion-trigger">
+									<span class="accordion-title   sub-title-1">
+										Цвет
+										<svg class="accordion-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+											<use xlink:href="#arrow-down"></use>
+										</svg>
+									</span>
+								</button>
+							</h3>
+							<div class="accordion-panel">
+								<div 
+									data-foldedContainer
+									data-foldedAmount="4" 
+									data-foldedButtonText="Показать все"
+									data-foldedButtonClass = "body-2 gray"
+								>
+									<ul data-foldedList class="body-2">
+										<li>
+											<input type="checkbox" id="item13" name="">
+											<label for="item13" class="body-2 color-selection-label">
+												<span class="filter-color">
+													<img loading="lazy" decoding="async" width="20" height="20" src="./img/color-1.png" alt="">
+												</span>
+												Металл <span>121</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="item11" name="">
+											<label for="item11" class="body-2 color-selection-label">
+												<span class="filter-color">
+													<img loading="lazy" decoding="async" width="20" height="20" src="./img/color-2.png" alt="">
+												</span>
+												Метал/пластик <span>11</span></label>
+										</li>
+										
+									</ul>
+								</div>
+							</div>
+	
+							<h3>
+								<button class="accordion-trigger">
+									<span class="accordion-title   sub-title-1">
+										Размер
+										<svg class="accordion-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+											<use xlink:href="#arrow-down"></use>
+										</svg>
+									</span>
+								</button>
+							</h3>
+							<div class="accordion-panel">
+								<div 
+									data-foldedContainer
+									data-foldedAmount="4" 
+									data-foldedButtonText="Показать все"
+									data-foldedButtonClass = "body-2 gray"
+								>
+									<ul data-foldedList class="body-2 box-selection-container">
+										<li>
+											<input type="checkbox" id="item23" name="">
+											<label class="box-label body-2" for="item23">500</label>
+										</li>
+										<li>
+											<input type="checkbox" id="item12" name="">
+											<label class="box-label body-2" for="item12">0</label>
+										</li>
+										<li>
+											<input type="checkbox" id="item22" name="">
+											<label class="box-label body-2" for="item22">10000</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+	
+							<h3 class="sub-title-1">Цена</h3>
+							<div>
+								<div class="filter__range-slider">
+									<div class="products-filter-price-slider">
+										<div class="ui-widget-header" style="left: 0%; width: 80%;"></div>
+										<span class="ui-state-default" style="left: 0%;"></span>
+										<span class="ui-state-default" style="left: 80%;"></span>
+									</div>
+		
+									<div class="products-filter-price-slider-value">
+										<span class="body-2  ">0₽</span>
+										<span class="body-2  ">900000₽</span>
+									</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</aside>
+				<div class="catalogue-content">
+					
+					<div class="catalogue-content__header">
+						<button class="open-filter body-2 semi-bold" data-popupTrigger="#catalogue-filters">
+							Фильтры
+						</button>
+						<div class="catalogue-content__sorting">
+							<p class="body-2 gray">Сортировка:</p>
+							<select name="amount">
+								<option value="1" selected>По цене</option>
+								<option value="2">Новые</option>
+								<option value="3">Избранные</option>
+								<option value="4">Со скидкой</option>
+							</select>
+						</div>
+						
+					</div>
+					<div class="facade-content__main">
+						@@include("./partials/facade-card.html",{
+							title: "Техас",
+							image: "./img/facade-item-1.png"
+						})
+						@@include("./partials/facade-card.html",{
+							title: "Техас",
+							image: "./img/facade-item-2.png"
+						})
+						@@include("./partials/facade-card.html",{
+							title: "Техас",
+							image: "./img/facade-item-3.png"
+						})
+						@@include("./partials/facade-card.html",{
+							title: "Техас",
+							image: "./img/facade-item-1.png"
+						})
+						@@include("./partials/facade-card.html",{
+							title: "Техас",
+							image: "./img/facade-item-2.png"
+						})
+					</div>
+				</div>
+			</section>
+
+			<hr>
+			<section class="catalogue-content__heading">
+				<h2 class="h3">Полезная информация</h2>
+			</section>
+			<section class="facade-brand-useful">
+				<div></div>
+				<div>
+					<div class="facade-brand-useful__card">
+						<h2 class="h3">Как правильно выбрать фасад?</h2>
+						<a class="arrow-button white body-2">
+							<span>Выбор фасады является сложным и трудоемким процессом, который трудно предтавить без помощи....</span>
+						</a>
+					</div>
+					<div class="facade-brand-useful__card">
+						<h2 class="h3">Как правильно выбрать фасад?</h2>
+						<a class="arrow-button white body-2">
+							<span>Выбор фасады является сложным и трудоемким процессом, который трудно предтавить без помощи....</span>
+						</a>
+					</div>
+					<button class="arrow-button h3 semi-bold"><span>Нужна помощь?</span></button>
+				</div>
+			</section>
+
+			@@include("./partials/facade-leave-question.html")
+		</div>
+	</main>
+
+	@@include("./partials/footer.html")
+	@@include("./partials/header-popups.html")
+	@@include("./partials/svg.html")
+
+	<div id="facade-make-order" data-popup>
+		<div class="facade-make-order__container">
+			<div class="facade-make-order__heading">
+				<h2 class="h3">Оставить заявку на фасад</h2>
+				<button data-popupCloseTrigger>
+					<svg class="accordion-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+						<use xlink:href="#close-mark"></use>
+					</svg>
+				</button>
+			</div>
+			<hr>
+			<div class="facade-make-order__main">
+				@@include("./partials/facade-form.html")
+			</div>
+		</div>
+	</div>
+
+	<script src="./js/header.js"></script>
+	<script src="./js/accordion.js"></script>
+
+	
+	</script>
+</body>
+
+
+</html>

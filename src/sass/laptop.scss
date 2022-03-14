@@ -2471,4 +2471,48 @@ height: -moz-fit-content;
 			}
 		}
 	}
+
+	.facade-brand-useful{
+		display: grid;
+		grid-template-columns: calc(calc(340% * 100) / 1366) 1fr;
+
+		&>div{
+			&:nth-child(2){
+				display: grid;
+				grid-template-columns: 50% 50%;
+
+				&>div{
+					border-left: 1px solid var(--light-gray)
+				}
+
+				&>button{
+					grid-column: 1/3;
+					padding: 30px 60px;
+					text-align: right;
+				}
+			}
+		}
+	}
+
+	.facade-brand-useful__card{
+		min-height: 330px;
+		padding: 40px 60px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		
+		h2{
+			padding-bottom: 20px;
+		}
+	}
+
+	.arrow-button{
+		display: block;
+
+		span{
+			display: block;
+			text-align: left;
+			padding-right: 80px;
+		}
+	}
 }
