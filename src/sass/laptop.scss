@@ -1898,7 +1898,7 @@ height: -moz-fit-content;
 			&:nth-of-type(5){
 				grid-column: 2/3;
 
-				button{
+				a{
 					width: 100%;
 					margin-top: auto;
 					display: block;
@@ -2002,11 +2002,12 @@ height: -moz-fit-content;
 			width: 100%;
 			border-top: 1px solid var(--light-gray);
 
-			p{
+			&>span{
 				display: block;
 				max-width: 625px;
-				padding: 30px 60px;
+				padding: 30px 55px 30px 60px;
 			}
+
 			text-align: right;
 		}
 	}

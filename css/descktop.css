@@ -1534,7 +1534,7 @@
   .facade-hero div:nth-of-type(5) {
     grid-column: 2/3;
   }
-  .facade-hero div:nth-of-type(5) button {
+  .facade-hero div:nth-of-type(5) a {
     width: 100%;
     margin-top: auto;
     display: block;
@@ -1622,10 +1622,10 @@
     border-top: 1px solid var(--light-gray);
     text-align: right;
   }
-  .facade-form .arrow-button p {
+  .facade-form .arrow-button > span {
     display: block;
     max-width: 880px;
-    padding: 30px 80px;
+    padding: 30px 70px 30px 80px;
   }
 
   .facade-form__file {
@@ -2121,6 +2121,15 @@
   }
   .catlogue-more span::after {
     display: none;
+  }
+
+  .news-hero {
+    display: grid;
+    grid-template-columns: 33.3333333333% 1fr;
+  }
+  .news-hero > div:nth-child(1) {
+    grid-column: 1/3;
+    min-height: 340px;
   }
 }
 /*# sourceMappingURL=descktop.css.map */

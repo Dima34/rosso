@@ -1604,7 +1604,7 @@
   .facade-hero div:nth-of-type(5) {
     grid-column: 2/3;
   }
-  .facade-hero div:nth-of-type(5) button {
+  .facade-hero div:nth-of-type(5) a {
     width: 100%;
     margin-top: auto;
     display: block;
@@ -1691,10 +1691,10 @@
     border-top: 1px solid var(--light-gray);
     text-align: right;
   }
-  .facade-form .arrow-button p {
+  .facade-form .arrow-button > span {
     display: block;
     max-width: 625px;
-    padding: 30px 60px;
+    padding: 30px 55px 30px 60px;
   }
 
   .facade-form__file {

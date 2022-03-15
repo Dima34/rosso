@@ -835,7 +835,7 @@ button {
 
 #facade-make-order{
 	display: none;
-	position: absolute;
+	position: fixed;
 	left: 0;
 	bottom: 0;
 	height: calc(100vh - var(--header-height));
@@ -847,6 +847,24 @@ button {
 		display: flex;
 	}
 }
+
+.facade-form{
+	.arrow-button>span{
+
+		&::after{
+			display: none;
+		}
+	}
+}
+
+input:focus::-webkit-input-placeholder{color:transparent}
+input:focus:-moz-placeholder{color:transparent}
+input:focus::-moz-placeholder{color:transparent}
+input:focus:-ms-input-placeholder{color:transparent}
+textarea:focus::-webkit-input-placeholder{color:transparent}
+textarea:focus:-moz-placeholder{color:transparent}
+textarea:focus::-moz-placeholder{color:transparent}
+textarea:focus:-ms-input-placeholder{color:transparent}
 
 
 @media screen and (max-width: $laptop+1) {

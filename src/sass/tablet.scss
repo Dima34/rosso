@@ -1867,7 +1867,7 @@ height: -moz-fit-content;
 				grid-column: 1/3;
 				grid-row: 3/4;
 
-				button{
+				a{
 					padding: 30px 60px;
 					display: block;
 					width: 100%;
@@ -1978,10 +1978,11 @@ height: -moz-fit-content;
 			width: 100%;
 			border-top: 1px solid var(--light-gray);
 
-			p{
+			&>span{
 				display: block;
-				padding: 30px 65px;
+				padding: 30px 60px 30px 65px;
 			}
+
 			text-align: right;
 		}
 	}
