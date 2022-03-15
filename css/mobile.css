@@ -2029,6 +2029,9 @@
   }
   .article-card img {
     margin-bottom: 35px;
+    width: 100%;
+    object-fit: cover;
+    height: 230px;
   }
   .article-card h2 {
     margin-bottom: 20px;
@@ -2259,6 +2262,19 @@
   .news-article-pagination a:nth-child(2) span {
     text-align: right;
     padding-right: 30px;
+  }
+
+  .articles > div {
+    padding: 30px;
+  }
+  .articles > div:nth-child(3n+1) {
+    background-color: transparent;
+  }
+  .articles > div:nth-child(3n+1) span, .articles > div:nth-child(3n+1) h2 {
+    color: var(--blakc);
+  }
+  .articles > div:nth-child(3n+1) .arrow-button span:after {
+    background-image: url(../img/arrow-white.svg);
   }
 }
 /*# sourceMappingURL=mobile.css.map */

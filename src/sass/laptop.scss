@@ -2412,6 +2412,9 @@ height: -moz-fit-content;
 
 		img{
 			margin-bottom: 35px;
+			width: 100%;
+			object-fit: cover;
+			height: 255px;
 		}
 
 		h2{
@@ -2717,6 +2720,27 @@ height: -moz-fit-content;
 
 			&:nth-child(2) span{
 				padding-right: 40px;
+			}
+		}
+	}
+
+	.articles{
+		&>div{
+			padding: 50px;
+
+			&:nth-child(5n+1),
+			&:nth-child(5n+5){
+				background-color: transparent;
+
+				span,h2{
+					color: var(--blakc);
+				}
+
+				.arrow-button{
+					span:after{
+						background-image: url(../img/arrow-white.svg);
+					}
+				}
 			}
 		}
 	}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru" class="primary-white-background">
+
+<head>
+	@@include("./partials/head.html", {title:"РОССО - Бренды"})
+</head>
+
+
+<body>
+	@@include("./partials/header.html")
+
+	<main>
+		@@include("./partials/breadcrumbs.html",
+		{
+			links: ["Главная", "Новости"]
+		})
+
+		<div class="wrapper">
+			<section class="news articles">
+				@@include("./partials/article-card.html")
+				@@include("./partials/article-card.html")
+				@@include("./partials/article-card.html")
+				@@include("./partials/article-card.html")
+				@@include("./partials/article-card.html")
+				@@include("./partials/article-card.html")
+				@@include("./partials/article-card.html")
+				@@include("./partials/article-card.html")
+			</section>
+			<button class="arrow-button body-2 white catlogue-more">
+				<span>Смотреть дальше 
+					<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+						<use xlink:href="#swiper-next"></use>
+					</svg>
+				</span>
+			</button>
+		</div>
+
+	</main>
+
+	@@include("./partials/footer.html")
+	@@include("./partials/header-popups.html")
+	@@include("./partials/svg.html")
+
+	<script src="./js/header.js"></script>
+</body>
+
+
+</html>
