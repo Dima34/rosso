@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru" class="primary-white-background">
+
+<head>
+	@@include("./partials/head.html", {title:"РОССО - Бренды"})
+</head>
+
+
+<body>
+	@@include("./partials/header.html")
+
+	<main>
+		@@include("./partials/breadcrumbs.html",
+		{
+			links: ["Главная", "Новости"]
+		})
+
+		<div class="wrapper">
+			<section class="hero-2">
+				<div>
+					<h1 class="semi-bold h1">Гарантии</h1>
+				</div>
+				<div></div>
+				<div></div>
+				<div>
+					<p class="body-1">
+						Все товары мы закупаем только у проверенных производителей и поставщиков. Наша компания уверена в качестве реализуемых комплектующих. Поэтому на всю реализуемую нами фурнитуру мы даём гарантию 1 год с момента приобретения.
+						Гарантия действует при соблюдении условии эксплуатации и ухода.
+					</p>
+				</div>
+			</section>
+		</div>
+
+	</main>
+
+	@@include("./partials/footer.html")
+	@@include("./partials/header-popups.html")
+	@@include("./partials/svg.html")
+
+	<script src="./js/header.js"></script>
+</body>
+
+
+</html>
