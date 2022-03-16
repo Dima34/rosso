@@ -2597,7 +2597,7 @@ height: -moz-fit-content;
 		}
 	}
 
-	.news-hero{
+	.hero-1{
 		display: grid;
 		grid-template-columns: calc(calc(190% * 100) / 768) 1fr;
 		border-bottom: 1px solid var(--light-gray);
@@ -2773,5 +2773,128 @@ height: -moz-fit-content;
 				}
 			}
 		}
+	}
+
+	.hero-2{
+		display: grid;
+		grid-template-columns: calc(calc(190% * 100) / 768) 1fr;
+		border-bottom: 1px solid var(--light-gray);
+
+		&>div{
+			&:nth-of-type(1){
+				grid-column: 1/3;
+				border-bottom: 1px solid var(--light-gray);
+				border-right: 1px solid var(--light-gray);
+				min-height: 150px;
+				display: flex;
+				justify-content: flex-end;
+				align-items: flex-end;
+				padding: 30px 80px;
+
+				h1{
+					max-width: 650px;
+					display: block;
+				}
+			}
+
+			&:nth-of-type(2){
+				display: none;
+			}
+
+			&:nth-of-type(4){
+				border-left: 1px solid var(--light-gray);
+				grid-column: 2/4;
+				min-height: 300px;
+				padding: 40px 30px;
+				padding-bottom: 60px;
+
+				p{
+					max-width: 410px;
+				}
+			}
+		}
+	}
+
+	.content-section{
+		grid-template-columns: 0 calc(calc(190% * 100) / 768);
+		border-bottom: 1px solid var(--light-gray);
+		display: grid;
+
+		&>div{
+
+			&:nth-of-type(2){
+				min-height: 320px;
+				border-left: 1px solid var(--light-gray);
+
+				img{
+					height: 100%;
+					min-width: 100%;
+					object-fit: cover;					
+				}
+			}
+		}
+	}
+
+	.contnet-section__doubled{
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-column: 1/4;
+		
+		&>div{
+			padding: 60px 65px;
+			min-height: 320px;
+
+			&:nth-child(2){
+				border-left: 1px solid var(--light-gray);
+			}
+		}
+	}
+
+	.content-collage{
+		grid-template-columns: calc(calc(320% * 100) / 768) 1fr;
+		border-bottom: 1px solid var(--gray);
+		display: grid;
+
+		&>div{
+			&:nth-of-type(1){
+				min-height: 450px;
+				overflow: hidden;
+
+				img{
+					min-width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+
+			&:nth-of-type(2){
+				border-bottom: 1px solid var(--gray);
+			}
+
+			&:nth-of-type(3){
+				grid-column: 1/4;
+
+				&>div{
+					padding: 75px 100px;
+					min-height: 300px;
+					border-bottom: 1px solid var(--gray);
+				}
+			}
+		}
+	}
+
+	.content-collage__header{
+		padding: 30px;
+		display: flex;
+		align-items: flex-end;
+		border-bottom: 1px solid var(--light-gray);
+		min-height: 200px;
+	}
+
+	.contnet-collage__content{
+		padding: 60px;
+		padding-top: 35px;
+		min-height: 440px;
+
 	}
 }
