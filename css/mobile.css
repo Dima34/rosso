@@ -2329,5 +2329,44 @@
   .contact-us-form .arrow-button > span {
     padding: 20px 25px 20px 30px;
   }
+
+  .delivery-hero {
+    border-bottom: 1px solid var(--light-gray);
+    background-color: var(--white);
+  }
+  .delivery-hero > div:nth-of-type(1) {
+    border-bottom: 1px solid var(--light-gray);
+    min-height: 110px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .delivery-hero > div:nth-of-type(1) h1 {
+    max-width: 360px;
+  }
+  .delivery-hero > div:nth-of-type(2), .delivery-hero > div:nth-of-type(3) {
+    padding: 30px 40px;
+  }
+  .delivery-hero > div:nth-of-type(2) h2, .delivery-hero > div:nth-of-type(3) h2 {
+    margin-bottom: 15px;
+  }
+  .delivery-hero > div:nth-of-type(2) p, .delivery-hero > div:nth-of-type(2) h2, .delivery-hero > div:nth-of-type(3) p, .delivery-hero > div:nth-of-type(3) h2 {
+    max-width: 360px;
+    display: block;
+    margin: 0 auto;
+  }
+  .delivery-hero > div:nth-of-type(3) {
+    border-top: 1px solid var(--light-gray);
+  }
+
+  .delivery-places {
+    padding: 40px 30px;
+    padding-bottom: 60px;
+  }
+
+  .delivery-places__selection,
+.delivery-places__table {
+    display: none;
+  }
 }
 /*# sourceMappingURL=mobile.css.map */

@@ -2767,4 +2767,52 @@ height: -moz-fit-content;
 			text-align: right;
 		}
 	}
+
+	.delivery-hero{
+		border-bottom: 1px solid var(--light-gray);
+		background-color: var(--white);
+
+		&>div{
+			&:nth-of-type(1){
+				border-bottom: 1px solid var(--light-gray);
+				min-height: 110px;
+				padding:20px 30px ;
+				display: flex;
+				align-items: flex-end;
+
+				h1{
+					max-width: 360px;
+				}
+			}
+
+			&:nth-of-type(2),
+			&:nth-of-type(3){
+				padding:30px 40px;
+
+				h2{
+					margin-bottom: 15px;
+				}
+
+				p, h2{
+					max-width: 360px;
+					display: block;
+					margin: 0 auto;
+				}
+			}
+
+			&:nth-of-type(3){
+				border-top: 1px solid var(--light-gray);
+			}
+		}
+	}
+
+	.delivery-places{
+		padding: 40px 30px;
+		padding-bottom:60px;
+	}
+
+	.delivery-places__selection,
+	.delivery-places__table{
+		display: none;
+	}
 }

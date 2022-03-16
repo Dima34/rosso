@@ -866,6 +866,13 @@ textarea:focus:-moz-placeholder{color:transparent}
 textarea:focus::-moz-placeholder{color:transparent}
 textarea:focus:-ms-input-placeholder{color:transparent}
 
+.delivery-places__selection{
+	button.active{
+		color: var(--black);
+		cursor: default;
+	}
+}
+
 
 @media screen and (max-width: $laptop+1) {
 	.card{

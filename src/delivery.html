@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru" class="primary-white-background">
+
+<head>
+	@@include("./partials/head.html", {title:"РОССО - Бренды"})
+</head>
+
+
+<body>
+	@@include("./partials/header.html")
+
+	<main>
+		@@include("./partials/breadcrumbs.html",
+		{
+		links: ["Главная", "Новости"]
+		})
+
+		<div class="wrapper">
+			<section class="delivery-hero">
+				<div>
+					<h1 class="h1">Условия доставки и адреса пунктов выдачи</h1>
+				</div>
+				<div>
+					<h2 class="h3">Доставка </h2>
+					<p class="body-2">Наш склад/магазин, в котором Вы можете самостоятельно забрать заказ, находится по адресу:
+						г. Санкт-Петербург, Полюстровский проспект, дом 50, 3-й этаж (вход с Чугунной улицы).
+					</p>
+				</div>
+				<div>
+					<h2 class="h3">Пункты выдачи</h2>
+					<p class="body-2">Мы организуем доставку ваших заказов в Санкт-Петербург транспортной компанией СДЭК. Товар
+						можно получить в пунктах выдачи заказов или заказать доставку до двери.</p>
+				</div>
+			</section>
+
+			<section class="delivery-places">
+				<div class="delivery-places__selection">
+					<button class="h4 light-gray" data-TargetID="on-map" data-targetActive>На карте</button>
+					<button class="h4 light-gray" data-TargetID="list">Списком</button>
+				</div>
+
+				<div class="delivery-places__section" id="on-map">
+					<div class="map">
+						<iframe src="https://yandex.ru/map-widget/v1/-/CCQxVMxwLC" allowfullscreen="true"
+							style="position:relative;"></iframe>
+					</div>
+				</div>
+				<div class="delivery-places__section" id="list">
+					<table class="delivery-places__table">
+						<thead>
+							<tr>
+								<th class="body-1 gray">Наименование</th>
+								<th class="body-1 gray">Адрес</th>
+								<th class="body-1 gray">Доп. информация</th>
+								<th class="body-1 gray">Телефон</th>
+								<th class="body-1 gray">Email</th>
+								<th class="body-1 gray">Время работы</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="body-1">На Комендантском</td>
+								<td class="body-1">г. Санкт-Петербург, Комендантский пр-кт, 4, корп.2, лит.А</td>
+								<td class="body-1">Мебельный Центр "Круиз", Цокольный этаж, Секция 001. Вход со стороны Туполевской улицы</td>
+								<td><a class="body-1" href="tel:+74955067832">+7 (495) 506-78-32</a></td>
+								<td><a class="body-1" href="mailto:e.bosenko@cdek.ru">e.bosenko@cdek.ru</a></td>
+								<td>									
+									<ul>
+										<li class="body-1">
+											<span>Пн-Чт</span>
+											<span>с 9:00 до 18:00</span>
+										</li>
+										<li class="body-1">
+											<span>Пт</span>
+											<span>с 9:00 до 17:00</span>
+										</li>
+										<li class="body-1">
+											<span>Сб-Вс</span>
+											<span>выходные</span>
+										</li>
+									</ul>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="body-1">На Типанова</td>
+								<td class="body-1">г. Санкт-Петербург ул. Типанова, 27/39, номер секции №158</td>
+								<td class="body-1">ТК Космос (остановка автобуса проспект Космонавтов)</td>
+								<td><a class="body-1" href="tel:+74955067832">+7 (495) 506-78-32</a></td>
+								<td><a class="body-1" href="mailto:e.bosenko@cdek.ru">e.bosenko@cdek.ru</a></td>
+								<td>									
+									<ul>
+										<li class="body-1">
+											<span>Пн-Чт</span>
+											<span>с 9:00 до 18:00</span>
+										</li>
+										<li class="body-1">
+											<span>Пт</span>
+											<span>с 9:00 до 17:00</span>
+										</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th>
+									<button class="body-1 light-gray">Показать все</button>
+								</th>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</section>
+
+
+		</div>
+
+	</main>
+
+	@@include("./partials/footer.html")
+	@@include("./partials/header-popups.html")
+	@@include("./partials/svg.html")
+
+	<script src="./js/header.js"></script>
+	<script src="./js/places.js"></script>
+</body>
+
+
+</html>

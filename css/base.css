@@ -1024,6 +1024,11 @@ textarea:focus:-ms-input-placeholder {
   color: transparent;
 }
 
+.delivery-places__selection button.active {
+  color: var(--black);
+  cursor: default;
+}
+
 @media screen and (max-width: 1367px) {
   .card a {
     padding: 25px 35px;
