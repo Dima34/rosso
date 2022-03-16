@@ -3047,4 +3047,23 @@ height: -moz-fit-content;
 			justify-content: flex-end;
 		}
 	}
+
+	.regions{
+		border-top: 1px solid var(--light-gray);
+		padding:100px 70px;
+
+	}
+
+	.regions__container{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 30px;
+		row-gap: 50px;
+
+		ul{
+			display: flex;
+			gap: 10px;
+			flex-direction: column;
+		}
+	}
 }

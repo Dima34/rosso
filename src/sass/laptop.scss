@@ -3053,4 +3053,24 @@ height: -moz-fit-content;
 			justify-content: flex-end;
 		}
 	}
+
+	.regions{
+		border-top: 1px solid var(--light-gray);
+		padding: 80px;
+
+	}
+
+	.regions__container{
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		column-gap: 20px;
+		row-gap: 50px;
+		max-width: 1060px;
+
+		ul{
+			display: flex;
+			gap: 5px;
+			flex-direction: column;
+		}
+	}
 }

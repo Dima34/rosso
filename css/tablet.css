@@ -2558,5 +2558,22 @@
   .delivery-places__table tfoot tr {
     display: block;
   }
+
+  .regions {
+    border-top: 1px solid var(--light-gray);
+    padding: 100px 70px;
+  }
+
+  .regions__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 50px;
+  }
+  .regions__container ul {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
 }
 /*# sourceMappingURL=tablet.css.map */

@@ -2815,4 +2815,23 @@ height: -moz-fit-content;
 	.delivery-places__table{
 		display: none;
 	}
+
+	.regions{
+		border-top: 1px solid var(--light-gray);
+		padding:60px 30px;
+
+	}
+
+	.regions__container{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 30px;
+		row-gap: 50px;
+
+		ul{
+			display: flex;
+			gap: 10px;
+			flex-direction: column;
+		}
+	}
 }
