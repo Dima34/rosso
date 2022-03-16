@@ -1815,7 +1815,7 @@ height: -moz-fit-content;
 		}
 	}
 
-	.product-delivery__map{
+	.map{
 		position: relative;
 		overflow: hidden;
 		border-top: 1px solid var(--light-gray);
@@ -2717,6 +2717,54 @@ height: -moz-fit-content;
 					display: block;
 				}
 			}
+		}
+	}
+
+	.contact-us__content-section{
+		border-bottom: 1px solid var(--gray);
+		border-top: 1px solid var(--gray);
+		
+		&>div{
+			&:nth-of-type(1){
+				padding: 20px 30px;
+				min-height: 100px;
+				border-bottom: 1px solid var(--gray);
+				display: flex;
+				align-items: flex-end;
+			}
+
+			&:nth-of-type(2){
+				padding: 40px 30px;
+			}
+		}
+	}
+
+	.contact-us-form{
+		fieldset{
+			padding: 30px;
+			padding-top: 40px;
+		}
+
+		label{
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+
+			input{
+				margin-bottom: 30px;
+			}
+		}
+
+
+		.arrow-button{
+			display: block;
+			width: 100%;
+			border-top: 1px solid var(--light-gray);
+
+			&>span{
+				padding: 20px 25px 20px 30px;
+			}
+			text-align: right;
 		}
 	}
 }

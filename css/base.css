@@ -988,7 +988,7 @@ button {
   display: flex;
 }
 
-.facade-form .arrow-button > span::after {
+.facade-form .arrow-button > span::after, .contact-us-form .arrow-button > span::after {
   display: none;
 }
 

@@ -1745,7 +1745,7 @@ height: -moz-fit-content;
 		}
 	}
 
-	.product-delivery__map{
+	.map{
 		position: relative;
 		overflow: hidden;
 		border-top: 1px solid var(--light-gray);
@@ -1894,6 +1894,7 @@ height: -moz-fit-content;
 			display: flex;
 			flex-direction: column;
 			gap: 5px;
+			width: 100%;
 		}
 
 		input{
@@ -2804,6 +2805,66 @@ height: -moz-fit-content;
 		p{
 			max-width: 800px;
 
+		}
+	}
+
+	.contact-us__content-section{
+		display: grid;
+		grid-template-columns: calc(calc(640% * 100) / 1920) 1fr;
+		border-bottom: 1px solid var(--gray);
+		border-top: 1px solid var(--gray);
+		
+		&>div{
+			&:nth-of-type(1){
+				padding: 100px 80px;
+				min-height: 480px;
+				border-right: 1px solid var(--gray);
+			}
+
+			&:nth-of-type(2){
+				padding: 100px 80px;
+
+				p{
+					max-width: 600px;
+					
+				}
+			}
+		}
+	}
+
+	.contact-us-form{
+		fieldset{
+			padding: 90px 80px;
+			max-width: 880px;
+		}
+
+		.inputgroup{
+			display: flex;
+			gap: 80px;
+
+			input{
+				margin-bottom: 80px;
+			}
+		}
+
+		label{
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+			width: 100%;
+		}		
+
+		.arrow-button{
+			display: block;
+			width: 100%;
+			border-top: 1px solid var(--light-gray);
+
+			&>span{
+				display: block;
+				max-width: 880px;
+				padding: 30px 70px 30px 80px;
+			}
+			text-align: right;
 		}
 	}
 }

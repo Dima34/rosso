@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru" class="primary-white-background">
+
+<head>
+	@@include("./partials/head.html", {title:"РОССО - Бренды"})
+</head>
+
+
+<body>
+	@@include("./partials/header.html")
+
+	<main>
+		@@include("./partials/breadcrumbs.html",
+		{
+			links: ["Главная", "Новости"]
+		})
+
+		<div class="wrapper">
+			<section class="contact-us">
+				<div>
+					<h2 class="h1">
+						Связаться <br> с нами
+					</h2>
+				</div>
+				<div>
+					<div class="contact-us__section">
+						<div>
+							<h3 class="h5">Контакты</h3>
+						</div>
+						<div>
+							<ul>
+								<li><a href="tel:+78123806686" class="h3">+7(812) 380-66-86 (Санкт-Петербург)</a></li>
+								<li><a href="tel:+74955067832" class="h3">+7(495) 506-78-32 (Москва)</a></li>
+								<li><a href="mail:info@rosso.su" class="h3">info@rosso.su</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="contact-us__section ">
+						<div>
+							<h3 class="h5">Адрес</h3>
+						</div>
+						<div>
+							<p class="h3 ">
+								г. Санкт-Петербург <br>
+								Полюстровский пр., д. 50 <br>
+								Пн- Пт. С 10.00 ДО 18.00
+							</p>
+
+							<p class="h3 ">
+								г. Москва, Московская область<br>
+								ул. Фабричная, д.6 <br>
+								Пн- Пт. С 10.00 ДО 18.00
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="contact-us__content-section">
+				<div>
+					<h2 class="h3 semi-bold">
+						Как добраться до нас
+					</h2>					
+				</div>
+				<div>
+					<p class="body-2">
+						От ст. метро "Лесная" и от площади Калинина: автобус 33, маршрутное такси 17 - до остановки Чугунная улица. Здание нашего бизнес-центра прямо на остановке, вход с торца здания с улицы Чугунная, на 3 этаж.
+						<br><br>
+						Также Вы можете забрать товар в любой из точек самовывоза ТК СДЭК.
+					</p>
+				</div>
+			</section>
+
+			<map class="map">
+				<iframe src="https://yandex.ru/map-widget/v1/-/CCQxVMxwLC" allowfullscreen="true" style="position:relative;"></iframe>
+			</map>
+
+			<section class="contact-us__content-section">
+				<div>
+					<h2 class="h1 semi-bold">
+						Остались вопросы?
+					</h2>					
+				</div>
+				<form action="POST" class="contact-us-form">
+					<fieldset>
+						<div class="inputgroup">
+							<label for="contact-us-name" class="body-1">
+								Ваше имя *
+								<input type="text" name="contact-us-name" id="contact-us-name" required placeholder="Иван">
+							</label>
+							<label for="contact-us-email" class="body-1">
+								Email *
+								<input type="email" name="contact-us-email" id="contact-us-email" required placeholder="example@example.ru">
+							</label>
+						</div>
+						<label for="contact-us-message" class="body-1">
+							Ваш вопрос *
+							<input type="text" name="contact-us-message" id="contact-us-message">
+						</label>
+					</fieldset>
+					<button class="arrow-button h4 white">
+						<span>
+							<span>Отправить</span>
+						</span>		
+					</button>
+				</form>
+			</section>
+		</div>
+
+	</main>
+
+	@@include("./partials/footer.html")
+	@@include("./partials/header-popups.html")
+	@@include("./partials/svg.html")
+
+	<script src="./js/header.js"></script>
+</body>
+
+
+</html>
