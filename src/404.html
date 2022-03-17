@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru" class="primary-white-background">
+
+<head>
+	@@include("./partials/head.html", {title:"РОССО - Бренды"})
+</head>
+
+
+<body>
+	@@include("./partials/header.html")
+
+	<main>
+		@@include("./partials/breadcrumbs.html",
+		{
+			links: ["Главная", "Ошибка 404"]
+		})
+
+		<div class="wrapper">
+			<div class="error-hero">
+				<div>
+					<h1 class="h1">404</h1>
+				</div>
+				<div>
+					<h2 class="h1">Плохи дела: мы не можем найти эту страницу!</h2>
+				</div>
+				<div></div>
+				<div>
+					<p class="body-1">
+						Вы запросили страниу <strong class="sub-title-1">https://rosso.su/catalog/kryuchki-ruchki/</strong> , но как наши серверы ни старались, мы не смогли ее найти. Что случилось?
+						<br><br>
+						Ссылка, на которую Вы щелкнули, чтобы прибыть сюда, содержит опечатку
+						Или эта страница была каким-то образом либо удалена, либо переименована нами
+						Или, что конечно же маловероятно, Вы вводили ее вручную и при этом допустили небольшую ошибку?
+						<br><br>
+						Вы наверняка найдёте необходимую информацию если начнёте с главной страницы
+					</p>
+				</div>
+				<div>
+					<a href="/" class="arrow-button h3 white"><span>Вернуться на главную</span></a>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	@@include("./partials/footer.html")
+	@@include("./partials/header-popups.html")
+	@@include("./partials/svg.html")
+
+	<script src="./js/header.js"></script>
+</body>
+
+
+</html>

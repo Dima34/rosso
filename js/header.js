@@ -5,6 +5,11 @@ const popups = document.querySelectorAll("[data-popup]")
 const popupTriggers = document.querySelectorAll("[data-popupTrigger]")
 const closeTriggers = document.querySelectorAll("[data-popupCloseTrigger]")
 
+// Set the data-classlist atribute to popup
+popups.forEach(item=>{
+	item.setAttribute("data-classlist", item.classList.value)
+})
+
 function showBlur() {
   blur.classList.add("active")
 }
@@ -30,9 +35,12 @@ function removeWhiteHeader(){
 }
 
 function closeAll(){
+
+	// Set the default popup classlist
   popups.forEach(el=>{
-    el.classList.remove("active")
+    el.classList = el.getAttribute("data-classlist")
   })
+
   popupTriggers.forEach(el=>{
     el.classList.remove("active")
   })
@@ -49,14 +57,19 @@ function toogleMenu(trigger,menuElement, openFunc=()=>{}){
   if(menuElement.classList.contains("active") || trigger.classList.contains("active") ){
     closeAll()
     trigger.classList.remove("active")
-    menuElement.classList.remove("active")
+		menuElement.classList = menuElement.getAttribute("data-classlist")
     hideBlur()
     unblockScroll();
   } else{
     closeAll()
     openFunc()
     trigger.classList.add("active")
-    menuElement.classList.add("active")
+		
+		if(trigger.hasAttribute("data-popupCustomClass")){
+			menuElement.classList.add(trigger.getAttribute("data-popupCustomClass"))
+		}else{
+			menuElement.classList.add("active")
+		}
     showBlur()
     blockScroll();
     makeHeaderWhite()
@@ -87,6 +100,14 @@ const searchResults = document.getElementById("search-block")
 
 searchBar.addEventListener("input", ()=>{
   searchBar.value != "" ? searchResults.classList.add("opened") : searchResults.classList.remove("opened")
+})
+
+// regions
+const regionBar = document.getElementById("regions-bar");
+const regionResults = document.getElementById("regions-list")
+
+regionBar.addEventListener("input", ()=>{
+  regionBar.value != "" ? regionResults.classList.add("opened") : regionResults.classList.remove("opened")
 })
 
 // Catalogue

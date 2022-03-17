@@ -65,7 +65,7 @@
 <body>
 	<header>
   <div class="wrapper">
-    <button id="header-location" class="gray">
+    <button id="header-location" class="gray" data-popupTrigger=".header_middle" data-popupCustomClass="regions-active">
       <svg width="24" height="24"><use xlink:href="#location-ico"></use></svg>        
       <span class="body-2">Санкт-Петербург</span>
     </button>
@@ -120,11 +120,18 @@
           <svg width="24" height="24"><use xlink:href="#search-close-ico"></use></svg>           
         </button>
       </div>
+
+			<div class="header-middle_regions-search">
+        <input type="text" name="header search" id="regions-bar" class="header_search-bar" placeholder="Поиск региона">
+        <button id="header_search-bar-close" data-popupCloseTrigger>
+          <svg width="24" height="24"><use xlink:href="#search-close-ico"></use></svg>           
+        </button>
+      </div>
     </div>
   
     <ul class="header_button-set">
       <li>
-        <button aria-label="open search" id="search-open" data-popupTrigger=".header_middle">
+        <button aria-label="open search" id="search-open" data-popupTrigger=".header_middle" data-popupCustomClass="search-active">
           <svg width="24" height="24"><use xlink:href="#open-search-ico"></use></svg>             
         </button>
       </li>
@@ -292,7 +299,7 @@
 </footer>
 	<div id="blur"></div>
 
-<div class="search-block popup" id="search-block" data-popup>
+<div class="search-block" id="search-block" data-popup>
   <div class="wrapper">
   <div class="search-block__results">
     <h2 class="body-2 light-gray">Результаты поиска</h2>
@@ -311,6 +318,92 @@
     </ul>
   </div>
   </div>
+</div>
+
+<div class="regions-block" id="regions-list" data-popup>
+  <div class="wrapper">
+		<div class="regions__container">
+	<ul>
+		<li><a href="#" class="body-1">Архангельск</a></li>
+		<li><a href="#" class="body-1">Астрахань</a></li>
+		<li><a href="#" class="body-1">Барнаул</a></li>
+		<li><a href="#" class="body-1">Белгород</a></li>
+		<li><a href="#" class="body-1">Благовещенск</a></li>
+		<li><a href="#" class="body-1">Братск</a></li>
+		<li><a href="#" class="body-1">Брянск</a></li>
+	</ul>
+
+	<ul>
+		<li><a href="#" class="body-1">Архангельск</a></li>
+		<li><a href="#" class="body-1">Астрахань</a></li>
+		<li><a href="#" class="body-1">Барнаул</a></li>
+		<li><a href="#" class="body-1">Белгород</a></li>
+		<li><a href="#" class="body-1">Благовещенск</a></li>
+		<li><a href="#" class="body-1">Братск</a></li>
+		<li><a href="#" class="body-1">Брянск</a></li>
+	</ul>
+
+	<ul>
+		<li><a href="#" class="body-1">Архангельск</a></li>
+		<li><a href="#" class="body-1">Астрахань</a></li>
+		<li><a href="#" class="body-1">Барнаул</a></li>
+		<li><a href="#" class="body-1">Белгород</a></li>
+		<li><a href="#" class="body-1">Благовещенск</a></li>
+		<li><a href="#" class="body-1">Братск</a></li>
+		<li><a href="#" class="body-1">Брянск</a></li>
+	</ul>
+
+	<ul>
+		<li><a href="#" class="body-1">Архангельск</a></li>
+		<li><a href="#" class="body-1">Астрахань</a></li>
+		<li><a href="#" class="body-1">Барнаул</a></li>
+		<li><a href="#" class="body-1">Белгород</a></li>
+		<li><a href="#" class="body-1">Благовещенск</a></li>
+		<li><a href="#" class="body-1">Братск</a></li>
+		<li><a href="#" class="body-1">Брянск</a></li>
+	</ul>
+
+	<ul>
+		<li><a href="#" class="body-1">Архангельск</a></li>
+		<li><a href="#" class="body-1">Астрахань</a></li>
+		<li><a href="#" class="body-1">Барнаул</a></li>
+		<li><a href="#" class="body-1">Белгород</a></li>
+		<li><a href="#" class="body-1">Благовещенск</a></li>
+		<li><a href="#" class="body-1">Братск</a></li>
+		<li><a href="#" class="body-1">Брянск</a></li>
+	</ul>
+
+	<ul>
+		<li><a href="#" class="body-1">Архангельск</a></li>
+		<li><a href="#" class="body-1">Астрахань</a></li>
+		<li><a href="#" class="body-1">Барнаул</a></li>
+		<li><a href="#" class="body-1">Белгород</a></li>
+		<li><a href="#" class="body-1">Благовещенск</a></li>
+		<li><a href="#" class="body-1">Братск</a></li>
+		<li><a href="#" class="body-1">Брянск</a></li>
+	</ul>
+
+	<ul>
+		<li><a href="#" class="body-1">Архангельск</a></li>
+		<li><a href="#" class="body-1">Астрахань</a></li>
+		<li><a href="#" class="body-1">Барнаул</a></li>
+		<li><a href="#" class="body-1">Белгород</a></li>
+		<li><a href="#" class="body-1">Благовещенск</a></li>
+		<li><a href="#" class="body-1">Братск</a></li>
+		<li><a href="#" class="body-1">Брянск</a></li>
+	</ul>
+
+	<ul>
+		<li><a href="#" class="body-1">Архангельск</a></li>
+		<li><a href="#" class="body-1">Астрахань</a></li>
+		<li><a href="#" class="body-1">Барнаул</a></li>
+		<li><a href="#" class="body-1">Белгород</a></li>
+		<li><a href="#" class="body-1">Благовещенск</a></li>
+		<li><a href="#" class="body-1">Братск</a></li>
+		<li><a href="#" class="body-1">Брянск</a></li>
+	</ul>
+</div>
+	</div>
 </div>
 
 <div id="authorization" data-popup>

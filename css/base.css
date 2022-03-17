@@ -305,6 +305,10 @@ hr {
   border-bottom: 1px solid var(--light-gray);
 }
 
+strong {
+  font-weight: 600;
+}
+
 .scroll-block {
   overflow: hidden;
 }
@@ -359,17 +363,26 @@ span {
   white-space: nowrap;
 }
 
-.header_middle.active .header-middle_search {
+.header_middle.search-active .header-middle_search {
   display: block;
 }
-.header_middle.active .header-middle_default {
+.header_middle.search-active .header-middle_default {
   display: none;
 }
 
-.search-block {
+.header_middle.regions-active .header-middle_regions-search {
+  display: block;
+}
+.header_middle.regions-active .header-middle_default {
   display: none;
 }
-.search-block.opened {
+
+.search-block,
+.regions-block {
+  display: none;
+}
+.search-block.opened,
+.regions-block.opened {
   display: block;
 }
 
