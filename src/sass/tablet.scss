@@ -1241,10 +1241,6 @@ height: -moz-fit-content;
 		width: 15px;
 		height: 15px;
 	}
-	
-	.catalogue-content{
-		border-left: 1px solid var(--light-gray);
-	}
 
 	.open-filter{
 		display: block;
@@ -1329,9 +1325,11 @@ height: -moz-fit-content;
 	.catalogue-card-big__info{
 		border-top: 1px solid var(--light-gray);
 
-		h2{
+		h2 a{
 			padding: 15px;
 			word-break: break-word;
+			display: block;
+
 		}
 
 		button{
@@ -2145,7 +2143,7 @@ height: -moz-fit-content;
 		border-top: 1px solid var(--light-gray);
 		height: 100%;
 
-		h2,a{
+		a{
 			padding:10px;
 			display: block;
 			width: 100%;
@@ -2509,12 +2507,9 @@ height: -moz-fit-content;
 	}
 
 	.arrow-button{
-		display: block;
-
 		span{
-			display: block;
 			text-align: left;
-			padding-right: 80px;
+			padding-right: 40px;
 		}
 	}
 
@@ -3148,6 +3143,13 @@ height: -moz-fit-content;
 				}
 				
 			}
+		}
+	}
+
+	.search-results{
+		border-bottom: 1px solid var(--light-gray);
+		.wrapper{
+			padding: 13px 32px;
 		}
 	}
 }

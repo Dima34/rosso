@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru" class="primary-white-background">
+
+<head>
+	@@include("./partials/head.html", {title:"РОССО - Каталог"})
+</head>
+
+
+<body>
+	@@include("./partials/header.html")
+
+	<main>
+		@@include("./partials/breadcrumbs.html",
+		{
+		links: ["Главная", "Результаты поиска"]
+		})
+		<div class="search-results">
+			<div class="wrapper">
+				<h2 class="body-2">По вашему запросу найдено 67 результатов</h2>
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<section class="catalogue-content">
+				
+				<div class="catalogue-content__main">
+					@@include("./partials/catalogue-card.html",
+					{title : "Ручка-кнопка"})
+					@@include("./partials/catalogue-card.html",
+					{title : "Ручка-кнопка"})
+					@@include("./partials/catalogue-card.html",
+					{title : "Ручка-кнопка"})
+					@@include("./partials/catalogue-card.html",
+					{title : "Ручка-кнопка"})
+					@@include("./partials/catalogue-card.html",
+					{title : "Ручка-кнопка"})
+					@@include("./partials/catalogue-card.html",
+					{title : "Ручка-кнопка"})
+					@@include("./partials/catalogue-card.html",
+					{title : "Ручка-кнопка"})
+					@@include("./partials/catalogue-card.html",
+					{title : "Ручка-кнопка"})
+					@@include("./partials/catalogue-card.html",
+					{title : "Ручка-кнопка"})
+					@@include("./partials/catalogue-card.html",
+					{title : "Ручка-кнопка"})
+					@@include("./partials/catalogue-card.html",
+					{title : "Ручка-кнопка"})
+					@@include("./partials/catalogue-card.html",
+					{title : "Ручка-кнопка"})
+					@@include("./partials/catalogue-card.html",
+					{title : "Ручка-кнопка"})
+				</div>
+				<button class="catalogue-content__more h4 white arrow-button">
+					<span>Смотреть дальше
+						<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+							<use xlink:href="#swiper-next"></use>
+						</svg>
+					</span>
+				</button>
+			</section>
+		</div>
+	</main>
+
+	@@include("./partials/footer.html")
+	@@include("./partials/header-popups.html")
+	@@include("./partials/svg.html")
+
+	<script src="./js/header.js"></script>
+	<script src="./js/accordion.js"></script>
+	<script src="./js/folded.js"></script>
+
+</body>
+
+
+</html>
