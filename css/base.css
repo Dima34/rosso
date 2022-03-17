@@ -992,6 +992,11 @@ button {
   display: none;
 }
 
+.contact-us-hero.contact-us-hero > div:first-child,
+.contact-us-hero .contact-us__section:first-child {
+  border-color: var(--light-gray);
+}
+
 input:focus::-webkit-input-placeholder {
   color: transparent;
 }

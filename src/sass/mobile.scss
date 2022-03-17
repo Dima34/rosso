@@ -2721,14 +2721,14 @@ height: -moz-fit-content;
 	}
 
 	.contact-us__content-section{
-		border-bottom: 1px solid var(--gray);
-		border-top: 1px solid var(--gray);
+		border-bottom: 1px solid var(--light-gray);
+		border-top: 1px solid var(--light-gray);
 		
 		&>div{
 			&:nth-of-type(1){
 				padding: 20px 30px;
 				min-height: 100px;
-				border-bottom: 1px solid var(--gray);
+				border-bottom: 1px solid var(--light-gray);
 				display: flex;
 				align-items: flex-end;
 			}
@@ -2832,6 +2832,67 @@ height: -moz-fit-content;
 			display: flex;
 			gap: 10px;
 			flex-direction: column;
+		}
+	}
+
+	.diplomas-content{
+		&>div{
+			border-bottom: 1px solid var(--light-gray);
+			grid-template-columns: 0 100%;
+			display: grid;
+
+			&>div:nth-of-type(2){
+				padding: 40px 10px;
+			}
+		}
+
+		ul{
+			max-width: 325px;
+			display: block;
+			margin: 0 auto;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			column-gap: 20px;
+			row-gap: 20px;
+
+			img{
+				width: 100%;
+				height: auto;
+				max-height: 140px;
+				object-fit: cover;
+			}
+		}
+	}
+
+	.hero-2{
+		border-bottom: 1px solid var(--light-gray);
+
+		&>div{
+			&:nth-of-type(1){
+				min-height: 100px;
+				display: flex;
+				align-items: flex-end;
+				padding: 20px 30px;
+			}
+
+			&:nth-of-type(2){
+				display: none;
+			}
+
+			&:nth-of-type(3){
+				border-top: 1px solid var(--light-gray);
+			}
+
+			&:nth-of-type(4){
+				grid-column: 2/4;
+				min-height: 300px;
+				padding: 40px 30px;
+				padding-bottom: 60px;
+
+				p{
+					max-width: 285px;
+				}
+			}
 		}
 	}
 }
