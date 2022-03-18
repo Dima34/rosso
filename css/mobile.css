@@ -2477,5 +2477,103 @@
   .search-results .wrapper {
     padding: 20px 16px;
   }
+
+  .checkout__heading {
+    padding-bottom: 10px;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid var(--light-gray);
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .checkout select {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--black);
+  }
+
+  .checkout-main {
+    padding: 0 30px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+  }
+
+  .checkout__section {
+    margin-bottom: 40px;
+  }
+
+  .checkout__heading,
+.checkout__title,
+.checkout__section label {
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  .checkout__table {
+    width: 100%;
+  }
+  .checkout__table tr {
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    align-items: center;
+    column-gap: 10px;
+  }
+  .checkout__table td, .checkout__table th {
+    padding: 0 5px;
+    word-break: break-all;
+  }
+  .checkout__table tbody {
+    border: 1px solid var(--light-gray);
+    border-bottom: 0;
+  }
+  .checkout__table tbody tr {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--light-gray);
+  }
+  .checkout__table tfoot {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .checkout__table tfoot tr {
+    display: block;
+  }
+  .checkout__table li {
+    display: flex;
+  }
+  .checkout__table li p:first-child {
+    margin-right: 10px;
+  }
+
+  .cart-pre-summary {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  .cart-pre-summary li {
+    margin-bottom: 20px;
+  }
+
+  .checkout-summary {
+    display: none;
+  }
+
+  .checkout-navigation {
+    border-top: 1px solid var(--light-gray);
+    display: grid;
+    grid-template-columns: 60px 1fr;
+  }
+  .checkout-navigation .back-button,
+.checkout-navigation .cart__checkout-btn {
+    padding: 18px;
+  }
+  .checkout-navigation .back-button span span {
+    display: none;
+  }
+  .checkout-navigation .back-button svg {
+    display: block;
+  }
+  .checkout-navigation .cart__checkout-btn {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=mobile.css.map */

@@ -3122,7 +3122,6 @@ height: -moz-fit-content;
 		width: 100%;
 	}
 
-
 	.checkout__heading,
 	.checkout__title,
 	.checkout__section,
@@ -3136,7 +3135,8 @@ height: -moz-fit-content;
 		
 		tr{
 			display: grid;
-			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-columns: 30% 30% 40%;
+			align-items: center;
 			column-gap: 15px;
 		}
 		

@@ -609,6 +609,7 @@ select{
 }
 
 .checkbox{
+
 	input{
 		display: none;
 	}
@@ -616,6 +617,8 @@ select{
 	label{
 		padding-left: 40px;
 		position: relative;
+		min-height: 24px;
+		display: block;
 	
 		&::after, &::before{
 			position: absolute;
@@ -1065,6 +1068,44 @@ label{
 			}
 		}
 	}	
+
+	.checkbox{
+
+		input{
+			display: none;
+		}
+	
+		label{
+			padding-left: 40px;
+			position: relative;
+			min-height: 24px;
+			display: block;
+		
+			&::after, &::before{
+				position: absolute;
+				content: "";
+			}
+		
+			&::after{
+				left: 0;
+				width: 20px;
+				height: 20px;
+				top: 1px;
+				border: 1px solid var(--black);
+		
+			}
+		}
+	
+		input:checked + label{
+			&::before{
+				left: 5px;
+				top: 6px;
+				background: var(--black);
+				width: 10px;
+				height: 10px;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: $tablet) {

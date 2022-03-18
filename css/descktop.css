@@ -2630,7 +2630,8 @@
   }
   .checkout__table tr {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 30% 30% 40%;
+    align-items: center;
     column-gap: 15px;
   }
   .checkout__table td, .checkout__table th {

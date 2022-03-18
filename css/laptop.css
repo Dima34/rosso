@@ -2658,12 +2658,23 @@
   .checkout fieldset {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 60px;
+    column-gap: 55px;
+  }
+  .checkout select {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--black);
   }
 
   .checkout-main {
-    max-width: 750px;
     padding: 0 60px;
+  }
+
+  .checkout__heading,
+.checkout-main fieldset,
+.checkout-main label,
+.checkout-main select {
+    max-width: 620px;
+    width: 100%;
   }
 
   .checkout__heading,
@@ -2674,13 +2685,17 @@
     margin-bottom: 25px;
   }
 
+  .checkout__table {
+    width: 100%;
+  }
   .checkout__table tr {
     display: grid;
-    grid-template-columns: 13% repeat(2, 1fr) repeat(2, 14%);
-    column-gap: 40px;
+    grid-template-columns: 30% 30% 40%;
+    align-items: center;
+    column-gap: 10px;
   }
   .checkout__table td, .checkout__table th {
-    padding: 0 7.5px;
+    padding: 0 5px;
     word-break: break-all;
   }
   .checkout__table tbody {
@@ -2688,21 +2703,27 @@
     border-bottom: 0;
   }
   .checkout__table tbody tr {
-    padding: 30px 0;
+    padding: 20px 0;
     border-bottom: 1px solid var(--light-gray);
   }
   .checkout__table tfoot {
-    padding-top: 30px;
+    padding-top: 20px;
     display: flex;
     justify-content: flex-end;
   }
   .checkout__table tfoot tr {
     display: block;
   }
+  .checkout__table li {
+    display: flex;
+  }
+  .checkout__table li p:first-child {
+    margin-right: 10px;
+  }
 
   .cart-pre-summary {
-    padding-top: 30px;
-    padding-bottom: 80px;
+    padding-top: 20px;
+    padding-bottom: 50px;
   }
   .cart-pre-summary li {
     margin-bottom: 20px;
@@ -2718,21 +2739,25 @@
   .checkout-navigation {
     border-top: 1px solid var(--light-gray);
     display: grid;
-    grid-template-columns: minmax(55%, 1fr) minmax(500px, 720px);
+    grid-template-columns: minmax(55%, 1fr) minmax(350px, 520px);
   }
   .checkout-navigation .back-button,
 .checkout-navigation .cart__checkout-btn {
-    padding: 40px;
+    padding: 25px;
   }
   .checkout-navigation .back-button span {
     display: flex;
     align-items: center;
   }
   .checkout-navigation .back-button svg {
-    margin-right: 16px;
+    margin-right: 15px;
   }
   .checkout-navigation .cart__checkout-btn {
     text-align: center;
+  }
+
+  .checkout-summary .cart-main {
+    padding: 55px 60px 24px 60px;
   }
 }
 /*# sourceMappingURL=laptop.css.map */

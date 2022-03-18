@@ -793,6 +793,8 @@ select {
 .checkbox label {
   padding-left: 40px;
   position: relative;
+  min-height: 24px;
+  display: block;
 }
 .checkbox label::after, .checkbox label::before {
   position: absolute;
@@ -1196,6 +1198,34 @@ label {
   .card a img {
     width: 230px;
     height: 230px;
+  }
+
+  .checkbox input {
+    display: none;
+  }
+  .checkbox label {
+    padding-left: 40px;
+    position: relative;
+    min-height: 24px;
+    display: block;
+  }
+  .checkbox label::after, .checkbox label::before {
+    position: absolute;
+    content: "";
+  }
+  .checkbox label::after {
+    left: 0;
+    width: 20px;
+    height: 20px;
+    top: 1px;
+    border: 1px solid var(--black);
+  }
+  .checkbox input:checked + label::before {
+    left: 5px;
+    top: 6px;
+    background: var(--black);
+    width: 10px;
+    height: 10px;
   }
 }
 @media screen and (max-width: 1124px) {
