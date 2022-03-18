@@ -206,29 +206,29 @@
 
 						<div class="checkout__section" id="to-door">
 							<fieldset>
-								<label for="checkout-mail" class="body-1">
+								<label for="checkout-index" class="body-1">
 									Индекс *
-									<input type="number" id="checkout-mail" placeholder="1234565">
+									<input type="number" id="checkout-index" placeholder="1234565">
 								</label>
-								<label for="checkout-phone" class="body-1">
+								<label for="checkout-city" class="body-1">
 									Город *
-									<input type="number" id="checkout-phone" placeholder="Москва">
+									<input type="number" id="checkout-city" placeholder="Москва">
 								</label>
 							</fieldset>
 							<fieldset>
-								<label for="checkout-mail" class="body-1">
+								<label for="checkout-street" class="body-1">
 									Улица *
-									<input type="number" id="checkout-mail" placeholder="Московская ул.">
+									<input type="number" id="checkout-street" placeholder="Московская ул.">
 								</label>
-								<label for="checkout-phone" class="body-1">
+								<label for="checkout-house" class="body-1">
 									Дом, корпус, строение *
-									<input type="number" id="checkout-phone">
+									<input type="number" id="checkout-house">
 								</label>
 							</fieldset>
 							<fieldset>
-								<label for="checkout-mail" class="body-1">
+								<label for="checkout-room" class="body-1">
 									Номер квартиры
-									<input type="number" id="checkout-mail">
+									<input type="number" id="checkout-room">
 								</label>
 							</fieldset>
 						</div>
@@ -305,6 +305,8 @@
 										</tbody>
 										<tfoot>
 											<tr>
+												<th></th>
+												<th></th>
 												<th>
 													<button class="body-1 light-gray">Показать все</button>
 												</th>
@@ -318,17 +320,17 @@
 						<div class="checkout__section" id="pickup">
 							<div class="checkout__places" data-places>
 								<div class="places__selection">
-									<div class="h4 light-gray" data-TargetID="on-map" data-targetActive>На карте</div>
-									<div class="h4 light-gray" data-TargetID="list">Списком</div>
+									<div class="h4 light-gray" data-TargetID="on-map1" data-targetActive>На карте</div>
+									<div class="h4 light-gray" data-TargetID="list1">Списком</div>
 								</div>
 				
-								<div class="places__section" id="on-map">
+								<div class="places__section" id="on-map1">
 									<div class="map">
 										<iframe src="https://yandex.ru/map-widget/v1/-/CCQxVMxwLC" allowfullscreen="true"
 											style="position:relative;"></iframe>
 									</div>
 								</div>
-								<div class="places__section" id="list">
+								<div class="places__section" id="list1">
 									<table class="checkout__table">
 										<tbody>
 											<tr>
@@ -386,6 +388,8 @@
 										</tbody>
 										<tfoot>
 											<tr>
+												<th></th>
+												<th></th>
 												<th>
 													<button class="body-1 light-gray">Показать все</button>
 												</th>
