@@ -33,20 +33,20 @@
 				</div>
 			</section>
 
-			<section class="delivery-places">
-				<div class="delivery-places__selection">
-					<button class="h4 light-gray" data-TargetID="on-map" data-targetActive>На карте</button>
-					<button class="h4 light-gray" data-TargetID="list">Списком</button>
+			<section class="places" data-places>
+				<div class="places__selection">
+					<div class="h4 light-gray" data-TargetID="on-map" data-targetActive>На карте</div>
+					<div class="h4 light-gray" data-TargetID="list">Списком</div>
 				</div>
 
-				<div class="delivery-places__section" id="on-map">
+				<div class="places__section" id="on-map">
 					<div class="map">
 						<iframe src="https://yandex.ru/map-widget/v1/-/CCQxVMxwLC" allowfullscreen="true"
 							style="position:relative;"></iframe>
 					</div>
 				</div>
-				<div class="delivery-places__section" id="list">
-					<table class="delivery-places__table">
+				<div class="places__section" id="list">
+					<table class="delivery__table">
 						<thead>
 							<tr>
 								<th class="body-1 gray">Наименование</th>
@@ -112,8 +112,6 @@
 					</table>
 				</div>
 			</section>
-
-
 		</div>
 
 	</main>

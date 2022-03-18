@@ -57,6 +57,10 @@ span{
   color: inherit;
 }
 
+.hero .arrow-button{
+	text-align: right;
+}
+
 .header_nav-item a{
   &:hover{
     color: var(--black); 
@@ -150,6 +154,7 @@ input{
   &[type="text"],
   &[type="password"],
   &[type="tel"],
+	&[type="number"],
   &[type="email"]{
     width: 100%;
     bottom: 0;
@@ -590,6 +595,54 @@ button {
 	display: none;
 }
 
+select{
+	border: 0;
+	border-bottom: 1px solid var(--light-gray);
+	color: var(--black);
+	padding-right: 25px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	position: relative;
+	background: transparent url("../img/select-arrow.svg") no-repeat right 0px center;
+	background-position-y: 10px;
+	cursor: pointer;
+}
+
+.checkbox{
+	input{
+		display: none;
+	}
+
+	label{
+		padding-left: 40px;
+		position: relative;
+	
+		&::after, &::before{
+			position: absolute;
+			content: "";
+		}
+	
+		&::after{
+			left: 0;
+			width: 20px;
+			height: 20px;
+			top: 3px;
+			border: 1px solid var(--black);
+	
+		}
+	}
+
+	input:checked + label{
+		&::before{
+			left: 5px;
+			top: 8px;
+			background: var(--black);
+			width: 10px;
+			height: 10px;
+		}
+	}
+}
+
 .catalogue__filter-group{
 	
 	button{
@@ -805,7 +858,7 @@ button {
 		transition: .3s;
 	}
 
-	&.hover{
+	&:hover{
 		img{
 			filter: grayscale(0%);
 		}
@@ -886,13 +939,121 @@ textarea:focus:-moz-placeholder{color:transparent}
 textarea:focus::-moz-placeholder{color:transparent}
 textarea:focus:-ms-input-placeholder{color:transparent}
 
-.delivery-places__selection{
+.places__selection{
 	button.active{
 		color: var(--black);
 		cursor: default;
 	}
 }
 
+.cart-pre-summary{
+	li{
+		display: flex;
+		justify-content: space-between;
+
+		p:first-child{
+			margin-right: 10px;
+		}
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+.checkout__radio-selection{
+	p{
+		padding-left: 40px;
+		margin-top: 50px;
+	}
+}
+
+.checkout__section.checkout__radio-selection label{
+	margin-bottom: 25px;
+}
+
+.chekout__order-accepted p{
+	max-width: 640px;
+}
+
+label{
+	overflow: hidden;
+}
+
+.news-card .arrow-button span{
+	display: block;
+	text-align: left;
+}
+
+.card:hover h2{
+	color: var(--gray);
+}
+
+.catalogue-card h2 a:hover,
+.catalogue-card li a:hover{
+	color: var(--gray);
+}
+
+.catalogue-card__unfold:hover{
+	color: var(--black);
+}
+
+.catalogue-card-big__info h2 a:hover{
+	color: var(--light-gray);
+}
+
+.catalogue-card-big__info button:nth-child(1):hover{
+	background: var(--gray);
+}
+
+.facade-form__file-button{
+	cursor: pointer;
+}
+
+.facade-form__file-button:hover span{
+	color: var(--gray);
+}
+
+.facade-card__content h2 a:hover{
+	color: var(--gray);
+}
+
+.facade-card__content > a:hover{
+	background-color: var(--light-gray);
+}
+
+.facade-form__file-attachments{
+	flex-shrink: 0;
+}
+
+.facade-item-hero__controls button:hover{
+	color: var(--white);
+	background-color: var(--black);
+}
+
+.product__add-to-cart:hover{
+	background-color: var(--gray);
+}
+
+.product__options button:hover{
+	background-color: var(--light-gray);
+	color: var(--white);
+}
+
+.product__availibility a:hover{
+	color: var(--light-gray);
+}
+
+.contact-us__section a{
+
+	&:hover{
+		color: var(--gray);
+	}
+
+	&.white:hover{
+		color: var(--light-gray);
+	}
+}
 
 @media screen and (max-width: $laptop+1) {
 	.card{

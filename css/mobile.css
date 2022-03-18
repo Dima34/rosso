@@ -21,7 +21,7 @@
     display: none;
   }
 
-  input[type=text], input[type=password], input[type=tel], input[type=email] {
+  input[type=text], input[type=password], input[type=tel], input[type=number], input[type=email] {
     padding-top: 7px;
     padding-bottom: 7px;
   }
@@ -298,14 +298,7 @@
   .cart-item__amount select {
     min-width: 64px;
     padding: 5px;
-    border: 0;
-    border-bottom: 1px solid var(--light-gray);
-    color: var(--black);
-    font: var(--h4);
     padding-left: 15px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    position: relative;
     background: transparent url("../img/select-arrow.svg") no-repeat right 4px center;
     background-position-y: 16px;
   }
@@ -2270,7 +2263,7 @@
     color: var(--blakc);
   }
   .articles > div:nth-child(3n+1) .arrow-button span:after {
-    background-image: url(../img/arrow-white.svg);
+    background-image: url(../img/arrow-black.svg);
   }
 
   .articles-article-section {
@@ -2357,13 +2350,13 @@
     border-top: 1px solid var(--light-gray);
   }
 
-  .delivery-places {
+  .places {
     padding: 40px 30px;
     padding-bottom: 60px;
   }
 
-  .delivery-places__selection,
-.delivery-places__table {
+  .places__selection,
+.delivery__table {
     display: none;
   }
 
