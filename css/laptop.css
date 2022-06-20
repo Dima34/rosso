@@ -98,18 +98,18 @@
     font: var(--body-2);
   }
 
-  #header_search-bar-close {
+  .header_search-bar-close {
     position: absolute;
     right: 30px;
     top: 50%;
     transform: translateY(-50%);
   }
-  #header_search-bar-close svg {
+  .header_search-bar-close svg {
     display: block;
     width: 15px;
     height: 15px;
   }
-  #header_search-bar-close svg:hover path {
+  .header_search-bar-close svg:hover path {
     fill: var(--gray);
   }
 

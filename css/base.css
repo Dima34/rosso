@@ -285,7 +285,7 @@ p {
   font-style: normal;
 }
 html {
-  background-image: url("../img/bg.png");
+  background-image: url("../img/bg.webp");
 }
 
 header {
@@ -578,7 +578,7 @@ input[type=password]::placeholder {
 }
 
 .catalogue__heading a {
-  background-image: url("../img/bg.png");
+  background-image: url("../img/bg.webp");
 }
 
 .catalogue__main, .catalogue__footer {
@@ -1230,7 +1230,7 @@ label {
 }
 @media screen and (max-width: 1124px) {
   #burger {
-    background-image: url(../img/bg.png);
+    background-image: url(../img/bg.webp);
     max-width: 360px;
     width: 100%;
     border-right: 1px solid var(--light-gray);
