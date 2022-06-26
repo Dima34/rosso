@@ -719,10 +719,9 @@
   }
   .partners .arrow-button {
     padding: 20px;
-    display: block;
     width: 100%;
     height: 100%;
-    text-align: right;
+    justify-content: flex-end;
   }
 
   .contact-us {

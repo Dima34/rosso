@@ -19,24 +19,38 @@
     padding-bottom: 10px;
   }
 
-  #header-location, .header-phone,
-.header_nav-item a, .catalogue-open,
-.header_button-set a, .header_button-set button,
-.header-middle-list a, .header-logo {
+  #header-location,
+.header-phone,
+.header_nav-item a,
+.catalogue-open,
+.header_button-set a,
+.header_button-set button,
+.header-middle-list a,
+.header-logo {
     padding: 10px 5px;
     display: block;
   }
 
-  #header-location, .header-phone, .catalogue-open {
+  #header-location,
+.header-phone,
+.catalogue-open {
     display: flex;
     align-items: center;
     gap: 6px;
   }
-  #header-location p, #header-location span, .header-phone p, .header-phone span, .catalogue-open p, .catalogue-open span {
+  #header-location p,
+#header-location span,
+.header-phone p,
+.header-phone span,
+.catalogue-open p,
+.catalogue-open span {
     padding-top: 1px;
   }
 
-  #header-location svg, .header-phone svg, .catalogue-open svg, .header_button-set svg {
+  #header-location svg,
+.header-phone svg,
+.catalogue-open svg,
+.header_button-set svg {
     width: 15px;
     height: 15px;
   }
@@ -258,12 +272,14 @@
     border-bottom: 1px solid var(--light-gray);
   }
 
-  #cart-close, .cart-item-remove {
+  #cart-close,
+.cart-item-remove {
     padding: 5px;
     margin-right: -5px;
     display: block;
   }
-  #cart-close svg, .cart-item-remove svg {
+  #cart-close svg,
+.cart-item-remove svg {
     display: block;
   }
 
@@ -343,7 +359,8 @@
     grid-template-columns: 55.5555555556% 1fr;
     border-top: 1px solid var(--light-gray);
   }
-  .cart-footer a, .cart-footer button {
+  .cart-footer a,
+.cart-footer button {
     padding: 36px;
   }
 
@@ -390,12 +407,14 @@
     border-bottom: 1px solid var(--light-gray);
   }
 
-  #favorites-close, .favorites-item-remove {
+  #favorites-close,
+.favorites-item-remove {
     padding: 5px;
     margin-right: -5px;
     display: block;
   }
-  #favorites-close svg, .favorites-item-remove svg {
+  #favorites-close svg,
+.favorites-item-remove svg {
     display: block;
   }
 
@@ -753,7 +772,6 @@
     align-items: center;
   }
   .partners .arrow-button {
-    display: block;
     width: 100%;
     height: 100%;
   }
@@ -835,7 +853,8 @@
     max-width: 1252px;
     padding: 12px 20px;
   }
-  .breadcrumbs a, .breadcrumbs ul {
+  .breadcrumbs a,
+.breadcrumbs ul {
     gap: 15px;
   }
   .breadcrumbs svg {
@@ -2152,7 +2171,9 @@
   .news > div:nth-child(5n+1), .news > div:nth-child(5n+5) {
     background-color: var(--black);
   }
-  .news > div:nth-child(5n+1) span, .news > div:nth-child(5n+1) h2, .news > div:nth-child(5n+5) span, .news > div:nth-child(5n+5) h2 {
+  .news > div:nth-child(5n+1) span,
+.news > div:nth-child(5n+1) h2, .news > div:nth-child(5n+5) span,
+.news > div:nth-child(5n+5) h2 {
     color: var(--white);
   }
   .news > div:nth-child(5n+1) .arrow-button span:after, .news > div:nth-child(5n+5) .arrow-button span:after {
@@ -2298,7 +2319,9 @@
   .articles > div:nth-child(5n+1), .articles > div:nth-child(5n+5) {
     background-color: transparent;
   }
-  .articles > div:nth-child(5n+1) span, .articles > div:nth-child(5n+1) h2, .articles > div:nth-child(5n+5) span, .articles > div:nth-child(5n+5) h2 {
+  .articles > div:nth-child(5n+1) span,
+.articles > div:nth-child(5n+1) h2, .articles > div:nth-child(5n+5) span,
+.articles > div:nth-child(5n+5) h2 {
     color: var(--black);
   }
   .articles > div:nth-child(5n+1) .arrow-button span:after, .articles > div:nth-child(5n+5) .arrow-button span:after {
@@ -2502,7 +2525,9 @@
   .delivery-hero > div:nth-of-type(2) h2, .delivery-hero > div:nth-of-type(3) h2 {
     margin-bottom: 30px;
   }
-  .delivery-hero > div:nth-of-type(2) p, .delivery-hero > div:nth-of-type(2) h2, .delivery-hero > div:nth-of-type(3) p, .delivery-hero > div:nth-of-type(3) h2 {
+  .delivery-hero > div:nth-of-type(2) p,
+.delivery-hero > div:nth-of-type(2) h2, .delivery-hero > div:nth-of-type(3) p,
+.delivery-hero > div:nth-of-type(3) h2 {
     max-width: 350px;
   }
   .delivery-hero > div:nth-of-type(3) {
@@ -2527,7 +2552,8 @@
     display: grid;
     grid-template-columns: 15% repeat(2, 1fr) repeat(2, 13%) 15%;
   }
-  .delivery__table td, .delivery__table th {
+  .delivery__table td,
+.delivery__table th {
     padding: 0 7.5px;
     word-break: break-all;
   }
@@ -2694,7 +2720,8 @@
     align-items: center;
     column-gap: 10px;
   }
-  .checkout__table td, .checkout__table th {
+  .checkout__table td,
+.checkout__table th {
     padding: 0 5px;
     word-break: break-all;
   }
