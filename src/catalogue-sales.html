@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" class="primary-white-background">
+
+<head>
+	@@include("./partials/head.html", {"title":"PОССО - New items"})
+</head>
+
+
+<body>
+	@@include("./partials/header.html")
+
+	<main>
+		@@include("./partials/breadcrumbs.html",
+		{
+		links: ["Main", "Catalogue", "New items"]
+		})
+
+		<div class="wrapper">
+			<section class="catalogue-item__main">
+				<aside id="catalogue-filters" data-popup>
+					<div class="cataloguer-filters__container">
+						<button class="catalogue-filters__close" data-popupCloseTrigger>
+							<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href="#close-mark"></use>
+							</svg>
+						</button>
+						<div class="catalogue-filters__header">
+							<h2 class="sub-title-1  ">Filters</h2>
+							<button class="sub-title-1 gray regular">Clear</button>
+						</div>
+						<hr>
+						<div class="catalogue__filter-group  " data-accordion>
+							<h3>
+								<button class="accordion-trigger">
+									<span class="accordion-title sub-title-1">
+										Material
+										<svg class="accordion-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+											<use xlink:href="#arrow-down"></use>
+										</svg>
+									</span>
+								</button>
+							</h3>
+							<div class="accordion-panel">
+								<div 
+									data-foldedContainer
+									data-foldedAmount="4" 
+									data-foldedButtonText="Show all"
+									data-foldedButtonClass = "body-2 gray"
+								>
+									<ul data-foldedList class="body-2">
+										<li>
+											<input type="checkbox" id="item" name="">
+											<label for="item">Metal <span>121</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="item1" name="">
+											<label for="item1">Metal/plastic <span>11</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="item2" name="">
+											<label for="item2">Plastic <span>54</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="item3" name="">
+											<label for="item3">Wood <span>89</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="item4" name="">
+											<label for="item4">Glass <span>163</span></label>
+										</li>
+									</ul>
+								</div>
+							</div>
+	
+							<h3>
+								<button class="accordion-trigger">
+									<span class="accordion-title sub-title-1">
+										Color
+										<svg class="accordion-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+											<use xlink:href="#arrow-down"></use>
+										</svg>
+									</span>
+								</button>
+							</h3>
+							<div class="accordion-panel">
+								<div 
+									data-foldedContainer
+									data-foldedAmount="4" 
+									data-foldedButtonText="Show all"
+									data-foldedButtonClass = "body-2 gray"
+								>
+									<ul data-foldedList class="body-2">
+										<li>
+											<input type="checkbox" id="item13" name="">
+											<label for="item13" class="body-2 color-selection-label">
+												<span class="filter-color">
+													<img loading="lazy" decoding="async" width="20" height="20" src="./img/color-1.webp" alt="">
+												</span>
+												Metal <span>121</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="item11" name="">
+											<label for="item11" class="body-2 color-selection-label">
+												<span class="filter-color">
+													<img loading="lazy" decoding="async" width="20" height="20" src="./img/color-2.webp" alt="">
+												</span>
+												Metal/plastic <span>11</span></label>
+										</li>
+										
+									</ul>
+								</div>
+							</div>
+	
+							<h3>
+								<button class="accordion-trigger">
+									<span class="accordion-title sub-title-1">
+										Size
+										<svg class="accordion-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+											<use xlink:href="#arrow-down"></use>
+										</svg>
+									</span>
+								</button>
+							</h3>
+							<div class="accordion-panel">
+								<div 
+									data-foldedContainer
+									data-foldedAmount="4" 
+									data-foldedButtonText="Show all"
+									data-foldedButtonClass = "body-2 gray"
+								>
+									<ul data-foldedList class="body-2 box-selection-container">
+										<li>
+											<input type="checkbox" id="item23" name="">
+											<label class="box-label body-2" for="item23">500</label>
+										</li>
+										<li>
+											<input type="checkbox" id="item12" name="">
+											<label class="box-label body-2" for="item12">0</label>
+										</li>
+										<li>
+											<input type="checkbox" id="item22" name="">
+											<label class="box-label body-2" for="item22">10000</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+	
+							<h3 class="sub-title-1">Price</h3>
+							<div>
+								<div class="filter__range-slider">
+									<div class="products-filter-price-slider">
+										<div class="ui-widget-header" style="left: 0%; width: 80%;"></div>
+										<span class="ui-state-default" style="left: 0%;"></span>
+										<span class="ui-state-default" style="left: 80%;"></span>
+									</div>
+		
+									<div class="products-filter-price-slider-value">
+										<span class="body-2  ">0$</span>
+										<span class="body-2  ">900000$</span>
+									</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</aside>
+				<div class="catalogue-content">
+					<div class="catalogue-content__header">
+						<button class="open-filter body-2 semi-bold" data-popupTrigger="#catalogue-filters">
+							Filters
+						</button>
+						<div class="catalogue-content__sorting">
+							<p class="body-2 gray">Sort type:</p>
+							<select name="amount">
+								<option value="1" selected>By price</option>
+								<option value="2">New</option>
+								<option value="3">Favorite</option>
+								<option value="4">With sale</option>
+							</select>
+						</div>
+					</div>
+					<div class="catalogue-content__main">
+						@@include("./partials/catalogue-card.html",
+						{
+							"title" : "Qupon pull handle walnut brushed gold Metakor", 
+							"imgsrc" : "./img/new-1.webp",
+							"price" : "62,42",
+							"label" : "NEW",
+						})
+						@@include("./partials/catalogue-card.html",
+						{
+							"title" : "Omnia L hinge with closer", 
+							"imgsrc" : "./img/new-2.webp",
+							"price" : "4,25",
+							"label" : "NEW",
+						})
+						@@include("./partials/catalogue-card.html",
+						{
+							"title" : "Adjustable furniture leg FONDA", 
+							"imgsrc" : "./img/new-3.webp",
+							"price" : "55,73",
+							"label" : "NEW",
+						})
+						@@include("./partials/catalogue-card.html",
+						{
+							"title" : "Adjustable furniture leg FONDA, matte dark gold", 
+							"imgsrc" : "./img/new-4.webp",
+							"price" : "55,73",
+							"label" : "NEW",
+						})
+						@@include("./partials/catalogue-card.html",
+						{
+							"title" : "PURA handle, polished black nickel", 
+							"imgsrc" : "./img/new-5.webp",
+							"price" : "22,00",
+							"label" : "NEW",
+						})
+						@@include("./partials/catalogue-card.html",
+						{
+							"title" : "Handle PURA, polished copper", 
+							"imgsrc" : "./img/new-6.webp",
+							"price" : "22,00",
+							"label" : "NEW",
+						})
+						@@include("./partials/catalogue-card.html",
+						{
+							"title" : "RILLE button handle, T-shaped, brushed brass", 
+							"imgsrc" : "./img/new-7.webp",
+							"price" : "23,96",
+							"label" : "NEW",
+						})
+						@@include("./partials/catalogue-card.html",
+						{
+							"title" : "Handle button RILLE, T-shaped, matte black", 
+							"imgsrc" : "./img/new-8.webp",
+							"price" : "23,96",
+							"label" : "NEW",
+						})
+						@@include("./partials/catalogue-card.html",
+						{
+							"title" : "RILLE handle, brushed brass", 
+							"imgsrc" : "./img/new-9.webp",
+							"price" : "49,90",
+							"label" : "NEW",
+						})
+						@@include("./partials/catalogue-card.html",
+						{
+							"title" : "RILLE handle, matte black", 
+							"imgsrc" : "./img/new-10.webp",
+							"price" : "49,90",
+							"label" : "NEW",
+						})
+					</div>
+					<button class="arrow-button body-2 white catlogue-more">
+						<span>Show more 
+							<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+								<use xlink:href="#swiper-next"></use>
+							</svg>
+						</span>
+					</button>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	@@include("./partials/footer.html")
+	@@include("./partials/header-popups.html")
+	@@include("./partials/svg.html")
+
+	<script src="./js/header.js"></script>
+	<script src="./js/accordion.js"></script>
+	<script src="./js/folded.js"></script>
+
+</body>
+
+
+</html>
