@@ -1294,4 +1294,8 @@ label {
   align-items: center;
   justify-content: center;
 }
+
+.catalogue-card-big {
+  background-color: white;
+}
 /*# sourceMappingURL=base.css.map */
