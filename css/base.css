@@ -1298,4 +1298,8 @@ label {
 .catalogue-card-big {
   background-color: white;
 }
+
+.favorites-footer, .cart-footer {
+  margin-top: auto;
+}
 /*# sourceMappingURL=base.css.map */
