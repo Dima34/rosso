@@ -2,7 +2,7 @@
 <html lang="ru" class="primary-white-background">
 
 <head>
-	@@include("./partials/head.html", {title:"РОССО - Бренды"})
+	@@include("./partials/head.html", {title:"РОССО - News"})
 </head>
 
 
@@ -12,22 +12,54 @@
 	<main>
 		@@include("./partials/breadcrumbs.html",
 		{
-			links: ["Главная", "Новости"]
+			links: ["Main page", "News"]
 		})
 
 		<div class="wrapper">
 			<section class="news">
-				@@include("./partials/news-card.html")
-				@@include("./partials/news-card.html")
-				@@include("./partials/news-card.html")
-				@@include("./partials/news-card.html")
-				@@include("./partials/news-card.html")
-				@@include("./partials/news-card.html")
-				@@include("./partials/news-card.html")
-				@@include("./partials/news-card.html")
+				@@include("./partials/news-card.html",{
+					date : "07-05-2021",
+					title : "РОССО - official representative of Kessebohmer in USA",
+					description : "We have great news! May 1st, 2021. we have become the official representative of the brand Kessebohmer (Germany) in USA.The section with Kessebohmer products is currently being developed...",
+				})
+				@@include("./partials/news-card.html",{
+					date : "05-09-2020",
+					title : "SEPTEMBER PROMOTION: 5% DISCOUNT!",
+					description : "The share -5% is valid for all retail prices except the products from the 'Novelties', 'Sales' and 'Transformation Mechanisms' sections.",
+				})
+				@@include("./partials/news-card.html",{
+					date : "03-08-2020",
+					title : "PARADE OF FURNITURE PENS. Welcome to our updated show - room",
+					description : "We have updated our show - room in Polustrovsky! We invite you to visit and choose the most fashionable and most convenient handles for kitchens and more!",
+				})
+				@@include("./partials/news-card.html",{
+					date : "03-08-2020",
+					title : "The action -10% extended to August!",
+					description : "The share -10% is valid for all retail prices except for the products from the 'Novelties', 'Sales' and 'Transformation Mechanisms' sections.",
+				})
+				@@include("./partials/news-card.html",{
+					date : "05-02-2020",
+					title : "The action -20% extended to February 2020!",
+					description : "Dear customers! We have decided to extend the share -20% for the whole of February 2020.",
+				})
+				@@include("./partials/news-card.html",{
+					date : "06-11-2018",
+					title : "We invite you to the exhibition on November 19-23, 2018",
+					description : "We invite you to visit the exhibition 'Furniture 2018', which will be held at New York. From 19 to 23 November 2018.",
+				})
+				@@include("./partials/news-card.html",{
+					date : "17-04-2018",
+					title : "We offer a new mechanism for convertible furniture M01 (Uruguay)",
+					description : "In April 2018, our warehouses in New York and Colorado received a new transformation mechanism M01 (Uruguay production).",
+				})
+				@@include("./partials/news-card.html",{
+					date : "22-05-2018",
+					title : "20 years of ROSSO company",
+					description : "Our company is 20 years old!",
+				})
 			</section>
 			<button class="arrow-button body-2 white catlogue-more">
-				<span>Смотреть дальше 
+				<span>Show more
 					<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg">
 						<use xlink:href="#swiper-next"></use>
 					</svg>
