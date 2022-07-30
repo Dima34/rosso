@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ru" class="primary-white-background">
+<html lang="en" class="primary-white-background">
 
 <head>
-	@@include("./partials/head.html", {title:"РОССО - Бренды"})
+	@@include("./partials/head.html", {title:"РОССО - Articles"})
 </head>
 
 
@@ -12,22 +12,30 @@
 	<main>
 		@@include("./partials/breadcrumbs.html",
 		{
-			links: ["Главная", "Новости"]
+			links: ["Main page", "Articles"]
 		})
 
 		<div class="wrapper">
 			<section class="news articles">
-				@@include("./partials/article-card.html")
-				@@include("./partials/article-card.html")
-				@@include("./partials/article-card.html")
-				@@include("./partials/article-card.html")
-				@@include("./partials/article-card.html")
-				@@include("./partials/article-card.html")
-				@@include("./partials/article-card.html")
-				@@include("./partials/article-card.html")
+				@@include("./partials/article-card.html", {
+					title: "Schedule of work of ROSSO in the festive days",
+					subtitle: "Happy USA Day to you! On holidays we will work on the following schedule:10.06.2022 - from 09-00 to 17-0011.06.2022 - 13.06.2022 - weekend 14.06.2022 - from 09-00 to..."
+				})
+				@@include("./partials/article-card.html", {
+					title: "ROSSO - official representative of Kessebohmer in USA",
+					subtitle: "We have great news! May 1st, 2021. we have become the official representative of the brand Kessebohmer (Germany) in the USA.The section with Kessebohmer products is currently being developed..."
+				})
+				@@include("./partials/article-card.html", {
+					title: "SEPTEMBER PROMOTION: 5% DISCOUNT!",
+					subtitle: "The share -5% is valid for all retail prices, except for the goods from the sections 'New', 'Sale' and 'Mechanisms of transformation'."
+				})
+				@@include("./partials/article-card.html", {
+					title: "PARADE OF FURNITURE PENS. Welcome to our updated show - room",
+					subtitle: "We have updated our show - room in Polustrovsky! We invite you to visit and choose the most fashionable and most convenient handles for kitchens and more! As you know, kitchen furniture without pens..."
+				})
 			</section>
 			<button class="arrow-button body-2 white catlogue-more">
-				<span>Смотреть дальше 
+				<span>Show more
 					<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg">
 						<use xlink:href="#swiper-next"></use>
 					</svg>
