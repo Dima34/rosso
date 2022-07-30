@@ -3,7 +3,7 @@
 
 <head>
 	<link rel="stylesheet" />
-	@@include("./partials/head.html", {title:"РОССО - Каталог"})
+	@@include("./partials/head.html", {title:"РОССО - Catalogue"})
 </head>
 
 
@@ -13,351 +13,160 @@
 	<main>
 		@@include("./partials/breadcrumbs.html",
 		{
-			links: ["Главная", "Каталог"]
+			links: ["Main page", "Catalogue"]
 		})
 
 		<div class="wrapper">
 			<section class="catalogue-hero  ">
 				@@include("./partials/card.html", {
-				title: "Ручки мебельные",
+				title: "Furniture Handle",
 				image: "./img/popular-1.webp"
 				})
 				@@include("./partials/card.html", {
-				title: "Фасады мебельные",
+				title: "Furniture facades",
 				image: "./img/popular-2.webp"
 				})
-				<a href="#" class="h1  ">
-					Новинки
+				<a href="./catalogue-new.html" class="h2  arrow-button white">
+					<span>New items</span>
 				</a>
-				<a href="#" class="arrow-button h1">
-					<span>Распродажа</span>          
+				<a href="./catalogue-sales.html" class="arrow-button h2">
+					<span>Sales</span>          
 				</a>
 			</section>
 			<hr>
 
 			<section class="catalogue-main">
 				<div class="catalogue-card">
-					<img loading="lazy" decoding="async" src="./img/catalogue-main-1.webp" alt="Мойки и смесители">
-					<h2><a href="#" class="h4 bold  ">Мойки и смесители</a></h2>
+					<img loading="lazy" decoding="async" src="./img/catalogue-main-1.webp" alt="Sinks and mixers">
+					<h2><a href="#" class="h4 bold">Sinks and mixers</a></h2>
 					<div 
-							data-foldedContainer
-							data-foldedAmount="3" 
-							data-foldedButtonText="Показать все"
-							data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
-						>
-							<ul data-foldedList>
-										<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Корзины в нижние модули</a></li>
-								<li><a href="#" class="body-1  ">Корзины в верхние модули</a></li>
-								<li><a href="#" class="body-1  ">Пеналы кухонные</a></li>
-								<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-							</ul>
-						</div>
+						data-foldedContainer
+						data-foldedAmount="3" 
+						data-foldedButtonText="Show all"
+						data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
+					>
+						<ul data-foldedList>
+							<li><a href="#" class="body-1  ">Kitchen faucet</a></li>
+							<li><a href="#" class="body-1  ">Mixers</a></li>
+							<li><a href="#" class="body-1  ">Accessories</a></li>
+						</ul>
+					</div>
 				</div>
+				
 				<div class="catalogue-card">
-					<img loading="lazy" decoding="async" src="./img/catalogue-main-2.webp" alt="Мойки и смесители">
-					<h2><a href="#" class="h4 bold  ">Мойки и смесители</a></h2>
-						<div 
-							data-foldedContainer
-							data-foldedAmount="3" 
-							data-foldedButtonText="Показать все"
-							data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
-						>
-							<ul data-foldedList>
-								<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-							</ul>
-						</div>			
-				</div>
-				<div class="catalogue-card">
-					<img loading="lazy" decoding="async" src="./img/catalogue-main-1.webp" alt="Мойки и смесители">
-					<h2><a href="#" class="h4 bold  ">Мойки и смесители</a></h2>
+					<img loading="lazy" decoding="async" src="./img/catalogue-main-2.webp" alt="Profile for CARDO frame structures">
+					<h2><a href="#" class="h4 bold">Profile for CARDO frame structures</a></h2>
 					<div 
-							data-foldedContainer
-							data-foldedAmount="3" 
-							data-foldedButtonText="Показать все"
-							data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
-						>
-							<ul data-foldedList>
-										<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Корзины в нижние модули</a></li>
-								<li><a href="#" class="body-1  ">Корзины в верхние модули</a></li>
-								<li><a href="#" class="body-1  ">Пеналы кухонные</a></li>
-								<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-							</ul>
-						</div>
+						data-foldedContainer
+						data-foldedAmount="3" 
+						data-foldedButtonText="Show all"
+						data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
+					>
+						<ul data-foldedList>
+							<li><a href="#" class="body-1  ">CARDO Profiles</a></li>
+							<li><a href="#" class="body-1  ">Accessories for CADRO frame system</a></li>
+						</ul>
+					</div>
 				</div>
+
 				<div class="catalogue-card">
-					<img loading="lazy" decoding="async" src="./img/catalogue-main-1.webp" alt="Мойки и смесители">
-					<h2><a href="#" class="h4 bold  ">Мойки и смесители</a></h2>
+					<img loading="lazy" decoding="async" src="./img/catalogue-main-3.webp" alt="Lamps furniture. Lamps furniture">
+					<h2><a href="#" class="h4 bold">Lamps furniture. Lamps furniture</a></h2>
 					<div 
-							data-foldedContainer
-							data-foldedAmount="3" 
-							data-foldedButtonText="Показать все"
-							data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
-						>
-							<ul data-foldedList>
-										<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Корзины в нижние модули</a></li>
-								<li><a href="#" class="body-1  ">Корзины в верхние модули</a></li>
-								<li><a href="#" class="body-1  ">Пеналы кухонные</a></li>
-								<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-							</ul>
-						</div>
+						data-foldedContainer
+						data-foldedAmount="3" 
+						data-foldedButtonText="Show all"
+						data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
+					>
+						<ul data-foldedList>
+							<li><a href="#" class="body-1  ">LED lights</a></li>
+							<li><a href="#" class="body-1  ">Halogen lamps</a></li>
+							<li><a href="#" class="body-1  ">Retractable socket blocks</a></li>
+							<li><a href="#" class="body-1  ">Accessories</a></li>
+						</ul>
+					</div>
 				</div>
+
 				<div class="catalogue-card">
-					<img loading="lazy" decoding="async" src="./img/catalogue-main-2.webp" alt="Мойки и смесители">
-					<h2><a href="#" class="h4 bold  ">Мойки и смесители</a></h2>
-						<div 
-							data-foldedContainer
-							data-foldedAmount="3" 
-							data-foldedButtonText="Показать все"
-							data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
-						>
-							<ul data-foldedList>
-								<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-							</ul>
-						</div>			
-				</div>
-				<div class="catalogue-card">
-					<img loading="lazy" decoding="async" src="./img/catalogue-main-1.webp" alt="Мойки и смесители">
-					<h2><a href="#" class="h4 bold  ">Мойки и смесители</a></h2>
+					<img loading="lazy" decoding="async" src="./img/catalogue-main-4.webp" alt="Retractable systems and filling for cabinets and wardrobes">
+					<h2><a href="#" class="h4 bold">Retractable systems and filling for cabinets and wardrobes</a></h2>
 					<div 
-							data-foldedContainer
-							data-foldedAmount="3" 
-							data-foldedButtonText="Показать все"
-							data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
-						>
-							<ul data-foldedList>
-										<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Корзины в нижние модули</a></li>
-								<li><a href="#" class="body-1  ">Корзины в верхние модули</a></li>
-								<li><a href="#" class="body-1  ">Пеналы кухонные</a></li>
-								<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-							</ul>
-						</div>
+						data-foldedContainer
+						data-foldedAmount="3" 
+						data-foldedButtonText="Show all"
+						data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
+					>
+						<ul data-foldedList>
+							<li><a href="#" class="body-1  ">Mesh basket </a></li>
+							<li><a href="#" class="body-1  ">Systems for cabinets and wardrobes rolled out</a></li>
+							<li><a href="#" class="body-1  ">Clothes bars</a></li>
+							<li><a href="#" class="body-1  ">Accessories</a></li>
+						</ul>
+					</div>
 				</div>
+
 				<div class="catalogue-card">
-					<img loading="lazy" decoding="async" src="./img/catalogue-main-2.webp" alt="Мойки и смесители">
-					<h2><a href="#" class="h4 bold  ">Мойки и смесители</a></h2>
-						<div 
-							data-foldedContainer
-							data-foldedAmount="3" 
-							data-foldedButtonText="Показать все"
-							data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
-						>
-							<ul data-foldedList>
-								<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-							</ul>
-						</div>			
+					<img loading="lazy" decoding="async" src="./img/catalogue-main-5.webp" alt="Rail kitchen systems. Rail kitchen systems">
+					<h2><a href="#" class="h4 bold">Rail kitchen systems. Rail kitchen systems</a></h2>
 				</div>
+
 				<div class="catalogue-card">
-					<img loading="lazy" decoding="async" src="./img/catalogue-main-1.webp" alt="Мойки и смесители">
-					<h2><a href="#" class="h4 bold  ">Мойки и смесители</a></h2>
+					<img loading="lazy" decoding="async" src="./img/catalogue-main-6.webp" alt="Lifting mechanisms">
+					<h2><a href="#" class="h4 bold">Lifting mechanisms</a></h2>
 					<div 
-							data-foldedContainer
-							data-foldedAmount="3" 
-							data-foldedButtonText="Показать все"
-							data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
-						>
-							<ul data-foldedList>
-										<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Корзины в нижние модули</a></li>
-								<li><a href="#" class="body-1  ">Корзины в верхние модули</a></li>
-								<li><a href="#" class="body-1  ">Пеналы кухонные</a></li>
-								<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-							</ul>
-						</div>
+						data-foldedContainer
+						data-foldedAmount="3" 
+						data-foldedButtonText="Show all"
+						data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
+					>
+						<ul data-foldedList>
+							<li><a href="#" class="body-1  ">Wind Salice mechanism</a></li>
+							<li><a href="#" class="body-1  ">Vertical opening systems</a></li>
+							<li><a href="#" class="body-1  ">Facade gas lifts</a></li>
+							<li><a href="#" class="body-1  ">Accessories</a></li>
+						</ul>
+					</div>
 				</div>
+
 				<div class="catalogue-card">
-					<img loading="lazy" decoding="async" src="./img/catalogue-main-2.webp" alt="Мойки и смесители">
-					<h2><a href="#" class="h4 bold  ">Мойки и смесители</a></h2>
-						<div 
-							data-foldedContainer
-							data-foldedAmount="3" 
-							data-foldedButtonText="Показать все"
-							data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
-						>
-							<ul data-foldedList>
-								<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-							</ul>
-						</div>			
-				</div>
-				<div class="catalogue-card">
-					<img loading="lazy" decoding="async" src="./img/catalogue-main-1.webp" alt="Мойки и смесители">
-					<h2><a href="#" class="h4 bold  ">Мойки и смесители</a></h2>
+					<img loading="lazy" decoding="async" src="./img/catalogue-main-7.webp" alt="Furniture hinges">
+					<h2><a href="#" class="h4 bold">Furniture hinges</a></h2>
 					<div 
-							data-foldedContainer
-							data-foldedAmount="3" 
-							data-foldedButtonText="Показать все"
-							data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
-						>
-							<ul data-foldedList>
-										<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Корзины в нижние модули</a></li>
-								<li><a href="#" class="body-1  ">Корзины в верхние модули</a></li>
-								<li><a href="#" class="body-1  ">Пеналы кухонные</a></li>
-								<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-							</ul>
-						</div>
+						data-foldedContainer
+						data-foldedAmount="3" 
+						data-foldedButtonText="Show all"
+						data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
+					>
+						<ul data-foldedList>
+							<li><a href="#" class="body-1  ">Furniture hinges Slide-On </a></li>
+							<li><a href="#" class="body-1  ">Hinges with closer </a></li>
+							<li><a href="#" class="body-1  ">Special hinges</a></li>
+							<li><a href="#" class="body-1  ">Accessories</a></li>
+						</ul>
+					</div>
 				</div>
+
 				<div class="catalogue-card">
-					<img loading="lazy" decoding="async" src="./img/catalogue-main-2.webp" alt="Мойки и смесители">
-					<h2><a href="#" class="h4 bold  ">Мойки и смесители</a></h2>
-						<div 
-							data-foldedContainer
-							data-foldedAmount="3" 
-							data-foldedButtonText="Показать все"
-							data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
-						>
-							<ul data-foldedList>
-								<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-							</ul>
-						</div>			
-				</div>
-				<div class="catalogue-card">
-					<img loading="lazy" decoding="async" src="./img/catalogue-main-1.webp" alt="Мойки и смесители">
-					<h2><a href="#" class="h4 bold  ">Мойки и смесители</a></h2>
+					<img loading="lazy" decoding="async" src="./img/catalogue-main-8.webp" alt="Drawers">
+					<h2><a href="#" class="h4 bold">Drawers</a></h2>
 					<div 
-							data-foldedContainer
-							data-foldedAmount="3" 
-							data-foldedButtonText="Показать все"
-							data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
-						>
-							<ul data-foldedList>
-										<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Корзины в нижние модули</a></li>
-								<li><a href="#" class="body-1  ">Корзины в верхние модули</a></li>
-								<li><a href="#" class="body-1  ">Пеналы кухонные</a></li>
-								<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-							</ul>
-						</div>
-				</div>
-				<div class="catalogue-card">
-					<img loading="lazy" decoding="async" src="./img/catalogue-main-2.webp" alt="Мойки и смесители">
-					<h2><a href="#" class="h4 bold  ">Мойки и смесители</a></h2>
-						<div 
-							data-foldedContainer
-							data-foldedAmount="3" 
-							data-foldedButtonText="Показать все"
-							data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
-						>
-							<ul data-foldedList>
-								<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-							</ul>
-						</div>			
-				</div>
-				<div class="catalogue-card">
-					<img loading="lazy" decoding="async" src="./img/catalogue-main-1.webp" alt="Мойки и смесители">
-					<h2><a href="#" class="h4 bold  ">Мойки и смесители</a></h2>
-					<div 
-							data-foldedContainer
-							data-foldedAmount="3" 
-							data-foldedButtonText="Показать все"
-							data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
-						>
-							<ul data-foldedList>
-										<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Корзины в нижние модули</a></li>
-								<li><a href="#" class="body-1  ">Корзины в верхние модули</a></li>
-								<li><a href="#" class="body-1  ">Пеналы кухонные</a></li>
-								<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-							</ul>
-						</div>
-				</div>
-				<div class="catalogue-card">
-					<img loading="lazy" decoding="async" src="./img/catalogue-main-2.webp" alt="Мойки и смесители">
-					<h2><a href="#" class="h4 bold  ">Мойки и смесители</a></h2>
-						<div 
-							data-foldedContainer
-							data-foldedAmount="3" 
-							data-foldedButtonText="Показать все"
-							data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
-						>
-							<ul data-foldedList>
-								<li><a href="#" class="body-1  ">Мойки кухонные</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-								<li><a href="#" class="body-1  ">Смесители</a></li>
-								<li><a href="#" class="body-1  ">Аксессуары</a></li>
-							</ul>
-						</div>			
+						data-foldedContainer
+						data-foldedAmount="3" 
+						data-foldedButtonText="Show all"
+						data-foldedButtonClass = "catalogue-card__unfold body-1 gray"
+					>
+						<ul data-foldedList>
+							<li><a href="#" class="body-1  ">Retractable drawers with closer</a></li>
+							<li><a href="#" class="body-1  ">Drawer accessories</a></li>
+							<li><a href="#" class="body-1  ">Metalboxes and railings</a></li>
+							<li><a href="#" class="body-1  ">Accessories</a></li>
+						</ul>
+					</div>
 				</div>
 			</section>
 
 			<button class="arrow-button body-2 white catlogue-more">
-				<span>Смотреть дальше 
+				<span>Show more
 					<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg">
 						<use xlink:href="#swiper-next"></use>
 					</svg>
