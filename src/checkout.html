@@ -2,7 +2,7 @@
 <html lang="en" class="primary-white-background">
 
 <head>
-	@@include("./partials/head.html", {title:"РОССО - Оплата"})
+	@@include("./partials/head.html", {title:"РОССО - Checkout"})
 </head>
 
 
@@ -14,16 +14,16 @@
 			<form action="POST">
 				<section class="checkout">
 					<div class="checkout-main">
-						<h2 class="checkout__heading h3">1/ Контактные данные</h2>
+						<h2 class="checkout__heading h3">1/ Contacts</h2>
 						<div class="checkout__section">
 							<fieldset>
 								<label for="checkout-name" class="body-1">
-									Имя *
-									<input type="text" id="checkout-name" placeholder="Иван">
+									Name *
+									<input type="text" id="checkout-name" placeholder="Mike">
 								</label>
 								<label for="checkout-secondname" class="body-1">
-									Фамилия *
-									<input type="text" id="checkout-secondname" placeholder="Иванов">
+									Surname *
+									<input type="text" id="checkout-secondname" placeholder="Gonzales">
 								</label>
 							</fieldset>
 							<fieldset>
@@ -32,154 +32,68 @@
 									<input type="email" id="checkout-mail" placeholder="example@example.com">
 								</label>
 								<label for="checkout-phone" class="body-1">
-									Телефон *
-									<input type="number" id="checkout-phone" placeholder="+7 (___)___-__-__">
+									Phone number *
+									<input type="number" id="checkout-phone" placeholder="+1 __-___-_____">
 								</label>
 							</fieldset>
 							<div class="checkbox">
 								<input type="checkbox" name="" id="checkout-accept">
 								<label for="checkout-accept" class="body-1 gray ">
-									Ознакомлен с условиями 
-									<a href="#" class="body-2 black">Договора оферты</a>
+									Acquainted with the Terms
+									<a href="./policy.html" class="body-2 black">policy</a>
 								</label>
 							</div>
 						</div>
 
-						<h2 class="checkout__heading h3">2/ Способ доставки</h2>
+						<h2 class="checkout__heading h3">2/ Delivery method</h2>
 						<div class="checkout__section">
-							<h3 class="h4 checkout__title">Способ доставки</h3>
+							<h3 class="h4 checkout__title">Delivery method</h3>
 							<select name="checkout-delivery" data-selection class="body-1">
 								<!-- Don`t change values. Value == Checkout section id -->
-								<option value="to-door" selected>Службой СДЭК до двери</option>
-								<option value="to-office">Yandex доставка</option>
-								<option value="pickup">Самовывоз</option>
+								<option value="to-door" selected>DHL delivery</option>
+								<option value="pickup">Self-delivery</option>
 							</select>
 						</div>
 
 						<div class="checkout__section" id="to-door">
 							<fieldset>
 								<label for="checkout-index" class="body-1">
-									Индекс *
+									Postcode *
 									<input type="number" id="checkout-index" placeholder="1234565">
 								</label>
 								<label for="checkout-city" class="body-1">
-									Город *
-									<input type="number" id="checkout-city" placeholder="Москва">
+									City *
+									<input type="number" id="checkout-city" placeholder="Chicago">
 								</label>
 							</fieldset>
 							<fieldset>
 								<label for="checkout-street" class="body-1">
-									Улица *
-									<input type="number" id="checkout-street" placeholder="Московская ул.">
+									Street *
+									<input type="number" id="checkout-street" placeholder="Main street">
 								</label>
 								<label for="checkout-house" class="body-1">
-									Дом, корпус, строение *
+									Building *
 									<input type="number" id="checkout-house">
 								</label>
 							</fieldset>
 							<fieldset>
 								<label for="checkout-room" class="body-1">
-									Номер квартиры
+									Apartment number
 									<input type="number" id="checkout-room">
 								</label>
 							</fieldset>
 						</div>
 
-						<div class="checkout__section" id="to-office">
-							<div class="checkout__places" data-places>
-								<div class="places__selection">
-									<div class="h4 light-gray" data-TargetID="on-map" data-targetActive>На карте</div>
-									<div class="h4 light-gray" data-TargetID="list">Списком</div>
-								</div>
-				
-								<div class="places__section" id="on-map">
-									<div class="map">
-										<iframe src="https://yandex.ru/map-widget/v1/-/CCQxVMxwLC" allowfullscreen="true"
-											style="position:relative;">
-										</iframe>
-									</div>
-								</div>
-								<div class="places__section" id="list">
-									<table class="checkout__table">
-										<tbody>
-											<tr>
-												<td class="body-1">
-													ул. Фабричная, д.6,<br>
-													г. Санкт-Петербург
-												</td>
-												<td>
-													<a class="body-1" href="tel:+74955067832">+7 (495) 506-78-32</a> <br>
-													<a class="body-1" href="tel:+74955067832">+7 (495) 506-78-32</a>
-												</td>
-												<td>		
-													<ul>
-														<li>
-															<p class="body-1">Пн-Чт </p>
-															<p class="body-1">с 9:00 до 18:00</p>
-														</li>
-														<li>
-															<p class="body-1">Пт</p>
-															<p class="body-1">с 9:00 до 17:00</p>
-														</li>
-														<li>
-															<p class="body-1">Сб-Вс</p>
-															<p class="body-1">выходные</p>
-														</li>
-													</ul>
-												</td>
-											</tr>
-											<tr>
-												<td class="body-1">
-													ул. Фабричная, д.6,<br>
-													г. Санкт-Петербург
-												</td>
-												<td>
-													<a class="body-1" href="tel:+74955067832">+7 (495) 506-78-32</a> <br>
-													<a class="body-1" href="tel:+74955067832">+7 (495) 506-78-32</a>
-												</td>
-												<td>		
-													<ul>
-														<li>
-															<p class="body-1">Пн-Чт </p>
-															<p class="body-1">с 9:00 до 18:00</p>
-														</li>
-														<li>
-															<p class="body-1">Пт</p>
-															<p class="body-1">с 9:00 до 17:00</p>
-														</li>
-														<li>
-															<p class="body-1">Сб-Вс</p>
-															<p class="body-1">выходные</p>
-														</li>
-													</ul>
-												</td>
-											</tr>
-										</tbody>
-										<tfoot>
-											<tr>
-												<th></th>
-												<th></th>
-												<th>
-													<button class="body-1 light-gray">Показать все</button>
-												</th>
-											</tr>
-										</tfoot>
-									</table>
-								</div>
-							</div>
-						</div>
-
 						<div class="checkout__section" id="pickup">
 							<div class="checkout__places" data-places>
 								<div class="places__selection">
-									<div class="h4 light-gray" data-TargetID="on-map1" data-targetActive>На карте</div>
-									<div class="h4 light-gray" data-TargetID="list1">Списком</div>
+									<div class="h4 light-gray" data-TargetID="on-map1" data-targetActive>On</div>
+									<div class="h4 light-gray" data-TargetID="list1">By list</div>
 								</div>
 				
 								<div class="places__section" id="on-map1">
 									<div class="map">
-										<iframe src="https://yandex.ru/map-widget/v1/-/CCQxVMxwLC" allowfullscreen="true"
-											style="position:relative;"></iframe>
+										<iframe style="border:0;position:relative;" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
 									</div>
 								</div>
 								<div class="places__section" id="list1">
@@ -187,52 +101,54 @@
 										<tbody>
 											<tr>
 												<td class="body-1">
-													ул. Фабричная, д.6,<br>
-													г. Санкт-Петербург
+													Ohio <br>
+													1811 Main St, Hays, KS 67601, USA <br>
+													Mon-Thu from 9:00AM to 6:00PM
 												</td>
 												<td>
-													<a class="body-1" href="tel:+74955067832">+7 (495) 506-78-32</a> <br>
-													<a class="body-1" href="tel:+74955067832">+7 (495) 506-78-32</a>
+													<a class="body-1" href="tel:+2162331762">216-233-1762</a>
 												</td>
 												<td>		
 													<ul>
 														<li>
-															<p class="body-1">Пн-Чт </p>
-															<p class="body-1">с 9:00 до 18:00</p>
+															<p class="body-1">Mon-Thu</p>
+															<p class="body-1">from 9:00AM to 6:00PM</p>
 														</li>
 														<li>
-															<p class="body-1">Пт</p>
-															<p class="body-1">с 9:00 до 17:00</p>
+															<p class="body-1">Thu</p>
+															<p class="body-1">from 9:00AM to 5:00PM</p>
 														</li>
 														<li>
-															<p class="body-1">Сб-Вс</p>
-															<p class="body-1">выходные</p>
+															<p class="body-1">Sat-Sun</p>
+
+															<p class="body-1">weekends</p>
 														</li>
 													</ul>
 												</td>
 											</tr>
 											<tr>
 												<td class="body-1">
-													ул. Фабричная, д.6,<br>
-													г. Санкт-Петербург
+													Florida<br>
+													600 Park St, Hays, KS 67601, US<br>
+													Mon-Thu from 9:00AM to 6:00PM
 												</td>
 												<td>
-													<a class="body-1" href="tel:+74955067832">+7 (495) 506-78-32</a> <br>
-													<a class="body-1" href="tel:+74955067832">+7 (495) 506-78-32</a>
+													<a class="body-1" href="tel:+727-873-3090">727-873-3090</a>
 												</td>
 												<td>		
 													<ul>
 														<li>
-															<p class="body-1">Пн-Чт </p>
-															<p class="body-1">с 9:00 до 18:00</p>
+															<p class="body-1">Mon-Thu</p>
+															<p class="body-1">from 9:00AM to 6:00PM</p>
 														</li>
 														<li>
-															<p class="body-1">Пт</p>
-															<p class="body-1">с 9:00 до 17:00</p>
+															<p class="body-1">Thu</p>
+															<p class="body-1">from 9:00AM to 5:00PM</p>
 														</li>
 														<li>
-															<p class="body-1">Сб-Вс</p>
-															<p class="body-1">выходные</p>
+															<p class="body-1">Sat-Sun</p>
+
+															<p class="body-1">weekends</p>
 														</li>
 													</ul>
 												</td>
@@ -243,7 +159,7 @@
 												<th></th>
 												<th></th>
 												<th>
-													<button class="body-1 light-gray">Показать все</button>
+													<button class="body-1 light-gray">Show all</button>
 												</th>
 											</tr>
 										</tfoot>
@@ -252,57 +168,47 @@
 							</div>
 						</div>
 
-						<h2 class="checkout__heading h3">3/ Выбор способа оплаты</h2>
+						<h2 class="checkout__heading h3">3/ Selecting a payment method</h2>
 						<div class="checkout__section checkout__radio-selection">
 							<div class="checkbox">
 								<input type="radio" name="payment" id="payment-1" checked>
 								<label for="payment-1">
 									<span class="body-1">
-										Связаться со мной для уточнения деталей оплаты 
+										Contact me to clarify payment details
 									</span>
 								</label>
 							</div>
 							<div class="checkbox">
 								<input type="radio" name="payment" id="payment-2">
 								<label for="payment-2" class="body-1">
-									Онлайн-оплата полной стоимости картой VISA, Mastercard, МИР
+									Online payment of the full cost of VISA, Mastercard
 								</label>
 							</div>
 							<div class="checkbox">
 								<input type="radio" name="payment" id="payment-3">
 								<label for="payment-3" class="body-1 black">
-									Онлайн-оплата 25% стоимости заказа (но не менее 500 рублей) картой VISA, Mastercard и МИР
+									Online payment of 25% of the order price (but not less than $ 10) by VISA card, Mastercard
 								</label>
 							</div>
 							<div class="checkbox">
 								<input type="radio" name="payment" id="payment-4">
 								<label for="payment-4" class="body-1">
-									Оплата заказа по выставленному счету (безнал для юр. и физ. лиц)
+									Order payment on the invoice (non-cash for the legal. and phiz. persons)
 								</label>
 							</div>
-							<p class="body-1 gray">Наш менеджер свяжется с Вами в ближайшее рабочее время для уточнения деталей оплаты</p>
-						</div>
-
-						<h2 class="checkout__heading h3">Ваш заказ принят!</h2>
-						<div class="checkout__section chekout__order-accepted">
-							<p class="body-1 gray">
-								Зарезервированный товар Вы можете самостоятельно забрать в магазине до 18.02.2021.
-								<br><br>
-								Если у Вас остались вопросы, пожалуйста, свяжитесь с намипо номеру 
-								<a class="body-1 gray" href="tel:+78123806686">+7 (812) 380-66-86</a>
-							</p>
+							<p class="body-1 gray">Our manager will contact you in the near working time to clarify the payment details</p>
 						</div>
 					</div>
 					<div class="checkout-summary">
 						<div class="cart-main">
 							<div class="cart-header">
-								<h2 class="h3 black">Ваш заказ</h2>
+								<h2 class="h3 black">Order</h2>
 							</div>
 					
 							<div class="cart-lineitem">
 								<div class="cart-item">
 								<div class="cart-item__main">
-									<img loading="lazy" decoding="async" src="./img/cart-item-1.webp" alt="Ручка-скоба Verona 11.4149.12, черный мат. лак, 160/177, Metakor" class="cart-item__thumb">
+									<img loading="lazy" decoding="async" src="./img/cart-item-1.webp" alt="Verona 11.4149.12 Brace Handle, Black Varnish Mat, 160/177, Metakor" class="cart-item__thumb">
 									<div class="cart-item__header">
 									<p class="body-1 light-gray">5а640</p>
 									<button class="cart-item-remove">
@@ -313,13 +219,13 @@
 									</div>
 									<h2>
 									<a href="#" class="body-2 black">
-										Ручка-скоба Verona 11.4149.12, черный мат. лак, 160/177, Metakor
+										Verona 11.4149.12 Brace Handle, Black Varnish Mat, 160/177, Metakor
 									</a>
 									</h2>        
 								</div>
 								<div class="cart-item__footer">
 									<div class="cart-item__amount">
-									<h3 class="body-2 black">Количество:</h3>
+									<h3 class="body-2 black">Amount:</h3>
 									<select name="amount" class="h4">
 										<option value="1" selected>1</option>
 										<option value="2">2</option>
@@ -327,57 +233,27 @@
 										<option value="4">4</option>
 									</select>
 									</div>
-									<p class="cart-item__price h3 black">740 ₽</p>
+									<p class="cart-item__price h3 black">25$</p>
 								</div>
 								</div>
-								<div class="cart-item">
-									<div class="cart-item__main">
-										<img loading="lazy" decoding="async" src="./img/cart-item-1.webp" alt="Ручка-скоба Verona 11.4149.12, черный мат. лак, 160/177, Metakor" class="cart-item__thumb">
-										<div class="cart-item__header">
-										<p class="body-1 light-gray">5а640</p>
-										<button class="cart-item-remove">
-											<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-											<use xlink:href="#bin"></use>
-											</svg>          
-										</button>
-										</div>
-										<h2>
-										<a href="#" class="body-2 black">
-											Ручка-скоба Verona 11.4149.12, черный мат. лак, 160/177, Metakor
-										</a>
-										</h2>        
-									</div>
-									<div class="cart-item__footer">
-										<div class="cart-item__amount">
-										<h3 class="body-2 black">Количество:</h3>
-										<select name="amount" class="h4">
-											<option value="1" selected>1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="4">4</option>
-										</select>
-										</div>
-										<p class="cart-item__price h3 black">740 ₽</p>
-									</div>
-									</div>
 							</div>
 					
 							<div class="cart-pre-summary">
 								<ul>
 									<li>
-										<p class="body-1 gray">Предварительная стоимость</p>
-										<p class="h3 gray">1533 ₽</p>
+										<p class="body-1 gray">Preliminary price</p>
+										<p class="h3 gray">25$ </p>
 									</li>
 									<li>
-										<p class="body-1 gray">Доставка</p>
-										<p class="h3 gray">0 ₽</p>
+										<p class="body-1 gray">Delivery</p>
+										<p class="h3 gray">0$</p>
 									</li>
 								</ul>
 							</div>
 
 							<div class="cart-summary">
-								<h3 class="body-1 black">Итого:</h3>
-								<p class="h3 black">1533 ₽</p>
+								<h3 class="body-1 black">Summary:</h3>
+								<p class="h3 black">25$ </p>
 							</div>
 					
 						</div>
@@ -390,11 +266,11 @@
 								<path d="M13.9982 5.00006C14.2319 4.9996 14.4583 5.08098 14.6382 5.23006C14.7395 5.31401 14.8232 5.41711 14.8846 5.53346C14.9459 5.6498 14.9837 5.77711 14.9958 5.90809C15.0079 6.03906 14.994 6.17114 14.9549 6.29674C14.9159 6.42234 14.8524 6.53901 14.7682 6.64006L10.2882 12.0001L14.6082 17.3701C14.6913 17.4723 14.7533 17.59 14.7908 17.7164C14.8282 17.8427 14.8403 17.9752 14.8264 18.1062C14.8124 18.2373 14.7727 18.3643 14.7095 18.4799C14.6464 18.5955 14.561 18.6975 14.4582 18.7801C14.3548 18.8711 14.2336 18.9398 14.1023 18.9818C13.9711 19.0237 13.8326 19.0381 13.6955 19.0241C13.5584 19.01 13.4257 18.9677 13.3057 18.8999C13.1857 18.8321 13.081 18.7402 12.9982 18.6301L8.16824 12.6301C8.02116 12.4511 7.94075 12.2267 7.94075 11.9951C7.94075 11.7634 8.02116 11.539 8.16824 11.3601L13.1682 5.36006C13.2686 5.23904 13.396 5.14338 13.5402 5.08083C13.6844 5.01828 13.8413 4.99061 13.9982 5.00006Z" fill="#444444"/>
 							</svg>
 							<span>
-								Назад
+								Back
 							</span>
 						</span>
 					</a>
-					<a href="#" class="cart__checkout-btn black-bg white h4">Оформить заказ</a>
+					<a href="#" class="cart__checkout-btn black-bg white h4">Checkout</a>
 				</section>
 			</form>
 		</div>

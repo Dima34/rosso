@@ -3,7 +3,7 @@
 
 <head>
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-	@@include("./partials/head.html", {title:"РОССО - Главная страница"})
+	@@include("./partials/head.html", {title:"РОССО - Mixer"})
 </head>
 
 
@@ -82,11 +82,11 @@
 
 				<div class="product__right" data-accordion>
 					<div class="product__info" >
-						<h1 class="h3">Смеситель</h1>
+						<h1 class="h3">Mixer</h1>
 						<h3>
 							<button class="accordion-trigger">
 								<span class="accordion-title   sub-title-1">
-									Характеристики
+									Characteristics
 									<svg class="accordion-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
 										<use xlink:href="#arrow-down"></use>
 									</svg>
@@ -96,43 +96,43 @@
 						<div class="accordion-panel">
 							<ul>
 								<li>
-									<h2 class="body-2">Производитель</h2>
+									<h2 class="body-2">Manufacturer</h2>
 									<p class="body-2 gray">Omoikiri</p>
 								</li>
 								<li>
-									<h2 class="body-2">Страна производитель</h2>
-									<p class="body-2 gray">Япония</p>
+									<h2 class="body-2">Country of origin</h2>
+									<p class="body-2 gray">Japan</p>
 								</li>
 								<li>
-									<h2 class="body-2">Код производителя</h2>
+									<h2 class="body-2">Manufacturer code</h2>
 									<p class="body-2 gray">4994179</p>
 								</li>
 								<li>
-									<h2 class="body-2">Код товара</h2>
+									<h2 class="body-2">Product Code</h2>
 									<p class="body-2 gray">05320</p>
 								</li>
 								<li>
-									<h2 class="body-2">Цвет</h2>
-									<p class="body-2 gray">Сталь черная</p>
+									<h2 class="body-2">Color</h2>
+									<p class="body-2 gray">Black steel</p>
 								</li>
 								<li>
-									<h2 class="body-2">Тип товара</h2>
-									<p class="body-2 gray">Смеситель</p>
+									<h2 class="body-2">Product type</h2>
+									<p class="body-2 gray">Mixer</p>
 								</li>
 								<li>
-									<h2 class="body-2">Материал товара</h2>
-									<p class="body-2 gray">Металл</p>
+									<h2 class="body-2">Product matrial</h2>
+									<p class="body-2 gray">Metal</p>
 								</li>
 								<li>
-									<h2 class="body-2">Коллекция</h2>
+									<h2 class="body-2">Collection</h2>
 									<p class="body-2 gray">Nagano</p>
 								</li>
 								<li>
-									<h2 class="body-2">Серия товара</h2>
-									<p class="body-2 gray">Премиум</p>
+									<h2 class="body-2">Product series</h2>
+									<p class="body-2 gray">Premium</p>
 								</li>
 								<li>
-									<h2 class="body-2">Размер модуля</h2>
+									<h2 class="body-2">Item size</h2>
 									<p class="body-2 gray">294*206</p>
 								</li>
 							</ul>
@@ -141,7 +141,7 @@
 						<h3>
 							<button class="accordion-trigger">
 								<span class="accordion-title   sub-title-1">
-									Гарантии
+									Guarantee
 									<svg class="accordion-icon" width="25" height="25" xmlns="http://www.w3.org/2000/svg">
 										<use xlink:href="#arrow-down"></use>
 									</svg>
@@ -149,17 +149,17 @@
 							</button>
 						</h3>
 						<div class="accordion-panel">
-							<p>Грантия от роизводителя 24 месяца</p>
+							<p>Grant from the manufacturer 24 monthsа</p>
 						</div>
 					</div>
 					<div class="product__checkout">
-						<h2 class="product__title-mobile h3">Смеситель</h2>
+						<h2 class="product__title-mobile h3">Mixer</h2>
 
 						<div class="product__price is-sale   h4 semi-bold">
-							<span>290 ₽</span>
-							<span>190 ₽</span>
+							<span>290 $</span>
+							<span>190 $</span>
 						</div>
-						<button class="product__add-to-cart white  black-bg body-3">Добавить в корзину</button>
+						<button class="product__add-to-cart white  black-bg body-3">Add to cart</button>
 						<div class="product__options">
 							<button class="body-2">
 								<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
@@ -167,15 +167,15 @@
 								</svg>
 							</button>
 							<button class="body-2">
-								Одним кликом
+								One click buy
 							</button>
 						</div>
 						<div class="product__availibility body-2">
 							<span class="gray body-2">
 								<!-- В наличии -->
-								Нет в наличии
+								Out of stock
 							</span>
-							<a href="#" class="body-3  ">Заказать?</a>						
+							<a href="#" class="body-3  ">Wanna buy?</a>						
 						</div>
 					</div>
 					
@@ -184,26 +184,58 @@
 
 			<div class="product-also">
 				<div class="product-also__heading">
-					<h2 class="h3  ">Дополнить образ</h2>
+					<h2 class="h3  ">Recently viewed</h2>
 				</div>
 				<div class="product-also__contnet">
 					<div class="product-also__slider">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								@@include("./partials/catalogue-card.html",
-								{title : "Ручка-кнопка"})
+								{
+									"title" : "Handle PURA, polished copper", 
+									"imgsrc" : "./img/new-6.webp",
+									"price" : "22,00"
+								})
 							</div>
 							<div class="swiper-slide">
 								@@include("./partials/catalogue-card.html",
-								{title : "Ручка-кнопка"})
+								{
+									"title" : "PURA handle, polished black nickel", 
+									"imgsrc" : "./img/new-5.webp",
+									"price" : "22,00"
+								})
 							</div>
 							<div class="swiper-slide">
 								@@include("./partials/catalogue-card.html",
-								{title : "Ручка-кнопка"})
+								{
+									"title" : "Adjustable furniture leg FONDA, matte dark gold", 
+									"imgsrc" : "./img/new-4.webp",
+									"price" : "55,73"
+								})
 							</div>
 							<div class="swiper-slide">
 								@@include("./partials/catalogue-card.html",
-								{title : "Ручка-кнопка"})
+								{
+									"title" : "Adjustable furniture leg FONDA", 
+									"imgsrc" : "./img/new-3.webp",
+									"price" : "55,73"
+								})
+							</div>
+							<div class="swiper-slide">
+								@@include("./partials/catalogue-card.html",
+								{
+									"title" : "Omnia L hinge with closer", 
+									"imgsrc" : "./img/new-2.webp",
+									"price" : "4,25"
+								})		
+							</div>
+							<div class="swiper-slide">
+								@@include("./partials/catalogue-card.html",
+								{
+									"title" : "Qupon pull handle walnut brushed gold Metakor", 
+									"imgsrc" : "./img/new-1.webp",
+									"price" : "62,42"
+								})
 							</div>
 						</div>
 					</div>
@@ -230,12 +262,12 @@
 
 			<div class="product-reviews">
 				<div>
-					<h2 class="h3  ">Отзывы о товаре</h2>
+					<h2 class="h3">Product reviews</h2>
 					<ul class="product-reviews__comments">
 						<li>
 							<div class="product-review__header">
 								<img loading="lazy" decoding="async" src="./img/cart-item-1.webp" alt="">
-								<h3 class="sub-title-1  ">Ирина К.</h3>
+								<h3 class="sub-title-1  ">Kate B.</h3>
 								<div class="product-review__stars">
 									<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
 										<use xlink:href="#star"></use>
@@ -255,50 +287,23 @@
 								</div>
 							</div>
 							<div class="product-review__content">
-								<p class="body-2  ">Достойно выглядит, достаточно тяжелая, работает плавно. Хром и обработка без дефектов </p>
-								<span class="sub-title-2   regular">6 Февраля 2021</span>
-							</div>
-						</li>
-						<li>
-							<div class="product-review__header">
-								<img loading="lazy" decoding="async" src="./img/cart-item-1.webp" alt="">
-								<h3 class="sub-title-1  ">Ирина К.</h3>
-								<div class="product-review__stars">
-									<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
-										<use xlink:href="#star"></use>
-									</svg>
-									<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
-										<use xlink:href="#star"></use>
-									</svg>
-									<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
-										<use xlink:href="#star"></use>
-									</svg>
-									<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
-										<use xlink:href="#star"></use>
-									</svg>
-									<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
-										<use xlink:href="#star"></use>
-									</svg>					
-								</div>
-							</div>
-							<div class="product-review__content">
-								<p class="body-2  ">Достойно выглядит, достаточно тяжелая, работает плавно. Хром и обработка без дефектов </p>
-								<span class="sub-title-2   regular">6 Февраля 2021</span>
+								<p class="body-2  ">Decent looking, heavy enough, runs smoothly. Chrome and machining without defects</p>
+								<span class="sub-title-2   regular">February 6, 2021</span>
 							</div>
 						</li>
 					</ul>		
 				</div>
 				<form action="POST">
 					<div class="product-reviews__form-container">
-						<h2 class="h3  ">Оставить свой отзыв</h2>
+						<h2 class="h3">leave your feedback</h2>
 						
 						<fieldset>
-							<label for="name" class="body-1  ">Ваше имя*
-								<input required type="text" name="name" id="name" placeholder="Иван">
+							<label for="name" class="body-1 black ">Name*
+								<input required type="text" name="name" id="name" placeholder="Mike">
 							</label>
 
 							<div class="product-reviews__form-raiting">
-								<label for = "raiting" class="body-1  ">Ваша оценка товара *</label>
+								<label for = "raiting" class="body-1  black">Your valuation *</label>
 							
 								<div class="raiting__group">
 									<input class="star star-5" id="star-5" type="radio"  name="star"/>
@@ -315,12 +320,12 @@
 							</div>
 						</fieldset>
 
-						<label for="message" class="body-1  ">Текст отзыва
+						<label for="message" class="body-1  black">Review text
 							<input type="text" name="message" id="message">
 						</label>
 					</div>
 					<button type="submit" class="arrow-button white h4">
-						<span>Отправить</span>
+						<span>Send</span>
 					</button>
 				</form>
 			</div>
@@ -328,18 +333,18 @@
 			<div class="product-delivery">
 				<div class="product-delivery__header white  black-bg">
 					<div>
-						<h2 class="h3 white">Доставка</h2>
-						<p class="body-2 white">Наш склад/магазин, в котором Вы можете самостоятельно забрать заказ, находится по адресу:
-							г. Санкт-Петербург, Полюстровский проспект, дом 50, 3-й этаж (вход с Чугунной улицы).
+						<h2 class="h3 white">Delivery</h2>
+						<p class="body-2 white">Our warehouse/shop, where you can pick up your order yourself, is located at:
+							Ohio, 1811 Main St, Hays.
 							</p>
 					</div>
 					<div>
-						<h2 class="h3 white">Пункты выдачи</h2>
-						<p class="body-2 white">Мы организуем доставку ваших заказов в Санкт-Петербург транспортной компанией СДЭК. Товар можно получить в пунктах выдачи заказов или заказать доставку до двери.</p>
+						<h2 class="h3 white">Delivery points</h2>
+						<p class="body-2 white">We will arrange delivery of your orders to Saint Petersburg by SDEK transport company. The goods can be obtained at the points of issue of orders or ordered delivery to the door.</p>
 					</div>
 				</div>
 				<div class="map">
-					<iframe src="https://yandex.ru/map-widget/v1/-/CCQxVMxwLC" allowfullscreen="true" style="position:relative;"></iframe>
+					<iframe style="border:0;position:relative; display: block;" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
 				</div>
 			</div>
 		</div>

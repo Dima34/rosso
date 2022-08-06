@@ -1,23 +1,23 @@
 'use strict';
 
 Array.prototype.slice.call(document.querySelectorAll("*[data-accordion]")).forEach(function (accordion, accordionIndex) {
-    const triggerEls = document.querySelectorAll(".accordion-trigger")
-    const panelEls = document.querySelectorAll(".accordion-panel")
+  const triggerEls = document.querySelectorAll(".accordion-trigger")
+  const panelEls = document.querySelectorAll(".accordion-panel")
 
-    triggerEls.forEach((el, index)=>{
-			el.setAttribute("aria-expanded", true)
-			var triggerId = "accordion" + accordionIndex + "trigger" + index
-			var sectId = "accordion" + accordionIndex + "sect" + index
-			el.setAttribute("aria-controls", sectId)
-			el.setAttribute("id", triggerId)
+  triggerEls.forEach((el, index)=>{
+    el.setAttribute("aria-expanded", true)
+    var triggerId = "accordion" + accordionIndex + "trigger" + index
+    var sectId = "accordion" + accordionIndex + "sect" + index
+    el.setAttribute("aria-controls", sectId)
+    el.setAttribute("id", triggerId)
 
-			
-			if(panelEls[index]){
-				panelEls[index].setAttribute("id", sectId)
-				panelEls[index].setAttribute("role", "region")
-				panelEls[index].setAttribute("aria-labelledby", triggerId)
-			}
-    })
+    
+    if(panelEls[index]){
+      panelEls[index].setAttribute("id", sectId)
+      panelEls[index].setAttribute("role", "region")
+      panelEls[index].setAttribute("aria-labelledby", triggerId)
+    }
+  })
 
   // Create the array of toggle elements for the accordion group
   var triggers = Array.prototype.slice.call(accordion.querySelectorAll('.accordion-trigger'));
